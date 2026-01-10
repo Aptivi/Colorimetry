@@ -5,6 +5,7 @@
     <File Path="Directory.Build.props" />
   </Folder>
   <Folder Name="/Private/">
+    <Project Path="private/BuildTargets/BuildTargets.csproj" />
     <Project Path="private/Colorimetry.ColorDataGen/Colorimetry.ColorDataGen.csproj" />
     <Project Path="private/Colorimetry.Tests/Colorimetry.Tests.csproj" Id="16713ba9-3cd7-45df-8fb7-55b54dc553d7" />
   </Folder>
