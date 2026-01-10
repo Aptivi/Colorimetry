@@ -1,0 +1,884 @@
+{
+  "sitemap": {
+    "baseUrl": "https://aptivi.github.io/Colorimetry/"
+  },
+  "source_base_path": "/home/runner/work/Colorimetry/Colorimetry/DocGen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Color.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Color",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Color.yml\" sourcestartlinenumber=\"1\">Color information class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.ColorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.ColorException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.ColorException",
+      "Summary": "<p sourcefile=\"api/Colorimetry.ColorException.yml\" sourcestartlinenumber=\"1\">Color exception</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.ColorSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.ColorSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.ColorSerializer",
+      "Summary": "<p sourcefile=\"api/Colorimetry.ColorSerializer.yml\" sourcestartlinenumber=\"1\">Color serializer</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.ColorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.ColorSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.ColorSettings",
+      "Summary": "<p sourcefile=\"api/Colorimetry.ColorSettings.yml\" sourcestartlinenumber=\"1\">The color settings class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.ColorTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.ColorTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.ColorTools",
+      "Summary": "<p sourcefile=\"api/Colorimetry.ColorTools.yml\" sourcestartlinenumber=\"1\">Color tools and management</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.ColorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.ColorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.ColorType",
+      "Summary": "<p sourcefile=\"api/Colorimetry.ColorType.yml\" sourcestartlinenumber=\"1\">Color type enumeration</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Data.ConsoleColorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Data.ConsoleColorData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Data.ConsoleColorData",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Data.ConsoleColorData.yml\" sourcestartlinenumber=\"1\">Console color data</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Data.ConsoleColorDataSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Data.ConsoleColorDataSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Data.ConsoleColorDataSerializer",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Data.ConsoleColorDataSerializer.yml\" sourcestartlinenumber=\"1\">Console color data serializer</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Data.ConsoleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Data.ConsoleColors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Data.ConsoleColors",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Data.ConsoleColors.yml\" sourcestartlinenumber=\"1\">All 255 console colors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Data.WebSafeColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Data.WebSafeColors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Data.WebSafeColors",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Data.WebSafeColors.yml\" sourcestartlinenumber=\"1\">Web safe color list as specified by W3C.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Gradients.ColorGradient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Gradients.ColorGradient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Gradients.ColorGradient",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Gradients.ColorGradient.yml\" sourcestartlinenumber=\"1\">A color gradient enumeration class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Gradients.ColorGradientEnumerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Gradients.ColorGradientEnumerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Gradients.ColorGradientEnumerator",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Gradients.ColorGradientEnumerator.yml\" sourcestartlinenumber=\"1\">The color gradient enumerator</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Gradients.ColorGradients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Gradients.ColorGradients.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Gradients.ColorGradients",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Gradients.ColorGradients.yml\" sourcestartlinenumber=\"1\">The color gradients class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Gradients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Gradients.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Gradients",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Interop.SystemColorConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Interop.SystemColorConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Interop.SystemColorConverter",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Interop.SystemColorConverter.yml\" sourcestartlinenumber=\"1\">Provides you with tools to convert <xref href=\"System.Drawing.Color?text=System.Drawing%27s+Color\" data-throw-if-not-resolved=\"false\"></xref> to and from <xref href=\"Colorimetry.Color?text=Colorimetry%27s+Color\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Interop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Interop.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Interop",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.BaseColorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.BaseColorModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.BaseColorModel",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.BaseColorModel.yml\" sourcestartlinenumber=\"1\">Base color model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.CieLab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.CieLab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.CieLab",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.CieLab.yml\" sourcestartlinenumber=\"1\">The CieLab class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.CieLch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.CieLch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.CieLch",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.CieLch.yml\" sourcestartlinenumber=\"1\">The CieLch class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.CieLuv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.CieLuv.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.CieLuv",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.CieLuv.yml\" sourcestartlinenumber=\"1\">The CieLuv class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Conversion.ConversionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Conversion.ConversionTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Conversion.ConversionTools",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Conversion.ConversionTools.yml\" sourcestartlinenumber=\"1\">Color conversion tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Conversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Conversion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Conversion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.CyanMagentaYellow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.CyanMagentaYellow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.CyanMagentaYellow",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.CyanMagentaYellow.yml\" sourcestartlinenumber=\"1\">The CMY class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.CyanMagentaYellowKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.CyanMagentaYellowKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.CyanMagentaYellowKey",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.CyanMagentaYellowKey.yml\" sourcestartlinenumber=\"1\">The CMYK class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.HueSaturationLightness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.HueSaturationLightness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.HueSaturationLightness",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.HueSaturationLightness.yml\" sourcestartlinenumber=\"1\">The Hue, Saturation, and Lightness (HSL) model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.HueSaturationValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.HueSaturationValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.HueSaturationValue",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.HueSaturationValue.yml\" sourcestartlinenumber=\"1\">The Hue, Saturation, and Value (HSV) model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.HueWhiteBlack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.HueWhiteBlack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.HueWhiteBlack",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.HueWhiteBlack.yml\" sourcestartlinenumber=\"1\">The Hue, Whiteness, and Blackness (HWB) model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.HunterLab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.HunterLab.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.HunterLab",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.HunterLab.yml\" sourcestartlinenumber=\"1\">The HunterLab class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.LumaChromaUv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.LumaChromaUv.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.LumaChromaUv",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.LumaChromaUv.yml\" sourcestartlinenumber=\"1\">The Luma chroma (YUV, PAL, SDTV with BT.470) model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.LumaInPhaseQuadrature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.LumaInPhaseQuadrature.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.LumaInPhaseQuadrature",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.LumaInPhaseQuadrature.yml\" sourcestartlinenumber=\"1\">The Luma, In-phase, and Quadrature (YIQ, NTSC 1953) model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Parsing.IlluminanceTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Parsing.IlluminanceTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Parsing.IlluminanceTools",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Parsing.IlluminanceTools.yml\" sourcestartlinenumber=\"1\">Standard illuminance tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Parsing.IlluminantType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Parsing.IlluminantType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Parsing.IlluminantType",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Parsing.IlluminantType.yml\" sourcestartlinenumber=\"1\">Illuminant type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Parsing.ParsingTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Parsing.ParsingTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Parsing.ParsingTools",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Parsing.ParsingTools.yml\" sourcestartlinenumber=\"1\">Tools to parse RGB specifiers for general use</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Parsing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Parsing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Parsing",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.RedGreenBlue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.RedGreenBlue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.RedGreenBlue",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.RedGreenBlue.yml\" sourcestartlinenumber=\"1\">The RGB class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.RedYellowBlue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.RedYellowBlue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.RedYellowBlue",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.RedYellowBlue.yml\" sourcestartlinenumber=\"1\">The RYB class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Xyz.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Xyz.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Xyz",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Xyz.yml\" sourcestartlinenumber=\"1\">The XYZ class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.Yxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.Yxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models.Yxy",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Models.Yxy.yml\" sourcestartlinenumber=\"1\">The YXY class instance</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.BaseTransformationFormula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.BaseTransformationFormula.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.BaseTransformationFormula",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.BaseTransformationFormula.yml\" sourcestartlinenumber=\"1\">Color transformation formula</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Contrast.ColorBrightness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Contrast.ColorBrightness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Contrast.ColorBrightness",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Contrast.ColorBrightness.yml\" sourcestartlinenumber=\"1\">Color brightness enumeration</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Contrast.ColorContrast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Contrast.ColorContrast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Contrast.ColorContrast",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Contrast.ColorContrast.yml\" sourcestartlinenumber=\"1\">Color contrast tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Contrast.ColorContrastType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Contrast.ColorContrastType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Contrast.ColorContrastType",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Contrast.ColorContrastType.yml\" sourcestartlinenumber=\"1\">The color contrast type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Contrast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Contrast.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Contrast",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.ColorBlind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.ColorBlind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas.ColorBlind",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Formulas.ColorBlind.yml\" sourcestartlinenumber=\"1\">Color blindness simulation formula</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.Cyanotype.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.Cyanotype.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas.Cyanotype",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Formulas.Cyanotype.yml\" sourcestartlinenumber=\"1\">Cyanotype color filtering.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.Inverse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.Inverse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas.Inverse",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Formulas.Inverse.yml\" sourcestartlinenumber=\"1\">Inverse colors</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.Monochromacy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.Monochromacy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas.Monochromacy",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Formulas.Monochromacy.yml\" sourcestartlinenumber=\"1\">Full color blindness, can only see grayscale.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.Sepia.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.Sepia.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas.Sepia",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Formulas.Sepia.yml\" sourcestartlinenumber=\"1\">Sepia color filtering.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Formulas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Formulas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Formulas",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.ITransformationFormula.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.ITransformationFormula.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.ITransformationFormula",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.ITransformationFormula.yml\" sourcestartlinenumber=\"1\">Transformation formula interface</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Tools.ColorBlind.ColorBlindDeficiency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Tools.ColorBlind.ColorBlindDeficiency.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Tools.ColorBlind.ColorBlindDeficiency",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Tools.ColorBlind.ColorBlindDeficiency.yml\" sourcestartlinenumber=\"1\">Deficiency type of the color blindness</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Tools.ColorBlind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Tools.ColorBlind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Tools.ColorBlind",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Tools.MonochromacyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Tools.MonochromacyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Tools.MonochromacyType",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.Tools.MonochromacyType.yml\" sourcestartlinenumber=\"1\">Monochromacy type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.TransformationTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.TransformationTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation.TransformationTools",
+      "Summary": "<p sourcefile=\"api/Colorimetry.Transformation.TransformationTools.yml\" sourcestartlinenumber=\"1\">Color transformation tools</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.Transformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.Transformation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry.Transformation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Colorimetry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Colorimetry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Colorimetry",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
