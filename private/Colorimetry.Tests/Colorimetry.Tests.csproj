@@ -1,0 +1,19 @@
+﻿<Project Sdk="MSTest.Sdk/4.0.2">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net48</TargetFrameworks>
+    <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shouldly" Version="4.3.0" />
+
+    <PackageReference Remove="Microsoft.SourceLink.GitHub" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\public\Colorimetry\Colorimetry.csproj" />
+  </ItemGroup>
+
+</Project>

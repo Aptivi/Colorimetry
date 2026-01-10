@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Colorimetry</AssemblyTitle>
+    <AssemblyDescription>Rich Color Tools</AssemblyDescription>
+    <Description>Color library that provides more than just color, such as transformation, conversion, and more.</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Colorimetry</AssemblyName>
+    <PackageId>Colorimetry</PackageId>
+    <PackageTags>color;truecolor;library;csharp;colors</PackageTags>
+    <PackageProjectUrl>https://github.com/Aptivi/Colorimetry</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Aptivi/Colorimetry</RepositoryUrl>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>OfficialAppIcon-Colorimetry-512.png</PackageIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\assets\OfficialAppIcon-Colorimetry-512.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Magico" Version="1.6.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="ResourceLab" Version="1.0.0" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.6.1" />
+    <PackageReference Include="Textify.Offline" Version="2.13.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\private\Colorimetry.ColorDataGen\Colorimetry.ColorDataGen.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Languages\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,62 @@
+/* Aptivi global variables */
+@import url('apt/apt-globals.css');
+
+/* DocFX */
+@import url('apt/apt-docfx.css');
+
+/* Important overrides */
+@import url('apt/apt-important.css');
+
+/* Aptivi-specific overrides and declarations */
+@import url('apt/apt-common.css');
+@import url('apt/apt-overrides.css');
+
+/* Common HTML overrides */
+html, body {
+    font-family: var(--apt-font-style-sans);
+    color: var(--apt-accent-2);
+    background-color: var(--apt-accent-back) !important;
+    height: 100%;
+}
+
+button {
+    font-family: var(--apt-font-style-sans);
+}
+
+p {
+    font-size: var(--apt-styling-common-font-size);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--apt-font-style-head);
+    font-weight: 400;
+    color: var(--apt-accent-1);
+}
+
+code, pre {
+    font-family: var(--apt-font-style-mono);
+    color: var(--apt-accent-1);
+}
+
+input, select {
+    color: var(--apt-accent-2);
+    background-color: var(--apt-accent-shade-3);
+    border-color: var(--apt-accent-1);
+    border-width: var(--apt-styling-border-width);
+    border-radius: var(--apt-styling-border-radius);
+}
+
+code {
+    background-color: unset;
+}
+
+pre {
+    background-color: var(--apt-accent-shade-3) !important;
+    border-color: var(--apt-accent-1);
+    border-width: var(--apt-styling-border-width) !important;
+    border-radius: var(--apt-styling-border-radius) !important;
+}
+
+a {
+    color: var(--apt-accent-1);
+}
