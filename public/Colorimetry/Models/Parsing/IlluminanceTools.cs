@@ -82,15 +82,15 @@ namespace Colorimetry.Models.Parsing
         {
             // Check the observer
             if (observer != 2 && observer != 10)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER") + $": {observer}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER") + $": {observer}");
 
             // Check the illuminant
             if (illuminant < 0 || illuminant > IlluminantType.F12)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT") + $": {(int)illuminant}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT") + $": {(int)illuminant}");
 
             // Now, get the references from the table
             if (!illuminanceTable.TryGetValue((observer, illuminant), out var references))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE") + $": {observer} degs, {(int)illuminant}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE") + $": {observer} degs, {(int)illuminant}");
             return references;
         }
     }

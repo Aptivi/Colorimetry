@@ -39,7 +39,7 @@ namespace Colorimetry.Gradients
             get
             {
                 var gradient = gradients[pos] ??
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_GRADIENT_EXCEPTION_GRADIENTNULL"));
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_GRADIENT_EXCEPTION_GRADIENTNULL"));
                 return gradient;
             }
         }

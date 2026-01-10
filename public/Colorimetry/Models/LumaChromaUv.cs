@@ -76,7 +76,7 @@ namespace Colorimetry.Models
         public static LumaChromaUv ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER").FormatString(specifier) + ": yuv:<Y>;<U>;<V>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER").FormatString(specifier) + ": yuv:<Y>;<U>;<V>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(4).Split(';');
@@ -85,20 +85,20 @@ namespace Colorimetry.Models
                 // We got the YUV whole values! First, check to see if we need to filter the color for the color-blind
                 int y = Convert.ToInt32(specifierArray[0]);
                 if (y < 0 || y > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYUVYLEVEL") + $" {y}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL") + $" {y}");
                 int u = Convert.ToInt32(specifierArray[1]);
                 if (u < 0 || u > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYUVULEVEL") + $" {u}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYUVULEVEL") + $" {u}");
                 int v = Convert.ToInt32(specifierArray[2]);
                 if (v < 0 || v > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYUVVLEVEL") + $" {v}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYUVVLEVEL") + $" {v}");
 
                 // First, we need to convert from YUV to RGB
                 var yuv = new LumaChromaUv(y, u, v);
                 return yuv;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED").FormatString(specifier) + ": yuv:<Y>;<U>;<V>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED").FormatString(specifier) + ": yuv:<Y>;<U>;<V>");
         }
 
         /// <summary>

@@ -55,7 +55,7 @@ namespace Colorimetry.Transformation.Formulas
                 MonochromacyType.Cyan =>        (0,     sMono, sMono),
                 MonochromacyType.Magenta =>     (sMono, 0,     sMono),
                 MonochromacyType.Yellow =>      (sMono, sMono, 0    ),
-                _ => throw new ColorException(LanguageTools.GetLocalized("T_COLOR_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE")),
+                _ => throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE")),
             };
             var final = TransformationTools.BlendColor((r, g, b), (mono.r, mono.g, mono.b), Frequency);
             return (final.RGB.R, final.RGB.G, final.RGB.B);

@@ -152,7 +152,7 @@ namespace Colorimetry.Models
         public static CieLab ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER").FormatString(specifier) + ": cielab:<l>;<a>;<b>;<observer>;<illuminant>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER").FormatString(specifier) + ": cielab:<l>;<a>;<b>;<observer>;<illuminant>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(7).Split(';');
@@ -162,13 +162,13 @@ namespace Colorimetry.Models
                 // We got the CieLab whole values! First, check to see if we need to filter the color for the color-blind
                 double l = Convert.ToDouble(specifierArray[0]);
                 if (l < 0 || l > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECIELABLLEVEL") + $" {l}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL") + $" {l}");
                 double a = Convert.ToDouble(specifierArray[1]);
                 if (a < -128 || a > 128)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECIELABALEVEL") + $" {a}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECIELABALEVEL") + $" {a}");
                 double b = Convert.ToDouble(specifierArray[2]);
                 if (b < -128 || b > 128)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECIELABBLEVEL") + $" {b}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECIELABBLEVEL") + $" {b}");
 
                 // Get the observer and the illuminant when needed
                 int observer = 2;
@@ -178,10 +178,10 @@ namespace Colorimetry.Models
                     // We've explicitly specified the observer and the illuminant
                     observer = Convert.ToInt32(specifierArray[3]);
                     if (observer != 2 && observer != 10)
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER") + $": {observer}");
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER") + $": {observer}");
                     illuminant = (IlluminantType)Convert.ToInt32(specifierArray[4]);
                     if (illuminant < IlluminantType.A || illuminant > IlluminantType.F12)
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT") + $": {(int)illuminant}");
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT") + $": {(int)illuminant}");
                 }
 
                 // Finally, return the CieLab instance
@@ -189,7 +189,7 @@ namespace Colorimetry.Models
                 return CieLab;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED").FormatString(specifier) + ": cielab:<l>;<a>;<b>;<observer>;<illuminant>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED").FormatString(specifier) + ": cielab:<l>;<a>;<b>;<observer>;<illuminant>");
         }
 
         /// <inheritdoc/>

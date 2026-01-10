@@ -42,7 +42,7 @@ namespace Colorimetry.Data
         public static ConsoleColorData GetColorData(ConsoleColors colors)
         {
             if (colors < ConsoleColors.Black || colors > ConsoleColors.Grey93)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_DATA_EXCEPTION_COLOROUTOFRANGE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_DATA_EXCEPTION_COLOROUTOFRANGE"));
             return GetColorData()[(int)colors];
         }
     }

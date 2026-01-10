@@ -85,7 +85,7 @@ namespace Colorimetry.Models
         public static HueSaturationLightness ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER").FormatString(specifier) + ": hsl:<hue>;<sat>;<lig>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER").FormatString(specifier) + ": hsl:<hue>;<sat>;<lig>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(4).Split(';');
@@ -94,13 +94,13 @@ namespace Colorimetry.Models
                 // We got the HSL whole values! First, check to see if we need to filter the color for the color-blind
                 int h = Convert.ToInt32(specifierArray[0]);
                 if (h < 0 || h > 360)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHSLHLEVEL") + $" {h}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL") + $" {h}");
                 int s = Convert.ToInt32(specifierArray[1]);
                 if (s < 0 || s > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHSLSLEVEL") + $" {s}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL") + $" {s}");
                 int l = Convert.ToInt32(specifierArray[2]);
                 if (l < 0 || l > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHSLLLEVEL") + $" {l}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHSLLLEVEL") + $" {l}");
 
                 // First, we need to convert from HSL to RGB
                 double hPart = (double)h / 360;
@@ -110,7 +110,7 @@ namespace Colorimetry.Models
                 return hsl;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED").FormatString(specifier) + ": hsl:<hue>;<sat>;<lig>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED").FormatString(specifier) + ": hsl:<hue>;<sat>;<lig>");
         }
 
         /// <summary>

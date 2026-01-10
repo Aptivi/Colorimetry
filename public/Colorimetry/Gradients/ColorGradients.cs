@@ -101,7 +101,7 @@ namespace Colorimetry.Gradients
         {
             // Sanity check
             if (colors.Length == 0)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_GRADIENT_EXCEPTION_COLORNEEDED"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_GRADIENT_EXCEPTION_COLORNEEDED"));
 
             // Some variables
             ColorGradients gradients = new();

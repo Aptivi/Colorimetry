@@ -76,7 +76,7 @@ namespace Colorimetry.Models
         public static CyanMagentaYellow ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER").FormatString(specifier) + ": cmy:<C>;<M>;<Y>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER").FormatString(specifier) + ": cmy:<C>;<M>;<Y>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(4).Split(';');
@@ -85,13 +85,13 @@ namespace Colorimetry.Models
                 // We got the CMY whole values! First, check to see if we need to filter the color for the color-blind
                 int c = Convert.ToInt32(specifierArray[0]);
                 if (c < 0 || c > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYCLEVEL") + $" {c}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL") + $" {c}");
                 int m = Convert.ToInt32(specifierArray[1]);
                 if (m < 0 || m > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYMLEVEL") + $" {m}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL") + $" {m}");
                 int y = Convert.ToInt32(specifierArray[2]);
                 if (y < 0 || y > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYYLEVEL") + $" {y}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL") + $" {y}");
 
                 // First, we need to convert from CMY to RGB
                 double cPart = (double)c / 100;
@@ -101,7 +101,7 @@ namespace Colorimetry.Models
                 return cmy;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED").FormatString(specifier) + ": cmy:<C>;<M>;<Y>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED").FormatString(specifier) + ": cmy:<C>;<M>;<Y>");
         }
 
         /// <summary>

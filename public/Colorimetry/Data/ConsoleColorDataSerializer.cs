@@ -71,7 +71,7 @@ namespace Colorimetry.Data
 #if GENERATOR
                 throw new Exception("Can't get color data.");
 #else
-                throw new Exception(LanguageTools.GetLocalized("T_COLOR_DATA_EXCEPTION_COLORNODATA"));
+                throw new Exception(LanguageTools.GetLocalized("COLORIMETRY_DATA_EXCEPTION_COLORNODATA"));
 #endif
             serializer.Serialize(writer, $"{color.RGB.R};{color.RGB.G};{color.RGB.B}");
         }

@@ -143,7 +143,7 @@ namespace Colorimetry.Models.Parsing
         public static RedGreenBlue ParseSpecifierRgbName(string specifier, ColorSettings? settings = null)
         {
             if (!IsSpecifierConsoleColors(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER").FormatString(specifier));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER").FormatString(specifier));
 
             // Form the sequences using the information from the color details
             ConsoleColorData data;
@@ -161,13 +161,13 @@ namespace Colorimetry.Models.Parsing
             // Check to see if we need to transform color. Else, be sane.
             int r = Convert.ToInt32(data.RGB.R);
             if (r < 0 || r > 255)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSERGBREDLEVEL") + $" {r}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL") + $" {r}");
             int g = Convert.ToInt32(data.RGB.G);
             if (g < 0 || g > 255)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSERGBGREENLEVEL") + $" {g}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL") + $" {g}");
             int b = Convert.ToInt32(data.RGB.B);
             if (b < 0 || b > 255)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSERGBBLUELEVEL") + $" {b}");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL") + $" {b}");
 
             // Now, transform
             settings ??= new(ColorTools.GlobalSettings);
@@ -187,7 +187,7 @@ namespace Colorimetry.Models.Parsing
         public static RedGreenBlue ParseSpecifierRgbHash(string specifier, ColorSettings? settings = null)
         {
             if (!IsSpecifierValidRgbHash(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER").FormatString(specifier) + ": #RRGGBB");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER").FormatString(specifier) + ": #RRGGBB");
 
             // Get the integral value of the total color
             string finalSpecifier = specifier.Substring(1);
@@ -199,11 +199,11 @@ namespace Colorimetry.Models.Parsing
                 finalSpecifier = $"{first}{first}{second}{second}{third}{third}";
             }
             else if (finalSpecifier.Length != 6)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH").FormatString(specifier) + ": #RRGGBB");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH").FormatString(specifier) + ": #RRGGBB");
 
             bool valid = int.TryParse(finalSpecifier, NumberStyles.HexNumber, null, out int ColorDecimal);
             if (!valid)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE").FormatString(specifier));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE").FormatString(specifier));
 
             // Convert the RGB values to numbers
             int r = (byte)((ColorDecimal & 0xFF0000) >> 0x10);

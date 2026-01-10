@@ -118,7 +118,7 @@ namespace Colorimetry.Models
         public static Xyz ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER").FormatString(specifier) + ": xyz:<x>;<y>;<z>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER").FormatString(specifier) + ": xyz:<x>;<y>;<z>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(4).Split(';');
@@ -127,20 +127,20 @@ namespace Colorimetry.Models
                 // We got the XYZ whole values! First, check to see if we need to filter the color for the color-blind
                 double x = Convert.ToDouble(specifierArray[0]);
                 if (x < 0 || x > 95.047)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEXYZXLEVEL") + $" {x}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL") + $" {x}");
                 double y = Convert.ToDouble(specifierArray[1]);
                 if (y < 0 || y > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEXYZYLEVEL") + $" {y}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEXYZYLEVEL") + $" {y}");
                 double z = Convert.ToDouble(specifierArray[2]);
                 if (z < 0 || z > 108.883)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEXYZZLEVEL") + $" {z}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEXYZZLEVEL") + $" {z}");
 
                 // First, we need to convert from XYZ to RGB
                 var xyz = new Xyz(x, y, z);
                 return xyz;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED").FormatString(specifier) + ": xyz:<x>;<y>;<z>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED").FormatString(specifier) + ": xyz:<x>;<y>;<z>");
         }
 
         /// <inheritdoc/>

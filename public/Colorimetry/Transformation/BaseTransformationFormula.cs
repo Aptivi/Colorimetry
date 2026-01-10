@@ -18,7 +18,6 @@
 //
 
 using System;
-using Colorimetry.Languages;
 
 namespace Colorimetry.Transformation
 {
@@ -34,6 +33,6 @@ namespace Colorimetry.Transformation
 
         /// <inheritdoc/>
         public virtual (int r, int g, int b) Transform(int r, int g, int b) =>
-            throw new ColorException(LanguageTools.GetLocalized("T_EXCEPTION_NOTIMPLEMENTED"), new NotImplementedException());
+            throw new NotImplementedException();
     }
 }

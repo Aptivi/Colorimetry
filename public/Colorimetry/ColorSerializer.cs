@@ -43,8 +43,8 @@ namespace Colorimetry
             else
             {
                 if (reader.ValueType?.Name is not null)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_SERIALIZER_EXCEPTION_READERROR1"), reader.TokenType, reader.ValueType?.Name ?? "");
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_SERIALIZER_EXCEPTION_READERROR2"), reader.TokenType);
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1"), reader.TokenType, reader.ValueType?.Name ?? "");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_SERIALIZER_EXCEPTION_READERROR2"), reader.TokenType);
             }
             return color;
         }
@@ -53,7 +53,7 @@ namespace Colorimetry
         public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
         {
             var color = value as Color ??
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_SERIALIZER_EXCEPTION_WRITEERROR"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_SERIALIZER_EXCEPTION_WRITEERROR"));
             serializer.Serialize(writer, color.ToString());
         }
     }

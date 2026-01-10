@@ -62,7 +62,7 @@ namespace Colorimetry.Models
         public static CyanMagentaYellowKey ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER").FormatString(specifier) + ": cmyk:<C>;<M>;<Y>;<K>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER").FormatString(specifier) + ": cmyk:<C>;<M>;<Y>;<K>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(5).Split(';');
@@ -71,16 +71,16 @@ namespace Colorimetry.Models
                 // We got the CMYK whole values! First, check to see if we need to filter the color for the color-blind
                 int c = Convert.ToInt32(specifierArray[0]);
                 if (c < 0 || c > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYCLEVEL") + $" {c}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL") + $" {c}");
                 int m = Convert.ToInt32(specifierArray[1]);
                 if (m < 0 || m > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYMLEVEL") + $" {m}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL") + $" {m}");
                 int y = Convert.ToInt32(specifierArray[2]);
                 if (y < 0 || y > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYYLEVEL") + $" {y}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL") + $" {y}");
                 int k = Convert.ToInt32(specifierArray[3]);
                 if (k < 0 || k > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECMYKKLEVEL") + $" {k}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL") + $" {k}");
 
                 // First, we need to convert from CMYK to RGB
                 double cPart = (double)c / 100;
@@ -91,7 +91,7 @@ namespace Colorimetry.Models
                 return cmyk;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED").FormatString(specifier) + ": cmyk:<C>;<M>;<Y>;<K>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED").FormatString(specifier) + ": cmyk:<C>;<M>;<Y>;<K>");
         }
 
         /// <summary>

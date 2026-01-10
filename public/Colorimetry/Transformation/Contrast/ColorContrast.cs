@@ -92,9 +92,9 @@ namespace Colorimetry.Transformation.Contrast
         {
             // First, check the values
             if (type < ColorType.TrueColor || type > ColorType.FourBitColor)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_CONTRAST_EXCEPTION_INVALIDTYPE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE"));
             if (!ColorTools.TryParseColor(type == ColorType.TrueColor ? $"{colorR};{colorG};{colorB}" : $"{colorLevel}", settings))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_CONTRAST_EXCEPTION_INVALIDSPECIFIER"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_CONTRAST_EXCEPTION_INVALIDSPECIFIER"));
 
             // Forbid setting these colors as they're considered too dark
             bool seeable = true;

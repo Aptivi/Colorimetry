@@ -118,7 +118,7 @@ namespace Colorimetry.Models
         public static HunterLab ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER").FormatString(specifier) + ": hunterlab:<l>;<a>;<b>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER").FormatString(specifier) + ": hunterlab:<l>;<a>;<b>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(10).Split(';');
@@ -127,20 +127,20 @@ namespace Colorimetry.Models
                 // We got the HunterLab whole values! First, check to see if we need to filter the color for the color-blind
                 double l = Convert.ToDouble(specifierArray[0]);
                 if (l < 0 || l > 100)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSECIELABLLEVEL") + $" {l}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL") + $" {l}");
                 double a = Convert.ToDouble(specifierArray[1]);
                 if (a < -128 || a > 127)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL") + $" {a}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL") + $" {a}");
                 double b = Convert.ToDouble(specifierArray[2]);
                 if (b < -128 || b > 127)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEHUNTERLABBLEVEL") + $" {b}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABBLEVEL") + $" {b}");
 
                 // First, we need to convert from HunterLab to RGB
                 var HunterLab = new HunterLab(l, a, b);
                 return HunterLab;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED").FormatString(specifier) + ": hunterlab:<l>;<a>;<b>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED").FormatString(specifier) + ": hunterlab:<l>;<a>;<b>");
         }
 
         /// <inheritdoc/>

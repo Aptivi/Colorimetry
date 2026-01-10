@@ -76,7 +76,7 @@ namespace Colorimetry.Models
         public static LumaInPhaseQuadrature ParseSpecifier(string specifier)
         {
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER").FormatString(specifier) + ": yiq:<Y>;<I>;<Q>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER").FormatString(specifier) + ": yiq:<Y>;<I>;<Q>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(4).Split(';');
@@ -85,20 +85,20 @@ namespace Colorimetry.Models
                 // We got the YIQ whole values! First, check to see if we need to filter the color for the color-blind
                 int y = Convert.ToInt32(specifierArray[0]);
                 if (y < 0 || y > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYUVYLEVEL") + $" {y}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL") + $" {y}");
                 int i = Convert.ToInt32(specifierArray[1]);
                 if (i < 0 || i > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYIQILEVEL") + $" {i}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL") + $" {i}");
                 int q = Convert.ToInt32(specifierArray[2]);
                 if (q < 0 || q > 255)
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEYIQQLEVEL") + $" {q}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYIQQLEVEL") + $" {q}");
 
                 // First, we need to convert from YIQ to RGB
                 var yiq = new LumaInPhaseQuadrature(y, i, q);
                 return yiq;
             }
             else
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED").FormatString(specifier) + ": yiq:<Y>;<I>;<Q>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED").FormatString(specifier) + ": yiq:<Y>;<I>;<Q>");
         }
 
         /// <summary>

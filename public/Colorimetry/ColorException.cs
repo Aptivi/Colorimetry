@@ -32,7 +32,7 @@ namespace Colorimetry
         /// Makes an empty <see cref="ColorException"/> exception instance with the default message
         /// </summary>
         public ColorException() :
-            base(LanguageTools.GetLocalized("T_EXCEPTION_UNKNOWNERROR1"))
+            base(LanguageTools.GetLocalized("COLORIMETRY_EXCEPTION_UNKNOWNERROR1"))
         { }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Colorimetry
         /// </summary>
         /// <param name="innerException">An inner exception to specify</param>
         public ColorException(Exception innerException) :
-            base(LanguageTools.GetLocalized("T_EXCEPTION_UNKNOWNERROR1"), innerException)
+            base(LanguageTools.GetLocalized("COLORIMETRY_EXCEPTION_UNKNOWNERROR1"), innerException)
         { }
 
         /// <summary>

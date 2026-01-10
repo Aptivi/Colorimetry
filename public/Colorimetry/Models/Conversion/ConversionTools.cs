@@ -169,25 +169,25 @@ namespace Colorimetry.Models.Conversion
         {
             // Check for value
             if (source is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOSOURCE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOSOURCE"));
             if (targetType is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOTYPE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOTYPE"));
             Type sourceType = source.GetType();
 
             // Check for type
             if (sourceType == typeof(BaseColorModel))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_SPECIFYSOURCEMODEL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_SPECIFYSOURCEMODEL"));
             if (!BaseClassTools.GetBaseTypes(sourceType).Contains(typeof(BaseColorModel)))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOTSOURCEMODEL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOTSOURCEMODEL"));
             if (targetType == typeof(BaseColorModel))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_SPECIFYTARGETMODEL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_SPECIFYTARGETMODEL"));
             if (!BaseClassTools.GetBaseTypes(targetType).Contains(typeof(BaseColorModel)))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOTTARGETMODEL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOTTARGETMODEL"));
 
             // Determine whether the conversion is needed or not
             bool needsConvertTarget = targetType != typeof(RedGreenBlue);
             if (sourceType == targetType)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_SAMEMODEL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_SAMEMODEL"));
 
             // Convert the source color first to RGB if we don't have an RGB instance
             if (source is not RedGreenBlue rgb)
@@ -195,7 +195,7 @@ namespace Colorimetry.Models.Conversion
             if (!needsConvertTarget)
             {
                 return rgb ??
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBFAILED"));
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
             }
             else
             {
@@ -214,11 +214,11 @@ namespace Colorimetry.Models.Conversion
         {
             // Check for value
             if (source is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOSOURCE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOSOURCE"));
 
             // Now, convert from the specified source model to RGB
             if (source.GetType() == typeof(BaseColorModel))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_FROMBASEFAILED"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED"));
             if (source is not RedGreenBlue rgb)
             {
                 if (source is CyanMagentaYellowKey cmyk)
@@ -250,7 +250,7 @@ namespace Colorimetry.Models.Conversion
                 else if (source is HueWhiteBlack hwb)
                     rgb = ToRgb(hwb);
                 else
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBFAILED"));
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
                 return rgb;
             }
             else
@@ -268,64 +268,64 @@ namespace Colorimetry.Models.Conversion
         {
             // Check for value
             if (source is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOSOURCE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOSOURCE"));
             if (targetType is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_NOTYPE"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_NOTYPE"));
 
             // Now, convert from RGB to the specified source model
             if (source.GetType() == typeof(BaseColorModel))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_FROMBASEFAILED"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED"));
             if (targetType == typeof(BaseColorModel))
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_FROMBASEFAILED"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED"));
             if (targetType == typeof(RedGreenBlue))
                 return source ??
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_FROMBASEFAILED"));
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED"));
             else
             {
                 if (targetType == typeof(CyanMagentaYellowKey))
                     return ToCmyk(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCMYKFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCMYKFAILED"));
                 else if (targetType == typeof(CyanMagentaYellow))
                     return ToCmy(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCMYFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCMYFAILED"));
                 else if (targetType == typeof(HueSaturationLightness))
                     return ToHsl(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHSLFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHSLFAILED"));
                 else if (targetType == typeof(HueSaturationValue))
                     return ToHsv(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHSVFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHSVFAILED"));
                 else if (targetType == typeof(RedYellowBlue))
                     return ToRyb(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORYBFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORYBFAILED"));
                 else if (targetType == typeof(LumaInPhaseQuadrature))
                     return ToYiq(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYIQFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYIQFAILED"));
                 else if (targetType == typeof(LumaChromaUv))
                     return ToYuv(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYUVFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYUVFAILED"));
                 else if (targetType == typeof(Xyz))
                     return ToXyz(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOXYZFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOXYZFAILED"));
                 else if (targetType == typeof(Yxy))
                     return ToYxy(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYXYFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYXYFAILED"));
                 else if (targetType == typeof(HunterLab))
                     return ToHunterLab(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHUNTERLABFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABFAILED"));
                 else if (targetType == typeof(CieLab))
                     return ToCieLab(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELABFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELABFAILED"));
                 else if (targetType == typeof(CieLuv))
                     return ToCieLuv(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELUVFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELUVFAILED"));
                 else if (targetType == typeof(CieLch))
                     return ToCieLch(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELCHFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELCHFAILED"));
                 else if (targetType == typeof(HueWhiteBlack))
                     return ToHwb(source) ??
-                        throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHWBFAILED"));
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHWBFAILED"));
                 else
-                    throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_FROMRGBFAILED"));
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
             }
         }
         #endregion
@@ -340,7 +340,7 @@ namespace Colorimetry.Models.Conversion
         public static CyanMagentaYellow ToCmy(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCMYNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCMYNULLRGB"));
 
             // Get the level of each color
             double levelR = (double)rgb.R / 255;
@@ -370,7 +370,7 @@ namespace Colorimetry.Models.Conversion
         public static CyanMagentaYellowKey ToCmyk(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCMYKNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCMYKNULLRGB"));
 
             // Get the level of each color
             double levelR = (double)rgb.R / 255;
@@ -406,7 +406,7 @@ namespace Colorimetry.Models.Conversion
         public static HueSaturationLightness ToHsl(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHSLNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHSLNULLRGB"));
 
             // Do the conversion
             double levelR = (double)rgb.R / 255;
@@ -468,7 +468,7 @@ namespace Colorimetry.Models.Conversion
         public static HueSaturationValue ToHsv(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHSVNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHSVNULLRGB"));
 
             double levelR = (double)rgb.R / 255;
             double levelG = (double)rgb.G / 255;
@@ -520,7 +520,7 @@ namespace Colorimetry.Models.Conversion
         public static RedYellowBlue ToRyb(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORYBNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORYBNULLRGB"));
 
             // Get the whiteness and remove it from all the colors
             double white = Math.Min(Math.Min(rgb.R, rgb.G), rgb.B);
@@ -593,7 +593,7 @@ namespace Colorimetry.Models.Conversion
         public static LumaInPhaseQuadrature ToYiq(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYIQNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYIQNULLRGB"));
 
             // Get the YIQ values
             int y = (int)((0.299d * rgb.R) + (0.587d * rgb.G) + (0.114d * rgb.B));
@@ -612,7 +612,7 @@ namespace Colorimetry.Models.Conversion
         public static LumaChromaUv ToYuv(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYUVNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYUVNULLRGB"));
 
             // Get the YUV values
             int y = (int)((0.299d * rgb.R) + (0.587d * rgb.G) + (0.114d * rgb.B));
@@ -631,7 +631,7 @@ namespace Colorimetry.Models.Conversion
         public static Xyz ToXyz(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOXYZNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOXYZNULLRGB"));
 
             // Get the XYZ values
             double r = rgb.RNormalized;
@@ -656,7 +656,7 @@ namespace Colorimetry.Models.Conversion
         public static Yxy ToYxy(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOYXYNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYXYNULLRGB"));
 
             // Get the XYZ values first
             var xyz = ToXyz(rgb);
@@ -678,7 +678,7 @@ namespace Colorimetry.Models.Conversion
         public static HunterLab ToHunterLab(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHUNTERLABNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABNULLRGB"));
 
             // Get the XYZ values first
             var xyz = ToXyz(rgb);
@@ -722,7 +722,7 @@ namespace Colorimetry.Models.Conversion
         public static CieLab ToCieLab(RedGreenBlue rgb, int observer, IlluminantType illuminant)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELABNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELABNULLRGB"));
 
             // Get the illuminant references
             (double refX, double refY, double refZ) = IlluminanceTools.GetIlluminantReferences(observer, illuminant);
@@ -785,7 +785,7 @@ namespace Colorimetry.Models.Conversion
         public static CieLuv ToCieLuv(RedGreenBlue rgb, int observer, IlluminantType illuminant)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELUVNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELUVNULLRGB"));
 
             // Get the illuminant references
             (double refX, double refY, double refZ) = IlluminanceTools.GetIlluminantReferences(observer, illuminant);
@@ -845,7 +845,7 @@ namespace Colorimetry.Models.Conversion
         public static CieLch ToCieLch(RedGreenBlue rgb, int observer, IlluminantType illuminant)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOCIELCHNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOCIELCHNULLRGB"));
 
             // Get the CIE-L*ab values first
             var lab = ToCieLab(rgb, observer, illuminant);
@@ -873,7 +873,7 @@ namespace Colorimetry.Models.Conversion
         public static HueWhiteBlack ToHwb(RedGreenBlue rgb)
         {
             if (rgb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TOHWBNULLRGB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHWBNULLRGB"));
 
             double levelR = (double)rgb.R / 255;
             double levelG = (double)rgb.G / 255;
@@ -926,7 +926,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(CyanMagentaYellow cmy)
         {
             if (cmy is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLCMY"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMY"));
 
             // Get the level of each color
             double levelC = 1 - (double)cmy.CWhole / 100;
@@ -950,7 +950,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(CyanMagentaYellowKey cmyk)
         {
             if (cmyk is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLCMYK"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMYK"));
 
             // Get the level of each color
             double levelC = 1 - (double)cmyk.CMY.CWhole / 100;
@@ -975,7 +975,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(HueSaturationLightness hsl)
         {
             if (hsl is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLHSL"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSL"));
 
             // Adjust the RGB values according to saturation
             int r, g, b;
@@ -1014,7 +1014,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(HueSaturationValue hsv)
         {
             if (hsv is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLHSV"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSV"));
 
             // Get the saturation
             double rFractional = 0.0d, gFractional = 0.0d, bFractional = 0.0d;
@@ -1089,7 +1089,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(RedYellowBlue ryb)
         {
             if (ryb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLRYB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLRYB"));
 
             // Get the whiteness and remove it from all the colors
             double white = Math.Min(Math.Min(ryb.R, ryb.Y), ryb.B);
@@ -1143,7 +1143,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(LumaInPhaseQuadrature yiq)
         {
             if (yiq is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLYIQ"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYIQ"));
 
             // Get the RGB by matrix transform
             int r = (int)Math.Round(yiq.Luma + (0.956 * (yiq.InPhase - 128)) + (0.621 * (yiq.Quadrature - 128)));
@@ -1176,7 +1176,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(LumaChromaUv yuv)
         {
             if (yuv is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLYUV"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYUV"));
 
             // Get the RGB by matrix transform
             int r = (int)Math.Round(yuv.Luma + 1.4075 * (yuv.ChromaV - 128));
@@ -1209,7 +1209,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(Xyz xyz)
         {
             if (xyz is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLXYZ"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLXYZ"));
 
             // Get the normalized xyz values
             double x = xyz.X / 100d;
@@ -1240,7 +1240,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(Yxy yxy)
         {
             if (yxy is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLYXY"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYXY"));
 
             // Get the normalized xyz values
             double x = yxy.X * (yxy.Y2 / yxy.Y1) / 100d;
@@ -1271,7 +1271,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(HunterLab hunterLab)
         {
             if (hunterLab is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLHUNTERLAB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHUNTERLAB"));
 
             // Get the normalized xyz values
             double varY = hunterLab.L / 10;
@@ -1316,7 +1316,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(CieLab cieLab, int observer, IlluminantType illuminant)
         {
             if (cieLab is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLCIELAB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELAB"));
 
             // Get the illuminant references
             (double refX, double refY, double refZ) = IlluminanceTools.GetIlluminantReferences(observer, illuminant);
@@ -1377,7 +1377,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(CieLuv cieLuv, int observer, IlluminantType illuminant)
         {
             if (cieLuv is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLCIELUV"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELUV"));
 
             // Get a variable Y value
             double varY = (cieLuv.L + 16) / 116;
@@ -1441,7 +1441,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(CieLch cieLch, int observer, IlluminantType illuminant)
         {
             if (cieLch is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLCIELCH"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELCH"));
 
             static double DegToRad(double angle) =>
                 Math.PI / 180 * angle;
@@ -1464,7 +1464,7 @@ namespace Colorimetry.Models.Conversion
         public static RedGreenBlue ToRgb(HueWhiteBlack hwb)
         {
             if (hwb is null)
-                throw new ColorException(LanguageTools.GetLocalized("T_COLOR_MODEL_EXCEPTION_TORGBNULLHWB"));
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHWB"));
 
             // Grayscale if both the whiteness and the blackness exceed a threshold
             double whiteBlack = hwb.Whiteness + hwb.Blackness;
