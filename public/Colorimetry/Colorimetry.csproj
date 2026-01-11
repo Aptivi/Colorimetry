@@ -19,7 +19,6 @@
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIcon>OfficialAppIcon-Colorimetry-512.png</PackageIcon>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,10 +36,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\private\Colorimetry.ColorDataGen\Colorimetry.ColorDataGen.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\Languages\" />
   </ItemGroup>
 
 </Project>
