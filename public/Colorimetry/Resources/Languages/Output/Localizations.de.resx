@@ -165,20 +165,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
     <value>Ungültiger CieLch-Farbspezifizierer &quot;{0}&quot;. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Der L-Wert liegt außerhalb des Bereichs (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>Der C-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL" xml:space="preserve">
     <value>Der H-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 128,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Beobachter muss entweder 2 oder 10 sein</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Leuchtmittel ist ungültig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
     <value>Ungültiger CieLch-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
@@ -186,20 +177,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
     <value>Ungültiger CieLuv-Farbspezifizierer &quot;{0}&quot;. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Der L-Wert liegt außerhalb des Bereichs (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>Der U-Wert liegt außerhalb des Bereichs (-134,0 -&gt; 220,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL" xml:space="preserve">
     <value>Der V-Wert liegt außerhalb des Bereichs (-140,0 -&gt; 122,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Beobachter muss entweder 2 oder 10 sein</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Leuchtmittel ist ungültig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
     <value>Ungültiger CieLuv-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
@@ -227,27 +209,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
     <value>Konvertierung in RGB nicht möglich.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Nullquelle kann nicht konvertiert werden.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Konvertierung vom Basisfarbmodell nicht möglich.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>Konvertierung in RGB nicht möglich.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Nullquelle kann nicht konvertiert werden.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOTYPE" xml:space="preserve">
-    <value>Kann nicht in den Nulltyp konvertiert werden.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Konvertierung vom Basisfarbmodell nicht möglich.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Konvertierung vom Basisfarbmodell nicht möglich.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
     <value>Konvertierung vom Basisfarbmodell nicht möglich.</value>
@@ -399,15 +360,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
     <value>Ungültiger CMYK-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
-    <value>Der Cyan-Farbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL" xml:space="preserve">
-    <value>Der Magenta-Farbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL" xml:space="preserve">
-    <value>Der Gelbfarbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Der Schwarzfarbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
@@ -432,12 +384,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
     <value>Ungültiger HSV-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Der Farbton liegt außerhalb des Bereichs (0&apos; -&gt; 360&apos; Grad).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
-    <value>Der Sättigungsgrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Der Wertebereich liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
@@ -446,9 +392,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
     <value>Ungültiger HWB-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Der Farbton liegt außerhalb des Bereichs (0&apos; -&gt; 360&apos; Grad).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Der Weißgrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
@@ -461,9 +404,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
     <value>Ungültiger HunterLab-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Der L-Wert liegt außerhalb des Bereichs (0,0 -&gt; 100,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>Der A-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 127,0).</value>
@@ -492,9 +432,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
     <value>Ungültiger YIQ-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
-    <value>Der Luma-Pegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Der In-Phase-Pegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
@@ -503,12 +440,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
     <value>Ungültiger YIQ-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Beobachter muss entweder 2 oder 10 sein</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Leuchtmittel ist ungültig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Es können keine Referenzen aus der Tabelle abgerufen werden</value>
@@ -539,15 +470,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
     <value>Ungültiger Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird. Dies bedeutet eine Zahl zwischen 0 und 255 bei Verwendung von 255 Farben oder eine VT-Sequenz bei Verwendung von True Color.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
-    <value>Der Rotfarbpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL" xml:space="preserve">
-    <value>Der Grünfarbpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL" xml:space="preserve">
-    <value>Der Blaufarbpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
     <value>Ungültiger Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>

@@ -165,20 +165,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare CieLch nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Valoarea L este în afara intervalului (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>Valoarea C este în afara intervalului (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL" xml:space="preserve">
     <value>Valoarea H este în afara intervalului (-128,0 -&gt; 128,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Observatorul trebuie să fie fie 2, fie 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Iluminantul este invalid</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
     <value>Specificator de culoare CieLch nevalid „{0}”. Specificatorul nu poate avea mai mult de trei elemente. Asigurați-vă că are formatul corect.</value>
@@ -186,20 +177,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare CieLuv nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Valoarea L este în afara intervalului (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>Valoarea U este în afara intervalului (-134,0 -&gt; 220,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL" xml:space="preserve">
     <value>Valoarea V este în afara intervalului (-140,0 -&gt; 122,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Observatorul trebuie să fie fie 2, fie 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Iluminantul este invalid</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
     <value>Specificator de culoare CieLuv nevalid „{0}”. Specificatorul nu poate avea mai mult de trei elemente. Asigurați-vă că are formatul corect.</value>
@@ -227,27 +209,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
     <value>Nu se poate converti în RGB.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Nu se poate converti sursa nulă.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Nu se poate converti din modelul de culoare de bază.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>Nu se poate converti în RGB.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Nu se poate converti sursa nulă.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOTYPE" xml:space="preserve">
-    <value>Nu se poate converti la tip nul.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Nu se poate converti din modelul de culoare de bază.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Nu se poate converti din modelul de culoare de bază.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
     <value>Nu se poate converti din modelul de culoare de bază.</value>
@@ -399,15 +360,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare CMYK nevalid „{0}”. Asigurați-vă că este în formatul corect.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
-    <value>Nivelul de culoare cyan este în afara intervalului (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL" xml:space="preserve">
-    <value>Nivelul de culoare magenta este în afara intervalului (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL" xml:space="preserve">
-    <value>Nivelul culorii galbene este în afara intervalului (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Nivelul de culoare neagră este în afara intervalului (0 -&gt; 100).</value>
   </data>
@@ -432,12 +384,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare HSV nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Nivelul de nuanță este în afara intervalului (0&apos; -&gt; 360&apos; grade).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
-    <value>Nivelul de saturație este în afara intervalului (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Nivelul valorii este în afara intervalului (0 -&gt; 100).</value>
   </data>
@@ -446,9 +392,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare HWB nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Nivelul de nuanță este în afara intervalului (0&apos; -&gt; 360&apos; grade).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Nivelul de alb este în afara intervalului (0 -&gt; 100).</value>
@@ -461,9 +404,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare HunterLab nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Valoarea L este în afara intervalului (0,0 -&gt; 100,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>Valoarea A este în afara intervalului (-128,0 -&gt; 127,0).</value>
@@ -492,9 +432,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare YIQ nevalid „{0}”. Asigurați-vă că are formatul corect.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
-    <value>Nivelul de luminanță este în afara intervalului (0 -&gt; 255).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Nivelul în fază este în afara intervalului (0 -&gt; 255).</value>
   </data>
@@ -503,12 +440,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
     <value>Specificator de culoare YIQ nevalid „{0}”. Specificatorul nu poate avea mai mult de trei elemente. Asigurați-vă că are formatul corect.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Observatorul trebuie să fie fie 2, fie 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Iluminantul este invalid</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Nu se pot obține referințe din tabel</value>
@@ -539,15 +470,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
     <value>Specificator de culoare nevalid „{0}”. Asigurați-vă că este în formatul corect, adică un număr de la 0 la 255 dacă utilizați 255 de culori sau o secvență VT dacă utilizați culoarea reală, după cum urmează.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
-    <value>Nivelul culorii roșii este în afara intervalului (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL" xml:space="preserve">
-    <value>Nivelul culorii verde este în afara intervalului (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL" xml:space="preserve">
-    <value>Nivelul culorii albastre este în afara intervalului (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
     <value>Specificator de culoare nevalid „{0}”. Specificatorul nu poate avea mai mult de trei elemente. Asigurați-vă că are formatul corect.</value>

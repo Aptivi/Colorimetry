@@ -77,24 +77,12 @@
       "text": "Ongeldige CieLch-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "De L-waarde ligt buiten het bereik (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "De C-waarde ligt buiten het bereik (-128,0 -> 128,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "De H-waarde ligt buiten het bereik (-128,0 -> 128,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "De waarnemer moet 2 of 10 zijn"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Verlichtingsmiddel is ongeldig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -105,24 +93,12 @@
       "text": "Ongeldige CieLuv-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "De L-waarde ligt buiten het bereik (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "De U-waarde ligt buiten het bereik (-134,0 -> 220,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "De V-waarde ligt buiten het bereik (-140,0 -> 122,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "De waarnemer moet 2 of 10 zijn"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Verlichtingsmiddel is ongeldig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -159,34 +135,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Kan niet naar RGB converteren."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Kan geen null-bron converteren."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Kan niet converteren van basiskleurmodel."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Kan niet naar RGB converteren."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Kan geen null-bron converteren."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Kan niet converteren naar nultype."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Kan niet converteren van basiskleurmodel."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Kan niet converteren van basiskleurmodel."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -389,18 +337,6 @@
       "text": "Ongeldige CMYK-kleurspecificatie \"{0}\". Zorg ervoor dat deze het juiste formaat heeft."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Het cyaankleurniveau ligt buiten het bereik (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Het kleurniveau magenta ligt buiten het bereik (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Het gele kleurniveau ligt buiten het bereik (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Het zwarte kleurniveau ligt buiten het bereik (0 -> 100)."
     },
@@ -433,14 +369,6 @@
       "text": "Ongeldige HSV-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Het tintniveau ligt buiten het bereik (0' -> 360' graden)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Het verzadigingsniveau ligt buiten het bereik (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "De waarde ligt buiten het bereik (0 -> 100)."
     },
@@ -451,10 +379,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Ongeldige HWB-kleurspecificatie \"{0}\". Zorg ervoor dat deze het juiste formaat heeft."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Het tintniveau ligt buiten het bereik (0' -> 360' graden)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -471,10 +395,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Ongeldige HunterLab-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "De L-waarde ligt buiten het bereik (0,0 -> 100,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -513,10 +433,6 @@
       "text": "Ongeldige YIQ-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Het luma-niveau ligt buiten het bereik (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Het in-fase niveau ligt buiten het bereik (0 -> 255)."
     },
@@ -527,14 +443,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Ongeldige YIQ-kleurspecificatie \"{0}\". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "De waarnemer moet 2 of 10 zijn"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Verlichtingsmiddel is ongeldig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -575,18 +483,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Ongeldige kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste notatie heeft, wat betekent een getal van 0-255 als u 255 kleuren gebruikt of een VT-reeks als u ware kleuren gebruikt, zoals hieronder."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Het rode kleurniveau ligt buiten het bereik (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Het groene kleurniveau ligt buiten het bereik (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Het blauwe kleurniveau ligt buiten het bereik (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

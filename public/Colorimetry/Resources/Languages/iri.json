@@ -72,24 +72,12 @@
       "text": "Sonraitheoir datha CieLch neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Tá an luach L lasmuigh den raon (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "Tá an luach C lasmuigh den raon (-128.0 -> 128.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "Tá an luach H lasmuigh den raon (-128.0 -> 128.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ní mór don bhreathnóir a bheith ina 2 nó 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Tá an soilseoir neamhbhailí"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -100,24 +88,12 @@
       "text": "Sonraitheoir datha CieLuv neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Tá an luach L lasmuigh den raon (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "Tá an luach U lasmuigh den raon (-134.0 -> 220.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "Tá an luach V lasmuigh den raon (-140.0 -> 122.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ní mór don bhreathnóir a bheith ina 2 nó 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Tá an soilseoir neamhbhailí"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -154,34 +130,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Ní féidir é a thiontú go RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Ní féidir an foinse nialasach a thiontú."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Ní féidir tiontú ón tsamhail datha bonn."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Ní féidir é a thiontú go RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Ní féidir an foinse nialasach a thiontú."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Ní féidir a thiontú go cineál nialasach."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Ní féidir tiontú ón tsamhail datha bonn."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Ní féidir tiontú ón tsamhail datha bonn."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -384,18 +332,6 @@
       "text": "Sonraitheoir datha CMYK neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Tá an leibhéal datha cian lasmuigh den raon (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Tá an leibhéal datha magenta lasmuigh den raon (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Tá an leibhéal datha buí lasmuigh den raon (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Tá an leibhéal datha dubh lasmuigh den raon (0 -> 100)."
     },
@@ -428,14 +364,6 @@
       "text": "Sonraitheoir datha HSV neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Tá an leibhéal datha lasmuigh den raon (0' -> 360' céim)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Tá an leibhéal sáithiúcháin lasmuigh den raon (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "Tá an leibhéal luacha lasmuigh den raon (0 -> 100)."
     },
@@ -446,10 +374,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Sonraitheoir datha HWB neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Tá an leibhéal datha lasmuigh den raon (0' -> 360' céim)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -466,10 +390,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Sonraitheoir datha HunterLab neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Tá an luach L lasmuigh den raon (0.0 -> 100.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -508,10 +428,6 @@
       "text": "Sonraitheoir datha YIQ neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Tá leibhéal an luma lasmuigh den raon (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Tá an leibhéal in-chéime lasmuigh den raon (0 -> 255)."
     },
@@ -522,14 +438,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Sonraitheoir datha YIQ neamhbhailí \"{0}\". Ní fhéadfaidh níos mó ná trí eilimint a bheith sa shonraitheoir. Cinntigh go bhfuil sé san fhormáid cheart."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ní mór don bhreathnóir a bheith ina 2 nó 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Tá an soilseoir neamhbhailí"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -570,18 +478,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Sonraitheoir datha neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart, rud a chiallaíonn uimhir ó 0-255 má úsáidtear 255 dathanna nó seicheamh VT má úsáidtear fíor-dhath mar seo a leanas."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Tá an leibhéal datha dearg lasmuigh den raon (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Tá an leibhéal datha glas lasmuigh den raon (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Tá an leibhéal datha gorm lasmuigh den raon (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

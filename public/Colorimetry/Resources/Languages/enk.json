@@ -70,24 +70,12 @@
       "text": "Invalid CieLch colour specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "The L value is out of range (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "The C value is out of range (-128.0 -> 128.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "The H value is out of range (-128.0 -> 128.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Observer must be either 2 or 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Illuminant is invalid"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -98,24 +86,12 @@
       "text": "Invalid CieLuv colour specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "The L value is out of range (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "The U value is out of range (-134.0 -> 220.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "The V value is out of range (-140.0 -> 122.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Observer must be either 2 or 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Illuminant is invalid"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -152,34 +128,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Can't convert to RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Can't convert null source."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Can't convert from base colour model."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Can't convert to RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Can't convert null source."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Can't convert to null type."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Can't convert from base colour model."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Can't convert from base colour model."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -382,18 +330,6 @@
       "text": "Invalid CMYK colour specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "The cyan colour level is out of range (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "The magenta colour level is out of range (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "The yellow colour level is out of range (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "The black colour level is out of range (0 -> 100)."
     },
@@ -426,14 +362,6 @@
       "text": "Invalid HSV colour specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "The hue level is out of range (0' -> 360' degrees)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "The saturation level is out of range (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "The value level is out of range (0 -> 100)."
     },
@@ -444,10 +372,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Invalid HWB colour specifier \"{0}\". Ensure that it's on the correct format"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "The hue level is out of range (0' -> 360' degrees)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -464,10 +388,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Invalid HunterLab colour specifier \"{0}\". Ensure that it's on the correct format"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "The L value is out of range (0.0 -> 100.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -506,10 +426,6 @@
       "text": "Invalid YIQ colour specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "The luma level is out of range (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "The in-phase level is out of range (0 -> 255)."
     },
@@ -520,14 +436,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Invalid YIQ colour specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Observer must be either 2 or 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Illuminant is invalid"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -568,18 +476,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Invalid colour specifier \"{0}\". Ensure that it's on the correct format, which means a number from 0-255 if using 255 colours or a VT sequence if using true colour as follows"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "The red colour level is out of range (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "The green colour level is out of range (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "The blue colour level is out of range (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

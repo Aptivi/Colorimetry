@@ -165,20 +165,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
     <value>Ongeldige CieLch-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>De L-waarde ligt buiten het bereik (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>De C-waarde ligt buiten het bereik (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL" xml:space="preserve">
     <value>De H-waarde ligt buiten het bereik (-128,0 -&gt; 128,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>De waarnemer moet 2 of 10 zijn</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Verlichtingsmiddel is ongeldig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
     <value>Ongeldige CieLch-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
@@ -186,20 +177,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
     <value>Ongeldige CieLuv-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>De L-waarde ligt buiten het bereik (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>De U-waarde ligt buiten het bereik (-134,0 -&gt; 220,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL" xml:space="preserve">
     <value>De V-waarde ligt buiten het bereik (-140,0 -&gt; 122,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>De waarnemer moet 2 of 10 zijn</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Verlichtingsmiddel is ongeldig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
     <value>Ongeldige CieLuv-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
@@ -227,27 +209,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
     <value>Kan niet naar RGB converteren.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Kan geen null-bron converteren.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Kan niet converteren van basiskleurmodel.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>Kan niet naar RGB converteren.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Kan geen null-bron converteren.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOTYPE" xml:space="preserve">
-    <value>Kan niet converteren naar nultype.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Kan niet converteren van basiskleurmodel.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Kan niet converteren van basiskleurmodel.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
     <value>Kan niet converteren van basiskleurmodel.</value>
@@ -399,15 +360,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
     <value>Ongeldige CMYK-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze het juiste formaat heeft.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
-    <value>Het cyaankleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL" xml:space="preserve">
-    <value>Het kleurniveau magenta ligt buiten het bereik (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL" xml:space="preserve">
-    <value>Het gele kleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Het zwarte kleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
@@ -432,12 +384,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
     <value>Ongeldige HSV-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Het tintniveau ligt buiten het bereik (0&apos; -&gt; 360&apos; graden).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
-    <value>Het verzadigingsniveau ligt buiten het bereik (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>De waarde ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
@@ -446,9 +392,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
     <value>Ongeldige HWB-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze het juiste formaat heeft.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Het tintniveau ligt buiten het bereik (0&apos; -&gt; 360&apos; graden).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Het witheidsniveau ligt buiten het bereik (0 -&gt; 100).</value>
@@ -461,9 +404,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
     <value>Ongeldige HunterLab-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>De L-waarde ligt buiten het bereik (0,0 -&gt; 100,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>De A-waarde ligt buiten het bereik (-128,0 -&gt; 127,0).</value>
@@ -492,9 +432,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
     <value>Ongeldige YIQ-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
-    <value>Het luma-niveau ligt buiten het bereik (0 -&gt; 255).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Het in-fase niveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
@@ -503,12 +440,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
     <value>Ongeldige YIQ-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>De waarnemer moet 2 of 10 zijn</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Verlichtingsmiddel is ongeldig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Kan geen referenties uit de tabel halen</value>
@@ -539,15 +470,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
     <value>Ongeldige kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste notatie heeft, wat betekent een getal van 0-255 als u 255 kleuren gebruikt of een VT-reeks als u ware kleuren gebruikt, zoals hieronder.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
-    <value>Het rode kleurniveau ligt buiten het bereik (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL" xml:space="preserve">
-    <value>Het groene kleurniveau ligt buiten het bereik (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL" xml:space="preserve">
-    <value>Het blauwe kleurniveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
     <value>Ongeldige kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>

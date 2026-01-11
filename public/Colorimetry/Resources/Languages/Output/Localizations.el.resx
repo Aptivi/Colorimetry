@@ -165,20 +165,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος CieLch &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Η τιμή L είναι εκτός εύρους (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>Η τιμή C είναι εκτός εύρους (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL" xml:space="preserve">
     <value>Η τιμή H είναι εκτός εύρους (-128,0 -&gt; 128,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Το φωτιστικό δεν είναι έγκυρο</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος CieLch &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
@@ -186,20 +177,11 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Η τιμή L είναι εκτός εύρους (0,0 -&gt; 100,0).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>Η τιμή U είναι εκτός εύρους (-134,0 -&gt; 220,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL" xml:space="preserve">
     <value>Η τιμή V είναι εκτός εύρους (-140,0 -&gt; 122,0).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Το φωτιστικό δεν είναι έγκυρο</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
@@ -227,27 +209,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
     <value>Δεν είναι δυνατή η μετατροπή σε RGB.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή της μηδενικής πηγής.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή σε RGB.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή της μηδενικής πηγής.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_NOTYPE" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή σε τύπο null.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
     <value>Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος.</value>
@@ -399,15 +360,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος CMYK &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
-    <value>Το επίπεδο κυανού χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL" xml:space="preserve">
-    <value>Το επίπεδο χρώματος ματζέντα είναι εκτός εύρους (0 -&gt; 100).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL" xml:space="preserve">
-    <value>Το επίπεδο κίτρινου χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Η στάθμη μαύρου χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
@@ -432,12 +384,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος HSV &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Η στάθμη απόχρωσης είναι εκτός εύρους (0&apos; -&gt; 360&apos; μοίρες).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
-    <value>Το επίπεδο κορεσμού είναι εκτός εύρους (0 -&gt; 100).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Το επίπεδο τιμής είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
@@ -446,9 +392,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος HWB &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Η στάθμη απόχρωσης είναι εκτός εύρους (0&apos; -&gt; 360&apos; μοίρες).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Το επίπεδο λευκότητας είναι εκτός εύρους (0 -&gt; 100).</value>
@@ -461,9 +404,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος HunterLab &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
-    <value>Η τιμή L είναι εκτός εύρους (0,0 -&gt; 100,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>Η τιμή A είναι εκτός εύρους (-128,0 -&gt; 127,0).</value>
@@ -492,9 +432,6 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος YIQ &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
-    <value>Η στάθμη φωτεινότητας είναι εκτός εύρους (0 -&gt; 255).</value>
-  </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Το επίπεδο σε φάση είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
@@ -503,12 +440,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος YIQ &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER" xml:space="preserve">
-    <value>Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT" xml:space="preserve">
-    <value>Το φωτιστικό δεν είναι έγκυρο</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Δεν είναι δυνατή η λήψη αναφορών από τον πίνακα</value>
@@ -539,15 +470,6 @@
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή, που σημαίνει έναν αριθμό από 0-255 εάν χρησιμοποιείτε 255 χρώματα ή μια ακολουθία VT εάν χρησιμοποιείτε πραγματικό χρώμα ως εξής.</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
-    <value>Το επίπεδο κόκκινου χρώματος είναι εκτός εύρους (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL" xml:space="preserve">
-    <value>Το επίπεδο πράσινου χρώματος είναι εκτός εύρους (0 -&gt; 255).</value>
-  </data>
-  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL" xml:space="preserve">
-    <value>Το επίπεδο μπλε χρώματος είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
     <value>Μη έγκυρος προσδιοριστής χρώματος &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>

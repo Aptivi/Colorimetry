@@ -72,24 +72,12 @@
       "text": "CieLch 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L 값이 범위를 벗어났습니다(0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "C 값이 범위를 벗어났습니다(-128.0 -> 128.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "H 값이 범위를 벗어났습니다(-128.0 -> 128.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "관찰자는 2 또는 10이어야 합니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "조명이 유효하지 않습니다"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -100,24 +88,12 @@
       "text": "CieLuv 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L 값이 범위를 벗어났습니다(0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "U 값이 범위를 벗어났습니다(-134.0 -> 220.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "V 값이 범위를 벗어났습니다(-140.0 -> 122.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "관찰자는 2 또는 10이어야 합니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "조명이 유효하지 않습니다"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -154,34 +130,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "RGB로 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "null 소스를 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "기본 색상 모델에서 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "RGB로 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "null 소스를 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "null 유형으로 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "기본 색상 모델에서 변환할 수 없습니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "기본 색상 모델에서 변환할 수 없습니다."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -384,18 +332,6 @@
       "text": "CMYK 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "청록색 레벨이 범위를 벗어났습니다(0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "마젠타 색상 레벨이 범위를 벗어났습니다(0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "노란색 레벨이 범위를 벗어났습니다(0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "검은색 레벨이 범위를 벗어났습니다(0 -> 100)."
     },
@@ -428,14 +364,6 @@
       "text": "HSV 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "색조 레벨이 범위를 벗어났습니다(0' -> 360'도)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "포화 수준이 범위를 벗어났습니다(0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "값 수준이 범위를 벗어났습니다(0 -> 100)."
     },
@@ -446,10 +374,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "HWB 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "색조 레벨이 범위를 벗어났습니다(0' -> 360'도)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -466,10 +390,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "HunterLab 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L 값이 범위를 벗어났습니다(0.0 -> 100.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -508,10 +428,6 @@
       "text": "YIQ 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식을 사용하고 있는지 확인하세요."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "루마 레벨이 범위를 벗어났습니다(0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "동상 레벨이 범위를 벗어났습니다(0 -> 255)."
     },
@@ -522,14 +438,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "YIQ 색상 지정자 \"{0}\"이(가) 잘못되었습니다. 지정자는 세 개 이상의 요소를 포함할 수 없습니다. 올바른 형식을 사용하고 있는지 확인하세요."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "관찰자는 2 또는 10이어야 합니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "조명이 유효하지 않습니다"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -570,18 +478,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "색상 지정자 \"{0}\"이(가) 잘못되었습니다. 올바른 형식인지 확인하세요. 즉, 255색을 사용하는 경우 0~255 사이의 숫자를 사용하고, 트루컬러를 사용하는 경우 다음과 같이 VT 시퀀스를 사용합니다."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "빨간색 색상 레벨이 범위를 벗어났습니다(0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "녹색 색상 레벨이 범위를 벗어났습니다(0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "파란색 레벨이 범위를 벗어났습니다(0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

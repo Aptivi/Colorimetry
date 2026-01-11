@@ -74,24 +74,12 @@
       "text": "Specificatore di colore CieLch non valido \"{0}\". Assicurarsi che sia nel formato corretto."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Il valore L è fuori intervallo (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "Il valore C è fuori intervallo (-128,0 -> 128,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "Il valore H è fuori intervallo (-128,0 -> 128,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "L'osservatore deve avere 2 o 10 anni"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "L'illuminante non è valido"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -102,24 +90,12 @@
       "text": "Specificatore di colore CieLuv non valido \"{0}\". Assicurati che sia nel formato corretto."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Il valore L è fuori intervallo (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "Il valore U è fuori intervallo (-134,0 -> 220,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "Il valore V è fuori intervallo (-140,0 -> 122,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "L'osservatore deve avere 2 o 10 anni"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "L'illuminante non è valido"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -156,34 +132,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Non è possibile convertire in RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Impossibile convertire la sorgente null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Impossibile convertire dal modello di colore di base."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Non è possibile convertire in RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Impossibile convertire la sorgente null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Impossibile convertire nel tipo null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Impossibile convertire dal modello di colore di base."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Impossibile convertire dal modello di colore di base."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -386,18 +334,6 @@
       "text": "Specificatore di colore CMYK non valido \"{0}\". Assicurarsi che sia nel formato corretto."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Il livello del colore ciano è fuori intervallo (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Il livello del colore magenta è fuori intervallo (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Il livello del colore giallo è fuori intervallo (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Il livello del colore nero è fuori intervallo (0 -> 100)."
     },
@@ -430,14 +366,6 @@
       "text": "Specificatore di colore HSV non valido \"{0}\". Assicurarsi che sia nel formato corretto."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Il livello di tonalità è fuori intervallo (0' -> 360' gradi)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Il livello di saturazione è fuori intervallo (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "Il livello del valore è fuori intervallo (0 -> 100)."
     },
@@ -448,10 +376,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Specificatore di colore HWB non valido \"{0}\". Assicurarsi che sia nel formato corretto."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Il livello di tonalità è fuori intervallo (0' -> 360' gradi)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -468,10 +392,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Specificatore di colore HunterLab non valido \"{0}\". Assicurati che sia nel formato corretto."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Il valore L è fuori intervallo (0,0 -> 100,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -510,10 +430,6 @@
       "text": "Specificatore di colore YIQ non valido \"{0}\". Assicurati che sia nel formato corretto."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Il livello di luminanza è fuori intervallo (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Il livello in fase è fuori intervallo (0 -> 255)."
     },
@@ -524,14 +440,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Specificatore di colore YIQ \"{0}\" non valido. Lo specificatore non può contenere più di tre elementi. Assicurarsi che sia nel formato corretto."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "L'osservatore deve avere 2 o 10 anni"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "L'illuminante non è valido"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -572,18 +480,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Specificatore di colore non valido \"{0}\". Assicurarsi che sia nel formato corretto, ovvero un numero da 0 a 255 se si utilizzano 255 colori o una sequenza VT se si utilizzano colori reali come segue."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Il livello del colore rosso è fuori intervallo (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Il livello del colore verde è fuori intervallo (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Il livello del colore blu è fuori intervallo (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

@@ -97,24 +97,12 @@
       "text": "مُحدِّد لون CieLch غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "قيمة L خارج النطاق (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "قيمة C خارج النطاق (-128.0 -> 128.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "قيمة H خارج النطاق (-128.0 -> 128.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "يجب أن يكون المراقب إما 2 أو 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "المضيء غير صالح"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -125,24 +113,12 @@
       "text": "مُحدِّد لون CieLuv \"{0}\" غير صالح. تأكد من أنه بالتنسيق الصحيح."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "قيمة L خارج النطاق (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "قيمة U خارج النطاق (-134.0 -> 220.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "قيمة V خارج النطاق (-140.0 -> 122.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "يجب أن يكون المراقب إما 2 أو 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "المضيء غير صالح"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -179,34 +155,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "لا يمكن التحويل إلى RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "لا يمكن تحويل المصدر الفارغ."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "لا يمكن التحويل من نموذج اللون الأساسي."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "لا يمكن التحويل إلى RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "لا يمكن تحويل المصدر الفارغ."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "لا يمكن التحويل إلى نوع فارغ."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "لا يمكن التحويل من نموذج اللون الأساسي."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "لا يمكن التحويل من نموذج اللون الأساسي."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -409,18 +357,6 @@
       "text": "مُحدِّد لون CMYK غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "مستوى اللون السماوي خارج النطاق (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "مستوى اللون الأرجواني خارج النطاق (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "مستوى اللون الأصفر خارج النطاق (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "مستوى اللون الأسود خارج النطاق (0 -> 100)."
     },
@@ -453,14 +389,6 @@
       "text": "مُحدِّد لون HSV غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "مستوى اللون خارج النطاق (0' -> 360' درجة)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "مستوى التشبع خارج النطاق (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "مستوى القيمة خارج النطاق (0 -> 100)."
     },
@@ -471,10 +399,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "مُحدِّد لون HWB غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "مستوى اللون خارج النطاق (0' -> 360' درجة)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -491,10 +415,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "مُحدِّد لون HunterLab غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "قيمة L خارج النطاق (0.0 -> 100.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -533,10 +453,6 @@
       "text": "مُحدِّد لون YIQ غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "مستوى الإضاءة خارج النطاق (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "مستوى الطور خارج النطاق (0 -> 255)."
     },
@@ -547,14 +463,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "مُحدِّد لون YIQ \"{0}\" غير صالح. لا يجب أن يتجاوز المُحدِّد ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "يجب أن يكون المراقب إما 2 أو 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "المضيء غير صالح"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -595,18 +503,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "مُحدِّد لون غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح، أي رقم من 0 إلى 255 إذا كنت تستخدم 255 لونًا، أو تسلسل VT إذا كنت تستخدم لونًا حقيقيًا كما يلي."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "مستوى اللون الأحمر خارج النطاق (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "مستوى اللون الأخضر خارج النطاق (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "مستوى اللون الأزرق خارج النطاق (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

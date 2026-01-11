@@ -71,24 +71,12 @@
       "text": "Chỉ định màu CieLch không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Giá trị L nằm ngoài phạm vi (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "Giá trị C nằm ngoài phạm vi (-128,0 -> 128,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "Giá trị H nằm ngoài phạm vi (-128,0 -> 128,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Người quan sát phải là 2 hoặc 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Chất chiếu sáng không hợp lệ"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -99,24 +87,12 @@
       "text": "Chỉ định màu CieLuv không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Giá trị L nằm ngoài phạm vi (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "Giá trị U nằm ngoài phạm vi (-134,0 -> 220,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "Giá trị V nằm ngoài phạm vi (-140,0 -> 122,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Người quan sát phải là 2 hoặc 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Chất chiếu sáng không hợp lệ"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -153,34 +129,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Không thể chuyển đổi sang RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Không thể chuyển đổi nguồn null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Không thể chuyển đổi từ mô hình màu cơ bản."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Không thể chuyển đổi sang RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Không thể chuyển đổi nguồn null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Không thể chuyển đổi sang kiểu null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Không thể chuyển đổi từ mô hình màu cơ bản."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Không thể chuyển đổi từ mô hình màu cơ bản."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -383,18 +331,6 @@
       "text": "Chỉ định màu CMYK không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Mức độ màu lục lam nằm ngoài phạm vi (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Mức màu đỏ tươi nằm ngoài phạm vi (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Mức độ màu vàng nằm ngoài phạm vi (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Mức độ màu đen nằm ngoài phạm vi (0 -> 100)."
     },
@@ -427,14 +363,6 @@
       "text": "Chỉ định màu HSV không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Mức độ màu sắc nằm ngoài phạm vi (0' -> 360' độ)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Mức độ bão hòa nằm ngoài phạm vi (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "Mức giá trị nằm ngoài phạm vi (0 -> 100)."
     },
@@ -445,10 +373,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Chỉ định màu HWB không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Mức độ màu sắc nằm ngoài phạm vi (0' -> 360' độ)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -465,10 +389,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Chỉ định màu HunterLab không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Giá trị L nằm ngoài phạm vi (0,0 -> 100,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -507,10 +427,6 @@
       "text": "Chỉ định màu YIQ không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Mức độ sáng nằm ngoài phạm vi (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Mức độ trong pha nằm ngoài phạm vi (0 -> 255)."
     },
@@ -521,14 +437,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Chỉ định màu YIQ không hợp lệ \"{0}\". Chỉ định màu không được quá ba phần tử. Đảm bảo rằng nó ở đúng định dạng"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Người quan sát phải là 2 hoặc 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Chất chiếu sáng không hợp lệ"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -569,18 +477,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Chỉ định màu không hợp lệ \"{0}\". Đảm bảo rằng nó ở đúng định dạng, nghĩa là một số từ 0-255 nếu sử dụng 255 màu hoặc một chuỗi VT nếu sử dụng màu thực như sau"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Mức độ màu đỏ nằm ngoài phạm vi (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Mức độ màu xanh lá cây nằm ngoài phạm vi (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Mức độ màu xanh nằm ngoài phạm vi (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

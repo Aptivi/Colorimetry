@@ -71,24 +71,12 @@
       "text": "अमान्य CieLch रंग विनिर्देशक \"{0}\"। सुनिश्चित करें कि यह सही प्रारूप पर है"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L मान सीमा से बाहर है (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "C मान सीमा से बाहर है (-128.0 -> 128.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "H मान सीमा से बाहर है (-128.0 -> 128.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "पर्यवेक्षक की संख्या 2 या 10 होनी चाहिए"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "प्रकाशक अमान्य है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -99,24 +87,12 @@
       "text": "CieLuv रंग विनिर्देशक \"{0}\" अमान्य है। सुनिश्चित करें कि यह सही प्रारूप पर है"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L मान सीमा से बाहर है (0.0 -> 100.0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "U मान सीमा से बाहर है (-134.0 -> 220.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "V मान सीमा से बाहर है (-140.0 -> 122.0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "पर्यवेक्षक की संख्या 2 या 10 होनी चाहिए"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "प्रकाशक अमान्य है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -153,34 +129,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "RGB में परिवर्तित नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "शून्य स्रोत परिवर्तित नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "आधार रंग मॉडल से रूपांतरण नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "RGB में परिवर्तित नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "शून्य स्रोत परिवर्तित नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "शून्य प्रकार में परिवर्तित नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "आधार रंग मॉडल से रूपांतरण नहीं किया जा सकता."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "आधार रंग मॉडल से रूपांतरण नहीं किया जा सकता."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -383,18 +331,6 @@
       "text": "अमान्य CMYK रंग विनिर्देशक \"{0}\"। सुनिश्चित करें कि यह सही प्रारूप में है"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "सियान रंग स्तर सीमा से बाहर है (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "मैजेन्टा रंग स्तर सीमा से बाहर है (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "पीला रंग स्तर सीमा से बाहर है (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "काले रंग का स्तर सीमा से बाहर है (0 -> 100)."
     },
@@ -427,14 +363,6 @@
       "text": "अमान्य HSV रंग विनिर्देशक \"{0}\"। सुनिश्चित करें कि यह सही प्रारूप पर है"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "रंग स्तर सीमा से बाहर है (0' -> 360' डिग्री)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "संतृप्ति स्तर सीमा से बाहर है (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "मान स्तर सीमा से बाहर है (0 -> 100)."
     },
@@ -445,10 +373,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "अमान्य HWB रंग विनिर्देशक \"{0}\"। सुनिश्चित करें कि यह सही प्रारूप पर है"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "रंग स्तर सीमा से बाहर है (0' -> 360' डिग्री)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -465,10 +389,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "हंटरलैब रंग विनिर्देशक \"{0}\" अमान्य है। सुनिश्चित करें कि यह सही प्रारूप पर है"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "L मान सीमा से बाहर है (0.0 -> 100.0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -507,10 +427,6 @@
       "text": "YIQ रंग विनिर्देशक \"{0}\" अमान्य है। सुनिश्चित करें कि यह सही प्रारूप पर है"
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "ल्यूमा स्तर सीमा से बाहर है (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "इन-फ़ेज़ स्तर सीमा से बाहर है (0 -> 255)."
     },
@@ -521,14 +437,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "अमान्य YIQ रंग विनिर्देशक \"{0}\"। विनिर्देशक में तीन से ज़्यादा तत्व नहीं होने चाहिए। सुनिश्चित करें कि यह सही फ़ॉर्मेट पर है"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "पर्यवेक्षक की संख्या 2 या 10 होनी चाहिए"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "प्रकाशक अमान्य है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -569,18 +477,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "अमान्य रंग विनिर्देशक \"{0}\"। सुनिश्चित करें कि यह सही प्रारूप में है, जिसका अर्थ है कि यदि 255 रंगों का उपयोग किया जा रहा है तो 0-255 तक की संख्या या यदि सही रंग का उपयोग किया जा रहा है तो VT अनुक्रम इस प्रकार है"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "लाल रंग का स्तर सीमा से बाहर है (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "हरा रंग स्तर सीमा से बाहर है (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "नीला रंग स्तर सीमा से बाहर है (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

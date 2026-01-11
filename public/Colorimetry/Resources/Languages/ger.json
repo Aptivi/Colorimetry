@@ -80,24 +80,12 @@
       "text": "Ungültiger CieLch-Farbspezifizierer \"{0}\". Stellen Sie sicher, dass er das richtige Format hat."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Der L-Wert liegt außerhalb des Bereichs (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "Der C-Wert liegt außerhalb des Bereichs (-128,0 -> 128,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "Der H-Wert liegt außerhalb des Bereichs (-128,0 -> 128,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Beobachter muss entweder 2 oder 10 sein"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Leuchtmittel ist ungültig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -108,24 +96,12 @@
       "text": "Ungültiger CieLuv-Farbspezifizierer \"{0}\". Stellen Sie sicher, dass er das richtige Format hat."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Der L-Wert liegt außerhalb des Bereichs (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "Der U-Wert liegt außerhalb des Bereichs (-134,0 -> 220,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "Der V-Wert liegt außerhalb des Bereichs (-140,0 -> 122,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Beobachter muss entweder 2 oder 10 sein"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Leuchtmittel ist ungültig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -162,34 +138,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Konvertierung in RGB nicht möglich."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Nullquelle kann nicht konvertiert werden."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Konvertierung vom Basisfarbmodell nicht möglich."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Konvertierung in RGB nicht möglich."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Nullquelle kann nicht konvertiert werden."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Kann nicht in den Nulltyp konvertiert werden."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Konvertierung vom Basisfarbmodell nicht möglich."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Konvertierung vom Basisfarbmodell nicht möglich."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -392,18 +340,6 @@
       "text": "Ungültiger CMYK-Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Der Cyan-Farbpegel liegt außerhalb des Bereichs (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Der Magenta-Farbpegel liegt außerhalb des Bereichs (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Der Gelbfarbpegel liegt außerhalb des Bereichs (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Der Schwarzfarbpegel liegt außerhalb des Bereichs (0 -> 100)."
     },
@@ -436,14 +372,6 @@
       "text": "Ungültiger HSV-Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Der Farbton liegt außerhalb des Bereichs (0' -> 360' Grad)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Der Sättigungsgrad liegt außerhalb des Bereichs (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "Der Wertebereich liegt außerhalb des Bereichs (0 -> 100)."
     },
@@ -454,10 +382,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Ungültiger HWB-Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Der Farbton liegt außerhalb des Bereichs (0' -> 360' Grad)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -474,10 +398,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Ungültiger HunterLab-Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Der L-Wert liegt außerhalb des Bereichs (0,0 -> 100,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -516,10 +436,6 @@
       "text": "Ungültiger YIQ-Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Der Luma-Pegel liegt außerhalb des Bereichs (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Der In-Phase-Pegel liegt außerhalb des Bereichs (0 -> 255)."
     },
@@ -530,14 +446,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Ungültiger YIQ-Farbspezifizierer \"{0}\". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Beobachter muss entweder 2 oder 10 sein"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Leuchtmittel ist ungültig"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -578,18 +486,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Ungültiger Farbbezeichner \"{0}\". Stellen Sie sicher, dass das richtige Format verwendet wird. Dies bedeutet eine Zahl zwischen 0 und 255 bei Verwendung von 255 Farben oder eine VT-Sequenz bei Verwendung von True Color."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Der Rotfarbpegel liegt außerhalb des Bereichs (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Der Grünfarbpegel liegt außerhalb des Bereichs (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Der Blaufarbpegel liegt außerhalb des Bereichs (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",

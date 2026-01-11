@@ -72,24 +72,12 @@
       "text": "Μη έγκυρος προσδιοριστής χρώματος CieLch \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Η τιμή L είναι εκτός εύρους (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL",
       "text": "Η τιμή C είναι εκτός εύρους (-128,0 -> 128,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHHLEVEL",
       "text": "Η τιμή H είναι εκτός εύρους (-128,0 -> 128,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Το φωτιστικό δεν είναι έγκυρο"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED",
@@ -100,24 +88,12 @@
       "text": "Μη έγκυρος προσδιοριστής χρώματος CieLuv \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Η τιμή L είναι εκτός εύρους (0,0 -> 100,0)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL",
       "text": "Η τιμή U είναι εκτός εύρους (-134,0 -> 220,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVVLEVEL",
       "text": "Η τιμή V είναι εκτός εύρους (-140,0 -> 122,0)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Το φωτιστικό δεν είναι έγκυρο"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED",
@@ -154,34 +130,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
       "text": "Δεν είναι δυνατή η μετατροπή σε RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Δεν είναι δυνατή η μετατροπή της μηδενικής πηγής."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED",
-      "text": "Δεν είναι δυνατή η μετατροπή σε RGB."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOSOURCE",
-      "text": "Δεν είναι δυνατή η μετατροπή της μηδενικής πηγής."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_NOTYPE",
-      "text": "Δεν είναι δυνατή η μετατροπή σε τύπο null."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
-      "text": "Δεν είναι δυνατή η μετατροπή από το βασικό μοντέλο χρώματος."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED",
@@ -384,18 +332,6 @@
       "text": "Μη έγκυρος προσδιοριστής χρώματος CMYK \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL",
-      "text": "Το επίπεδο κυανού χρώματος είναι εκτός εύρους (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYMLEVEL",
-      "text": "Το επίπεδο χρώματος ματζέντα είναι εκτός εύρους (0 -> 100)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYYLEVEL",
-      "text": "Το επίπεδο κίτρινου χρώματος είναι εκτός εύρους (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL",
       "text": "Η στάθμη μαύρου χρώματος είναι εκτός εύρους (0 -> 100)."
     },
@@ -428,14 +364,6 @@
       "text": "Μη έγκυρος προσδιοριστής χρώματος HSV \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Η στάθμη απόχρωσης είναι εκτός εύρους (0' -> 360' μοίρες)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL",
-      "text": "Το επίπεδο κορεσμού είναι εκτός εύρους (0 -> 100)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL",
       "text": "Το επίπεδο τιμής είναι εκτός εύρους (0 -> 100)."
     },
@@ -446,10 +374,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER",
       "text": "Μη έγκυρος προσδιοριστής χρώματος HWB \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL",
-      "text": "Η στάθμη απόχρωσης είναι εκτός εύρους (0' -> 360' μοίρες)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL",
@@ -466,10 +390,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER",
       "text": "Μη έγκυρος προσδιοριστής χρώματος HunterLab \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL",
-      "text": "Η τιμή L είναι εκτός εύρους (0,0 -> 100,0)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL",
@@ -508,10 +428,6 @@
       "text": "Μη έγκυρος προσδιοριστής χρώματος YIQ \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     },
     {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL",
-      "text": "Η στάθμη φωτεινότητας είναι εκτός εύρους (0 -> 255)."
-    },
-    {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL",
       "text": "Το επίπεδο σε φάση είναι εκτός εύρους (0 -> 255)."
     },
@@ -522,14 +438,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED",
       "text": "Μη έγκυρος προσδιοριστής χρώματος YIQ \"{0}\". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDOBSERVER",
-      "text": "Ο παρατηρητής πρέπει να είναι είτε 2 είτε 10"
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCEINVALIDILLUMINANT",
-      "text": "Το φωτιστικό δεν είναι έγκυρο"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE",
@@ -570,18 +478,6 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER",
       "text": "Μη έγκυρος προσδιοριστής χρώματος \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή, που σημαίνει έναν αριθμό από 0-255 εάν χρησιμοποιείτε 255 χρώματα ή μια ακολουθία VT εάν χρησιμοποιείτε πραγματικό χρώμα ως εξής."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL",
-      "text": "Το επίπεδο κόκκινου χρώματος είναι εκτός εύρους (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBGREENLEVEL",
-      "text": "Το επίπεδο πράσινου χρώματος είναι εκτός εύρους (0 -> 255)."
-    },
-    {
-      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSERGBBLUELEVEL",
-      "text": "Το επίπεδο μπλε χρώματος είναι εκτός εύρους (0 -> 255)."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED",
