@@ -39,6 +39,8 @@ namespace Colorimetry
     [JsonConverter(typeof(ColorSerializer))]
     public class Color : IEquatable<Color>
     {
+        internal static Color _empty = new(0, new());
+
         // General vars
         private ConsoleColorData? colorId;
         private readonly string hex = "";
@@ -71,14 +73,8 @@ namespace Colorimetry
         /// <summary>
         /// Empty color singleton
         /// </summary>
-        public static Color Empty
-        {
-            get
-            {
-                ColorTools._empty ??= new(0, new());
-                return ColorTools._empty;
-            }
-        }
+        public static Color Empty =>
+            _empty;
 
         /// <summary>
         /// Either 0-255, or &lt;R&gt;;&lt;G&gt;;&lt;B&gt;, depending on the settings.
