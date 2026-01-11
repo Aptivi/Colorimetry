@@ -14,7 +14,7 @@
 
 # Colorimetry
     
-*A library that parses Metalink 3.0 and 4.0 files for download managers*
+*Color tools library for C# CLI, TUI, and GUI applications*
 
 <br>
 <br>
@@ -38,7 +38,7 @@
 [Releases]: https://github.com/Aptivi/Colorimetry/releases
 [NuGet]: https://www.nuget.org/packages/Colorimetry/
 
-[Manual]: https://aptivi.gitbook.io/metalinker-manual/
+[Manual]: https://aptivi.gitbook.io/colorimetry-manual/
 
 <!----------------------------------[ Badges ]--------------------------------->
 
