@@ -2,7 +2,7 @@
     color: var(--apt-accent-1);
 }
 
-.btn-primary, .btn, .form-control, .form-text {
+.btn-primary, .btn:disabled, .btn, .form-control, .form-text {
     color: var(--apt-accent-2);
     background-color: var(--apt-accent-shade-3);
     border-color: var(--apt-accent-1);
@@ -156,6 +156,12 @@
     color: var(--apt-accent-2);
 }
 
+.container-header {
+    width: unset;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
 .container {
     width: unset;
     padding-left: 16rem;
@@ -163,6 +169,12 @@
 }
 
 @media (max-width: 770px) {
+    .container-header {
+        width: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .container {
         width: unset;
         padding-left: 15px;
