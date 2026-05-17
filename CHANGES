@@ -1,10 +1,10 @@
-We've fixed the Empty property to synchronize with recent Terminaux changes.
+We've updated Colorimetry to update libraries.
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Fixed Color.Empty property
+- `[*]` Updated libraries
 
 Review the commit history if you want to get a deep insight about the changes.
 
