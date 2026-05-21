@@ -1,10 +1,10 @@
-We've updated Colorimetry to update libraries.
+We've updated Colorimetry to fix bugs related to transformation functions.
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Updated libraries
+- `[*]` Fixed issues related to transformation functions
 
 Review the commit history if you want to get a deep insight about the changes.
 
