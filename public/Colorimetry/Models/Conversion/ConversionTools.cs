@@ -249,6 +249,12 @@ namespace Colorimetry.Models.Conversion
                     rgb = ToRgb(cieLch);
                 else if (source is HueWhiteBlack hwb)
                     rgb = ToRgb(hwb);
+                else if (source is YPbPrSDTV ypbprSDTV)
+                    rgb = ToRgb(ypbprSDTV);
+                else if (source is YPbPrHDTV ypbprHDTV)
+                    rgb = ToRgb(ypbprHDTV);
+                else if (source is YPbPrHiVi ypbprHiVi)
+                    rgb = ToRgb(ypbprHiVi);
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
                 return rgb;
@@ -324,6 +330,18 @@ namespace Colorimetry.Models.Conversion
                 else if (targetType == typeof(HueWhiteBlack))
                     return ToHwb(source) ??
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHWBFAILED"));
+                else if (targetType == typeof(YPbPrSDTV))
+                    return ToYPbPrSDTV(source) ??
+                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
+                else if (targetType == typeof(YPbPrHDTV))
+                    return ToYPbPrHDTV(source) ??
+                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
+                else if (targetType == typeof(YPbPrHiVi))
+                    return ToYPbPrHiVi(source) ??
+                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
             }
@@ -916,6 +934,99 @@ namespace Colorimetry.Models.Conversion
             hue /= 360;
             return new(hue, white, black);
         }
+
+        /// <summary>
+        /// Converts the RGB color model to YPbPrSDTV
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YPbPrSDTV ToYPbPrSDTV(RedGreenBlue rgb)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
+
+            double levelR = (double)rgb.R / 255;
+            double levelG = (double)rgb.G / 255;
+            double levelB = (double)rgb.B / 255;
+
+            // Get coefficients
+            double Kr = 0.299d;
+            double Kb = 0.114d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Get the luma (Y) in millivolts (mV)
+            double y = Kr * levelR + Kg * levelG + Kb * levelB;
+
+            // Get the Pb and Pr values in millivolts (mV)
+            double pb = (levelB - y) / (2.0 * (1.0 - Kb)) * 700d + 350;
+            double pr = (levelR - y) / (2.0 * (1.0 - Kr)) * 700d + 350;
+
+            // Return the resulting values
+            return new(y * 700d, pb, pr);
+        }
+
+        /// <summary>
+        /// Converts the RGB color model to YPbPrHDTV
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YPbPrHDTV ToYPbPrHDTV(RedGreenBlue rgb)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
+
+            double levelR = (double)rgb.R / 255;
+            double levelG = (double)rgb.G / 255;
+            double levelB = (double)rgb.B / 255;
+
+            // Get coefficients
+            double Kr = 0.2126d;
+            double Kb = 0.0722d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Get the luma (Y) in millivolts (mV)
+            double y = Kr * levelR + Kg * levelG + Kb * levelB;
+
+            // Get the Pb and Pr values in millivolts (mV)
+            double pb = (levelB - y) / (2.0 * (1.0 - Kb)) * 700d + 350;
+            double pr = (levelR - y) / (2.0 * (1.0 - Kr)) * 700d + 350;
+
+            // Return the resulting values
+            return new(y * 700d, pb, pr);
+        }
+
+        /// <summary>
+        /// Converts the RGB color model to YPbPrHiVi
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YPbPrHiVi ToYPbPrHiVi(RedGreenBlue rgb)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
+
+            double levelR = (double)rgb.R / 255;
+            double levelG = (double)rgb.G / 255;
+            double levelB = (double)rgb.B / 255;
+
+            // Get coefficients
+            double Kr = 0.2627d;
+            double Kb = 0.0593d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Get the luma (Y) in millivolts (mV)
+            double y = Kr * levelR + Kg * levelG + Kb * levelB;
+
+            // Get the Pb and Pr values in millivolts (mV)
+            double pb = (levelB - y) / (2.0 * (1.0 - Kb)) * 700d + 350;
+            double pr = (levelR - y) / (2.0 * (1.0 - Kr)) * 700d + 350;
+
+            // Return the resulting values
+            return new(y * 700d, pb, pr);
+        }
         #endregion
         #region Translate to RGB from...
         /// <summary>
@@ -1483,6 +1594,111 @@ namespace Colorimetry.Models.Conversion
             int r = (int)((rgbFromHsl.RNormalized * (1 - whiteBlack) + hwb.Whiteness) * 255);
             int g = (int)((rgbFromHsl.GNormalized * (1 - whiteBlack) + hwb.Whiteness) * 255);
             int b = (int)((rgbFromHsl.BNormalized * (1 - whiteBlack) + hwb.Whiteness) * 255);
+
+            // Install the values
+            return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the YPbPrSDTV color model to RGB
+        /// </summary>
+        /// <param name="ypbpr">Instance of YPbPr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YPbPrSDTV ypbpr)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
+            if (ypbpr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
+
+            // Get coefficients
+            double Kr = 0.299d;
+            double Kb = 0.114d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Normalize the YPbPr values from 700 mV
+            double normalizedY = ypbpr.Y / 700d;
+            double normalizedPb = (ypbpr.Pb - 350) / 700d;
+            double normalizedPr = (ypbpr.Pr - 350) / 700d;
+
+            // Get the RGB from YPbPr values
+            double redLevel = normalizedY + 2.0 * (1.0 - Kr) * normalizedPr;
+            double greenLevel = normalizedY - 2.0 * Kb * (1.0 - Kb) / Kg * normalizedPb - 2.0 * Kr * (1.0 - Kr) / Kg * normalizedPr;
+            double blueLevel = normalizedY + 2.0 * (1.0 - Kb) * normalizedPb;
+
+            // Normalize to [0-255]
+            int r = (int)(redLevel * 255);
+            int g = (int)(greenLevel * 255);
+            int b = (int)(blueLevel * 255);
+
+            // Install the values
+            return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the YPbPrHDTV color model to RGB
+        /// </summary>
+        /// <param name="ypbpr">Instance of YPbPr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YPbPrHDTV ypbpr)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
+            if (ypbpr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
+
+            // Get coefficients
+            double Kr = 0.2126d;
+            double Kb = 0.0722d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Normalize the YPbPr values from 700 mV
+            double normalizedY = ypbpr.Y / 700d;
+            double normalizedPb = (ypbpr.Pb - 350) / 700d;
+            double normalizedPr = (ypbpr.Pr - 350) / 700d;
+
+            // Get the RGB from YPbPr values
+            double redLevel = normalizedY + 2.0 * (1.0 - Kr) * normalizedPr;
+            double greenLevel = normalizedY - 2.0 * Kb * (1.0 - Kb) / Kg * normalizedPb - 2.0 * Kr * (1.0 - Kr) / Kg * normalizedPr;
+            double blueLevel = normalizedY + 2.0 * (1.0 - Kb) * normalizedPb;
+
+            // Normalize to [0-255]
+            int r = (int)(redLevel * 255);
+            int g = (int)(greenLevel * 255);
+            int b = (int)(blueLevel * 255);
+
+            // Install the values
+            return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the YPbPrHiVi color model to RGB
+        /// </summary>
+        /// <param name="ypbpr">Instance of YPbPr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YPbPrHiVi ypbpr)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
+            if (ypbpr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
+
+            // Get coefficients
+            double Kr = 0.2627d;
+            double Kb = 0.0593d;
+            double Kg = 1.0 - Kr - Kb;
+
+            // Normalize the YPbPr values from 700 mV
+            double normalizedY = ypbpr.Y / 700d;
+            double normalizedPb = (ypbpr.Pb - 350) / 700d;
+            double normalizedPr = (ypbpr.Pr - 350) / 700d;
+
+            // Get the RGB from YPbPr values
+            double redLevel = normalizedY + 2.0 * (1.0 - Kr) * normalizedPr;
+            double greenLevel = normalizedY - 2.0 * Kb * (1.0 - Kb) / Kg * normalizedPb - 2.0 * Kr * (1.0 - Kr) / Kg * normalizedPr;
+            double blueLevel = normalizedY + 2.0 * (1.0 - Kb) * normalizedPb;
+
+            // Normalize to [0-255]
+            int r = (int)(redLevel * 255);
+            int g = (int)(greenLevel * 255);
+            int b = (int)(blueLevel * 255);
 
             // Install the values
             return new(r, g, b);
