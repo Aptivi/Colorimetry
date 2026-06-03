@@ -1,10 +1,12 @@
-We've updated Colorimetry to fix bugs related to transformation functions.
+We've updated Colorimetry to add more color models!
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Fixed issues related to transformation functions
+- `[+]` Added YPbPr color model (SDTV, HDTV, and HiVision)
+- `[+]` Added YDbDr color model
+- `[+]` Added LMS color model
 
 Review the commit history if you want to get a deep insight about the changes.
 
