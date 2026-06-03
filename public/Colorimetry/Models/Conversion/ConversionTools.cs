@@ -255,6 +255,8 @@ namespace Colorimetry.Models.Conversion
                     rgb = ToRgb(ypbprHDTV);
                 else if (source is YPbPrHiVi ypbprHiVi)
                     rgb = ToRgb(ypbprHiVi);
+                else if (source is YDbDr ydbdr)
+                    rgb = ToRgb(ydbdr);
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
                 return rgb;
@@ -342,6 +344,10 @@ namespace Colorimetry.Models.Conversion
                     return ToYPbPrHiVi(source) ??
                         // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
+                else if (targetType == typeof(YDbDr))
+                    return ToYDbDr(source) ??
+                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED -> "Can't convert to YDbDr."
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED"));
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
             }
@@ -1027,6 +1033,30 @@ namespace Colorimetry.Models.Conversion
             // Return the resulting values
             return new(y * 700d, pb, pr);
         }
+
+        /// <summary>
+        /// Converts the RGB color model to YDbDr
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YDbDr ToYDbDr(RedGreenBlue rgb)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB -> "Can't convert a null RGB instance to YDbDr!"
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB"));
+
+            double levelR = (double)rgb.R / 255;
+            double levelG = (double)rgb.G / 255;
+            double levelB = (double)rgb.B / 255;
+
+            // Get the luma (Y) and Db,Dr values
+            double y = 0.299d * levelR + 0.587d * levelG + 0.114d * levelB;
+            double db = -0.450d * levelR + -0.883d * levelG + 1.333d * levelB;
+            double dr = -1.333d * levelR + 1.116d * levelG + 0.217d * levelB;
+
+            // Return the resulting values
+            return new(y, db, dr);
+        }
         #endregion
         #region Translate to RGB from...
         /// <summary>
@@ -1694,6 +1724,31 @@ namespace Colorimetry.Models.Conversion
             double redLevel = normalizedY + 2.0 * (1.0 - Kr) * normalizedPr;
             double greenLevel = normalizedY - 2.0 * Kb * (1.0 - Kb) / Kg * normalizedPb - 2.0 * Kr * (1.0 - Kr) / Kg * normalizedPr;
             double blueLevel = normalizedY + 2.0 * (1.0 - Kb) * normalizedPb;
+
+            // Normalize to [0-255]
+            int r = (int)(redLevel * 255);
+            int g = (int)(greenLevel * 255);
+            int b = (int)(blueLevel * 255);
+
+            // Install the values
+            return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the YDbDr color model to RGB
+        /// </summary>
+        /// <param name="ydbdr">Instance of YDbDr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YDbDr ydbdr)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR -> "Can't convert a null YDbDr instance to RGB!"
+            if (ydbdr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR"));
+
+            // Get the RGB from YDbDr values
+            double redLevel = ydbdr.Y + 0.000092303716148d * ydbdr.Db + -0.525912630661865d * ydbdr.Dr;
+            double greenLevel = ydbdr.Y + -0.129132898890509d * ydbdr.Db + 0.267899328207599d * ydbdr.Dr;
+            double blueLevel = ydbdr.Y + 0.664679059978955d * ydbdr.Db + -0.000079202543533d * ydbdr.Dr;
 
             // Normalize to [0-255]
             int r = (int)(redLevel * 255);

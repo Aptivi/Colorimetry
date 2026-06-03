@@ -920,6 +920,44 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to YDbDr
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestConvertRgbToYDbDr()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YDbDr
+            var ydbdr = ConversionTools.ToYDbDr(ColorInstance.RGB);
+
+            // Check for property correctness
+            ydbdr.Y.ShouldBe(0.299);
+            ydbdr.Db.ShouldBe(-0.45);
+            ydbdr.Dr.ShouldBe(-1.333);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ToRgb(ydbdr);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -1532,6 +1570,44 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to YDbDr
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericConvertRgbToYDbDr()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YDbDr
+            var ydbdr = ConversionTools.ConvertFromRgb<YDbDr>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ydbdr.Y.ShouldBe(0.299);
+            ydbdr.Db.ShouldBe(-0.45);
+            ydbdr.Dr.ShouldBe(-1.333);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ConvertToRgb(ydbdr);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -2139,6 +2215,44 @@ namespace Colorimetry.Tests
 
             // Check for property correctness
             rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YDbDr
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericBidirectionalConvertRgbToYDbDr()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YDbDr
+            var ydbdr = ConversionTools.GetConvertedColorModel<RedGreenBlue, YDbDr>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ydbdr.Y.ShouldBe(0.299);
+            ydbdr.Db.ShouldBe(-0.45);
+            ydbdr.Dr.ShouldBe(-1.333);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.GetConvertedColorModel<YDbDr, RedGreenBlue>(ydbdr);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
             rgb.G.ShouldBe(0);
             rgb.B.ShouldBe(0);
         }

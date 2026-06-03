@@ -47,7 +47,7 @@ namespace Colorimetry.Models
         public double Pr { get; private set; }
 
         /// <summary>
-        /// YPbPrHDTV:&lt;Y&gt;;&lt;Pb&gt;;&lt;Pr&gt;
+        /// ypbprhdtv:&lt;Y&gt;;&lt;Pb&gt;;&lt;Pr&gt;
         /// </summary>
         public override string ToString() =>
             $"ypbprhdtv:{Y:0.##};{Pb:0.##};{Pr:0.##}";
@@ -119,7 +119,7 @@ namespace Colorimetry.Models
         {
             // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER -> "Invalid YPbPr color specifier \"{0}\". Ensure that it's on the correct format"
             if (!IsSpecifierValid(specifier))
-                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER").FormatString(specifier) + ": YPbPrHDTV:<y>;<pb>;<pr>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER").FormatString(specifier) + ": ypbprhdtv:<y>;<pb>;<pr>");
 
             // Split the VT sequence into three parts
             var specifierArray = specifier.Substring(10).Split(';');
@@ -127,14 +127,17 @@ namespace Colorimetry.Models
             {
                 // We got the YPbPr whole values! First, check to see if we need to filter the color for the color-blind
                 double y = Convert.ToDouble(specifierArray[0]);
+                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL -> "The Y value is out of range (0.0 -> 750.0)."
                 if (y < 0 || y > 700)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL") + $" {y}");
                 double pb = Convert.ToDouble(specifierArray[1]);
+                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL -> "The Pb value is out of range (0.0 -> 750.0)."
                 if (pb < 0 || pb > 700)
-                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRX1LEVEL") + $" {pb}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL") + $" {pb}");
                 double pr = Convert.ToDouble(specifierArray[2]);
+                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL -> "The Pr value is out of range (0.0 -> 750.0)."
                 if (pr < 0 || pr > 700)
-                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRY2LEVEL") + $" {pr}");
+                    throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL") + $" {pr}");
 
                 // First, we need to convert from YPbPr to RGB
                 var YPbPr = new YPbPrHDTV(y, pb, pr);
@@ -142,7 +145,7 @@ namespace Colorimetry.Models
             }
             else
                 // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED -> "Invalid YPbPr color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
-                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED").FormatString(specifier) + ": YPbPrHDTV:<y>;<pb>;<pr>");
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED").FormatString(specifier) + ": ypbprhdtv:<y>;<pb>;<pr>");
         }
 
         /// <inheritdoc/>

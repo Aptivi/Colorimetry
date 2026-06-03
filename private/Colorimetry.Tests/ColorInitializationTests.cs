@@ -2063,6 +2063,60 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests initializing color instance from true color (YDbDr)
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYDbDr()
+        {
+            // Create instance
+            var ColorInstance = new Color("ydbdr:0.299;-0.45;-1.333");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("254;0;0");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(254);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FE0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YDbDr) using the implicit operator
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYDbDrImplicit()
+        {
+            // Create instance
+            Color ColorInstance = "ydbdr:0.299;-0.45;-1.333";
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("254;0;0");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(254);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FE0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
         /// Tests initializing color instance from Drawing's color
         /// </summary>
         [TestMethod]

@@ -104,6 +104,7 @@ namespace Colorimetry.Models
                 YPbPrSDTV.IsSpecifierValid(specifier) ? YPbPrSDTV.ParseSpecifierToRgb(specifier, settings) :
                 YPbPrHDTV.IsSpecifierValid(specifier) ? YPbPrHDTV.ParseSpecifierToRgb(specifier, settings) :
                 YPbPrHiVi.IsSpecifierValid(specifier) ? YPbPrHiVi.ParseSpecifierToRgb(specifier, settings) :
+                YDbDr.IsSpecifierValid(specifier) ? YDbDr.ParseSpecifierToRgb(specifier, settings) :
 
                 // Colors and hash
                 usesColorId ? ParsingTools.ParseSpecifierRgbName(specifier, settings) :
