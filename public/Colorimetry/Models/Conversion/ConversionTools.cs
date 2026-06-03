@@ -257,6 +257,8 @@ namespace Colorimetry.Models.Conversion
                     rgb = ToRgb(ypbprHiVi);
                 else if (source is YDbDr ydbdr)
                     rgb = ToRgb(ydbdr);
+                else if (source is Lms lms)
+                    rgb = ToRgb(lms);
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
                 return rgb;
@@ -348,6 +350,10 @@ namespace Colorimetry.Models.Conversion
                     return ToYDbDr(source) ??
                         // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED -> "Can't convert to YDbDr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED"));
+                else if (targetType == typeof(Lms))
+                    return ToLms(source) ??
+                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED -> "Can't convert to LMS."
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED"));
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
             }
@@ -1057,6 +1063,30 @@ namespace Colorimetry.Models.Conversion
             // Return the resulting values
             return new(y, db, dr);
         }
+
+        /// <summary>
+        /// Converts the RGB color model to LMS
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static Lms ToLms(RedGreenBlue rgb)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB -> "Can't convert a null RGB instance to LMS!"
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB"));
+
+            double levelR = (double)rgb.R / 255;
+            double levelG = (double)rgb.G / 255;
+            double levelB = (double)rgb.B / 255;
+
+            // Get the LMS values
+            double l = 0.8951d * levelR + 0.2664d * levelG - 0.1614d * levelB;
+            double m = -0.7502d * levelR + 1.7135d * levelG + 0.0367d * levelB;
+            double s = 0.0389d * levelR - 0.0685d * levelG + 1.0296d * levelB;
+
+            // Return the resulting values
+            return new(l, m, s);
+        }
         #endregion
         #region Translate to RGB from...
         /// <summary>
@@ -1749,6 +1779,31 @@ namespace Colorimetry.Models.Conversion
             double redLevel = ydbdr.Y + 0.000092303716148d * ydbdr.Db + -0.525912630661865d * ydbdr.Dr;
             double greenLevel = ydbdr.Y + -0.129132898890509d * ydbdr.Db + 0.267899328207599d * ydbdr.Dr;
             double blueLevel = ydbdr.Y + 0.664679059978955d * ydbdr.Db + -0.000079202543533d * ydbdr.Dr;
+
+            // Normalize to [0-255]
+            int r = (int)(redLevel * 255);
+            int g = (int)(greenLevel * 255);
+            int b = (int)(blueLevel * 255);
+
+            // Install the values
+            return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the LMS color model to RGB
+        /// </summary>
+        /// <param name="lms">Instance of LMS</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(Lms lms)
+        {
+            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS -> "Can't convert a null LMS instance to RGB!"
+            if (lms is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS"));
+
+            // Get the RGB from LMS values
+            double redLevel = 0.9869929d * lms.L - 0.1470543d * lms.M + 0.1599627d * lms.S;
+            double greenLevel = 0.4323053d * lms.L + 0.5183603d * lms.M + 0.0492912d * lms.S;
+            double blueLevel = -0.0085287d * lms.L + 0.0400428d * lms.M + 0.9684867d * lms.S;
 
             // Normalize to [0-255]
             int r = (int)(redLevel * 255);

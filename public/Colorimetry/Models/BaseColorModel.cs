@@ -69,7 +69,8 @@ namespace Colorimetry.Models
                 CieLuv.IsSpecifierAndValueValid(specifier) ||
                 YPbPrSDTV.IsSpecifierAndValueValid(specifier) ||
                 YPbPrHDTV.IsSpecifierAndValueValid(specifier) ||
-                YPbPrHiVi.IsSpecifierAndValueValid(specifier);
+                YPbPrHiVi.IsSpecifierAndValueValid(specifier) ||
+                Lms.IsSpecifierAndValueValid(specifier);
         }
 
         /// <summary>
@@ -105,6 +106,7 @@ namespace Colorimetry.Models
                 YPbPrHDTV.IsSpecifierValid(specifier) ? YPbPrHDTV.ParseSpecifierToRgb(specifier, settings) :
                 YPbPrHiVi.IsSpecifierValid(specifier) ? YPbPrHiVi.ParseSpecifierToRgb(specifier, settings) :
                 YDbDr.IsSpecifierValid(specifier) ? YDbDr.ParseSpecifierToRgb(specifier, settings) :
+                Lms.IsSpecifierValid(specifier) ? Lms.ParseSpecifierToRgb(specifier, settings) :
 
                 // Colors and hash
                 usesColorId ? ParsingTools.ParseSpecifierRgbName(specifier, settings) :

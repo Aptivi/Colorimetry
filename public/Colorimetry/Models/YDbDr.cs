@@ -47,7 +47,7 @@ namespace Colorimetry.Models
         public double Dr { get; private set; }
 
         /// <summary>
-        /// YDbDr:&lt;Y&gt;;&lt;Db&gt;;&lt;Dr&gt;
+        /// ydbdr:&lt;Y&gt;;&lt;Db&gt;;&lt;Dr&gt;
         /// </summary>
         public override string ToString() =>
             $"ydbdr:{Y:0.##};{Db:0.##};{Dr:0.##}";
@@ -75,13 +75,13 @@ namespace Colorimetry.Models
 
             var specifierArray = specifier.Substring(6).Split(';');
             int y = Convert.ToInt32(specifierArray[0]);
-            if (y < 0 || y > 700)
+            if (y < 0 || y > 1)
                 return false;
             int db = Convert.ToInt32(specifierArray[1]);
-            if (db < 0 || db > 700)
+            if (db < -1.333 || db > 1.333)
                 return false;
             int dr = Convert.ToInt32(specifierArray[2]);
-            if (dr < 0 || dr > 700)
+            if (dr < -1.333 || dr > 1.333)
                 return false;
             return true;
         }

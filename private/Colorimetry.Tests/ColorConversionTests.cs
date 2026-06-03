@@ -958,6 +958,44 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to LMS
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestConvertRgbToLms()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to LMS
+            var lms = ConversionTools.ToLms(ColorInstance.RGB);
+
+            // Check for property correctness
+            lms.L.ShouldBe(0.8951);
+            lms.M.ShouldBe(-0.7502);
+            lms.S.ShouldBe(0.0389);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ToRgb(lms);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -1608,6 +1646,44 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to LMS
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericConvertRgbToLms()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to LMS
+            var lms = ConversionTools.ConvertFromRgb<Lms>(ColorInstance.RGB);
+
+            // Check for property correctness
+            lms.L.ShouldBe(0.8951);
+            lms.M.ShouldBe(-0.7502);
+            lms.S.ShouldBe(0.0389);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ConvertToRgb(lms);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -2253,6 +2329,44 @@ namespace Colorimetry.Tests
 
             // Check for property correctness
             rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to LMS
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericBidirectionalConvertRgbToLms()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to LMS
+            var lms = ConversionTools.GetConvertedColorModel<RedGreenBlue, Lms>(ColorInstance.RGB);
+
+            // Check for property correctness
+            lms.L.ShouldBe(0.8951);
+            lms.M.ShouldBe(-0.7502);
+            lms.S.ShouldBe(0.0389);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.GetConvertedColorModel<Lms, RedGreenBlue>(lms);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
             rgb.G.ShouldBe(0);
             rgb.B.ShouldBe(0);
         }
