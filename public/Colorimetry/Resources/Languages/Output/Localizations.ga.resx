@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>Cineál monacrómatachta neamhbhailí</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>Ní féidir tiontú go YPbPr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>Ní féidir tiontú go YDbDr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>Ní féidir tiontú go LMS.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>Ní féidir sampla RGB nialasach a thiontú go YPbPr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>Ní féidir sampla RGB nialasach a thiontú go YDbDr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>Ní féidir sampla RGB nialasach a thiontú go LMS!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>Ní féidir sampla YPbPr nialasach a thiontú go RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>Ní féidir sampla YDbDr nialasach a thiontú go RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>Ní féidir sampla LMS nialasach a thiontú go RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>Sonraitheoir datha LMS neamhbhailí &quot;{0}&quot;. Cinntigh go bhfuil sé san fhormáid cheart.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>Tá an luach L lasmuigh den raon (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>Tá an luach M lasmuigh den raon (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>Tá an luach S lasmuigh den raon (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>Sonraitheoir datha LMS neamhbhailí &quot;{0}&quot;. Ní fhéadfaidh an sonraitheoir a bheith níos mó ná trí eilimint. Cinntigh go bhfuil sé san fhormáid cheart</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>Sonraitheoir datha YDbDr neamhbhailí &quot;{0}&quot;. Cinntigh go bhfuil sé san fhormáid cheart</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>Tá an luach Y lasmuigh den raon (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>Tá an luach Db lasmuigh den raon (−1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>Tá an luach Dr lasmuigh den raon (−1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Sonraitheoir datha YDbDr neamhbhailí &quot;{0}&quot;. Ní fhéadfaidh níos mó ná trí eilimint a bheith sa sonraitheoir. Cinntigh go bhfuil sé san fhormáid cheart</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>Sonraitheoir datha YPbPr neamhbhailí &quot;{0}&quot;. Cinntigh go bhfuil sé san fhormáid cheart</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>Tá an luach Y lasmuigh den raon (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>Tá an luach Pb lasmuigh den raon (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>Tá an luach Pr lasmuigh den raon (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Sonraitheoir datha YPbPr neamhbhailí &quot;{0}&quot;. Ní fhéadfaidh níos mó ná trí eilimint a bheith sa shonraitheoir. Cinntigh go bhfuil sé san fhormáid cheart.</value>
+  </data>
 
 </root>

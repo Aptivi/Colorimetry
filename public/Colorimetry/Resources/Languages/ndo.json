@@ -553,6 +553,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "Jenis monokromasi tidak valid"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "Tidak dapat dikonversi ke YPbPr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "Tidak dapat dikonversi ke YDbDr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "Tidak dapat dikonversi ke LMS."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "Tidak dapat mengkonversi instance RGB null ke YPbPr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "Tidak dapat mengkonversi instance RGB null ke YDbDr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "Tidak dapat mengkonversi instance RGB null ke LMS!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "Tidak dapat mengkonversi instance YPbPr null ke RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "Tidak dapat mengkonversi instance YDbDr null ke RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "Tidak dapat mengkonversi instance LMS null ke RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "Penentu warna LMS tidak valid \\\"{0}\\\". Pastikan formatnya benar."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "Nilai L berada di luar rentang (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "Nilai M berada di luar rentang (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "Nilai S berada di luar rentang (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "Penentu warna LMS tidak valid \\\"{0}\\\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "Penentu warna YDbDr tidak valid \\\"{0}\\\". Pastikan formatnya sudah benar"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Nilai Y berada di luar rentang (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Nilai Db berada di luar rentang (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Nilai Dr berada di luar rentang (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "Penentu warna YDbDr tidak valid \\\"{0}\\\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "Penentu warna YPbPr tidak valid \\\"{0}\\\". Pastikan formatnya sudah benar"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Nilai Y berada di luar rentang (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Nilai Pb berada di luar rentang (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Nilai Pr berada di luar rentang (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "Penentu warna YPbPr tidak valid \\\"{0}\\\". Penentu warna tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar."
     }
   ]
 }

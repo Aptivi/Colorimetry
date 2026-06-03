@@ -553,6 +553,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "अमान्य मोनोक्रोमेसी प्रकार"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "YPbPr में कन्वर्ट नहीं कर सकता।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "YDbDr में कन्वर्ट नहीं कर सकता।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "LMS में कन्वर्ट नहीं कर सकता।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "एक null RGB इंस्टेंस को YPbPr में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "एक null RGB इंस्टेंस को YDbDr में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "एक null RGB इंस्टेंस को LMS में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "एक null YPbPr इंस्टेंस को RGB में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "एक null YDbDr इंस्टेंस को RGB में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "एक null LMS इंस्टेंस को RGB में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "गलत LMS कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "L वैल्यू रेंज से बाहर है (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "M वैल्यू रेंज से बाहर है (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "S वैल्यू रेंज से बाहर है (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "गलत LMS कलर स्पेसिफायर \\\"{0}\\\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "अमान्य YDbDr कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Y वैल्यू रेंज से बाहर है (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Db वैल्यू रेंज से बाहर है (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Dr वैल्यू रेंज से बाहर है (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "अमान्य YDbDr कलर स्पेसिफायर \\\"{0}\\\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "अमान्य YPbPr कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Y वैल्यू रेंज से बाहर है (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Pb वैल्यू रेंज से बाहर है (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Pr वैल्यू रेंज (0.0 -> 750.0) से बाहर है।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "YPbPr कलर स्पेसिफायर \\\"{0}\\\" गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।"
     }
   ]
 }

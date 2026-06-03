@@ -562,6 +562,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "Ungültiger Monochromasie-Typ"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "Konvertierung nach YPbPr nicht möglich."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "Konvertierung nach YDbDr nicht möglich."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "Konvertierung nach LMS nicht möglich."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "Eine leere RGB-Instanz kann nicht nach YPbPr konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "Eine leere RGB-Instanz kann nicht nach YDbDr konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "Eine leere RGB-Instanz kann nicht nach LMS konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "Eine leere YPbPr-Instanz kann nicht nach RGB konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "Eine leere YDbDr-Instanz kann nicht nach RGB konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "Eine leere LMS-Instanz kann nicht nach RGB konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "Ungültiger LMS-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "Der L-Wert liegt außerhalb des Bereichs (0,0 → 1,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "Der M-Wert liegt außerhalb des Bereichs (0,0 → 1,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "Der S-Wert liegt außerhalb des Bereichs (0,0 → 1,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "Ungültiger LMS-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass das Format korrekt ist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "Ungültiger YDbDr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Der Y-Wert liegt außerhalb des Bereichs (0,0 → 1,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Der Db-Wert liegt außerhalb des Bereichs (−1,333 → 1,333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Der Dr-Wert liegt außerhalb des Bereichs (−1,333 → 1,333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "Ungültiger YDbDr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass das Format korrekt ist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "Ungültiger YPbPr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Der Y-Wert liegt außerhalb des Bereichs (0,0 → 750,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Der Pb-Wert liegt außerhalb des Bereichs (0,0 → 750,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Der Pr-Wert liegt außerhalb des Bereichs (0,0 → 750,0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "Ungültiger YPbPr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format aufweist."
     }
   ]
 }

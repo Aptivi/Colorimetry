@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>نوع أحادي اللون غير صالح</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>لا يمكن التحويل إلى YPbPr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>لا يمكن التحويل إلى YDbDr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>لا يمكن التحويل إلى LMS.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة RGB فارغة إلى YPbPr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة RGB فارغة إلى YDbDr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة RGB فارغة إلى LMS!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة YPbPr فارغة إلى RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة YDbDr فارغة إلى RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>لا يمكن تحويل قيمة LMS فارغة إلى RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>محدد لون LMS غير صالح &quot;{0}&quot;. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>قيمة L خارج النطاق (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>قيمة M خارج النطاق (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>قيمة S خارج النطاق (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>محدد لون LMS غير صالح &quot;{0}&quot;. يجب ألا يتجاوز مُحدِّد اللون ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>مُحدِّد لون YDbDr غير صالح &quot;{0}&quot;. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>قيمة Y خارج النطاق (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>قيمة Db خارج النطاق (-1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>قيمة Dr خارج النطاق (-1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>مُحدِّد لون YDbDr غير صالح &quot;{0}&quot;. يجب ألا يتجاوز مُحدِّد اللون ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>مُحدِّد لون YPbPr غير صالح &quot;{0}&quot;. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>قيمة Y خارج النطاق (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>قيمة Pb خارج النطاق (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>قيمة Pr خارج النطاق (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>محدد لون YPbPr غير صالح &quot;{0}&quot;. يجب ألا يتجاوز عدد عناصر المحدد ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح.</value>
+  </data>
 
 </root>

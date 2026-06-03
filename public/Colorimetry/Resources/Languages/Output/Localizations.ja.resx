@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>無効な単色覚タイプ</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>YPbPr に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>YDbDr に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>LMS に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>null の RGB インスタンスを YPbPr に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>null の RGB インスタンスを YDbDr に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>null の RGB インスタンスを LMS に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>null の YPbPr インスタンスを RGB に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>null の YDbDr インスタンスを RGB に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>null の LMS インスタンスを RGB に変換できません。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>LMS カラー指定子「{0}」が無効です。正しい形式になっていることを確認してください。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>L 値が範囲外です (0.0 -&gt; 1.0)。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>M 値が範囲外です (0.0 -&gt; 1.0)。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>S 値が範囲外です (0.0 -&gt; 1.0)。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>LMS カラー指定子「{0}」が無効です。指定子は3要素までです。正しい形式であることを確認してください。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>無効なYDbDr色指定子「{0}」。正しい形式であることを確認してください。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>Y値が範囲外です（0.0～1.0）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>Db値が範囲外です（-1.333～1.333）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>Dr値が範囲外です（-1.333～1.333）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>無効なYDbDr色指定子「{0}」。指定子は3要素までです。正しい形式であることを確認してください。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>無効なYPbPr色指定子「{0}」。正しい形式であることを確認してください。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>Y値が範囲外です（0.0～750.0）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>Pb値が範囲外です（0.0～750.0）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>Pr値が範囲外です（0.0～750.0）。</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>無効なYPbPrカラー指定子「{0}」。指定子は3要素までしか指定できません。正しい形式になっていることを確認してください。</value>
+  </data>
 
 </root>

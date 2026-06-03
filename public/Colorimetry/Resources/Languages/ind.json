@@ -553,6 +553,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "amaany monokromesee prakaar"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "YPbPr mein convert nahin kar sakta।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "YDbDr mein convert nahin kar sakta।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "LMS mein convert nahin kar sakta।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "ek null RGB instance ko YPbPr mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "ek null RGB instance ko YDbDr mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "ek null RGB instance ko LMS mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "ek null YPbPr instance ko RGB mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "ek null YDbDr instance ko RGB mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "ek null LMS instance ko RGB mein convert nahin kar sakta!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "galat LMS colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "L value range se bahar hai (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "M value range se bahar hai (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "S value range se bahar hai (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "galat LMS colour specifier \\\"{0}\\\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "amanya YDbDr colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Y value range se bahar hai (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Db value range se bahar hai (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Dr value range se bahar hai (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "amanya YDbDr colour specifier \\\"{0}\\\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "amanya YPbPr colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Y value range se bahar hai (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Pb value range se bahar hai (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Pr value range (0.0 -> 750.0) se bahar hai।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "YPbPr colour specifier \\\"{0}\\\" galat hai। specifier mein teen se zyada element nahin ho sakte। pakka karen ki yah sahi formate mein ho।"
     }
   ]
 }

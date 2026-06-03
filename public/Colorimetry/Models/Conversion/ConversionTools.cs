@@ -336,23 +336,18 @@ namespace Colorimetry.Models.Conversion
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOHWBFAILED"));
                 else if (targetType == typeof(YPbPrSDTV))
                     return ToYPbPrSDTV(source) ??
-                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
                 else if (targetType == typeof(YPbPrHDTV))
                     return ToYPbPrHDTV(source) ??
-                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
                 else if (targetType == typeof(YPbPrHiVi))
                     return ToYPbPrHiVi(source) ??
-                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED -> "Can't convert to YPbPr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED"));
                 else if (targetType == typeof(YDbDr))
                     return ToYDbDr(source) ??
-                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED -> "Can't convert to YDbDr."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED"));
                 else if (targetType == typeof(Lms))
                     return ToLms(source) ??
-                        // TODO: COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED -> "Can't convert to LMS."
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED"));
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
@@ -954,7 +949,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static YPbPrSDTV ToYPbPrSDTV(RedGreenBlue rgb)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
             if (rgb is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
 
@@ -985,7 +979,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static YPbPrHDTV ToYPbPrHDTV(RedGreenBlue rgb)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
             if (rgb is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
 
@@ -1016,7 +1009,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static YPbPrHiVi ToYPbPrHiVi(RedGreenBlue rgb)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB -> "Can't convert a null RGB instance to YPbPr!"
             if (rgb is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB"));
 
@@ -1047,7 +1039,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static YDbDr ToYDbDr(RedGreenBlue rgb)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB -> "Can't convert a null RGB instance to YDbDr!"
             if (rgb is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB"));
 
@@ -1071,7 +1062,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static Lms ToLms(RedGreenBlue rgb)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB -> "Can't convert a null RGB instance to LMS!"
             if (rgb is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB"));
 
@@ -1666,7 +1656,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static RedGreenBlue ToRgb(YPbPrSDTV ypbpr)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
             if (ypbpr is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
 
@@ -1701,7 +1690,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static RedGreenBlue ToRgb(YPbPrHDTV ypbpr)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
             if (ypbpr is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
 
@@ -1736,7 +1724,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static RedGreenBlue ToRgb(YPbPrHiVi ypbpr)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR -> "Can't convert a null YPbPr instance to RGB!"
             if (ypbpr is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR"));
 
@@ -1771,7 +1758,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static RedGreenBlue ToRgb(YDbDr ydbdr)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR -> "Can't convert a null YDbDr instance to RGB!"
             if (ydbdr is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR"));
 
@@ -1796,7 +1782,6 @@ namespace Colorimetry.Models.Conversion
         /// <exception cref="ColorException"></exception>
         public static RedGreenBlue ToRgb(Lms lms)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS -> "Can't convert a null LMS instance to RGB!"
             if (lms is null)
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS"));
 

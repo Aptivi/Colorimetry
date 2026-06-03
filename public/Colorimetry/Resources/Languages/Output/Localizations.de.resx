@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>Ungültiger Monochromasie-Typ</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>Konvertierung nach YPbPr nicht möglich.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>Konvertierung nach YDbDr nicht möglich.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>Konvertierung nach LMS nicht möglich.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>Eine leere RGB-Instanz kann nicht nach YPbPr konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>Eine leere RGB-Instanz kann nicht nach YDbDr konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>Eine leere RGB-Instanz kann nicht nach LMS konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>Eine leere YPbPr-Instanz kann nicht nach RGB konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>Eine leere YDbDr-Instanz kann nicht nach RGB konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>Eine leere LMS-Instanz kann nicht nach RGB konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>Ungültiger LMS-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>Der L-Wert liegt außerhalb des Bereichs (0,0 → 1,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>Der M-Wert liegt außerhalb des Bereichs (0,0 → 1,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>Der S-Wert liegt außerhalb des Bereichs (0,0 → 1,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>Ungültiger LMS-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass das Format korrekt ist.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>Ungültiger YDbDr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>Der Y-Wert liegt außerhalb des Bereichs (0,0 → 1,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>Der Db-Wert liegt außerhalb des Bereichs (−1,333 → 1,333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>Der Dr-Wert liegt außerhalb des Bereichs (−1,333 → 1,333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Ungültiger YDbDr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass das Format korrekt ist.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>Ungültiger YPbPr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass das Format korrekt ist.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>Der Y-Wert liegt außerhalb des Bereichs (0,0 → 750,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>Der Pb-Wert liegt außerhalb des Bereichs (0,0 → 750,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>Der Pr-Wert liegt außerhalb des Bereichs (0,0 → 750,0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Ungültiger YPbPr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format aufweist.</value>
+  </data>
 
 </root>

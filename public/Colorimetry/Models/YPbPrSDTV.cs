@@ -117,7 +117,6 @@ namespace Colorimetry.Models
         /// <exception cref="ColorException"></exception>
         public static YPbPrSDTV ParseSpecifier(string specifier)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER -> "Invalid YPbPr color specifier \"{0}\". Ensure that it's on the correct format"
             if (!IsSpecifierValid(specifier))
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER").FormatString(specifier) + ": ypbprsdtv:<y>;<pb>;<pr>");
 
@@ -127,15 +126,12 @@ namespace Colorimetry.Models
             {
                 // We got the YPbPr whole values! First, check to see if we need to filter the color for the color-blind
                 double y = Convert.ToDouble(specifierArray[0]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL -> "The Y value is out of range (0.0 -> 750.0)."
                 if (y < 0 || y > 700)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL") + $" {y}");
                 double pb = Convert.ToDouble(specifierArray[1]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL -> "The Pb value is out of range (0.0 -> 750.0)."
                 if (pb < 0 || pb > 700)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL") + $" {pb}");
                 double pr = Convert.ToDouble(specifierArray[2]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL -> "The Pr value is out of range (0.0 -> 750.0)."
                 if (pr < 0 || pr > 700)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL") + $" {pr}");
 
@@ -144,7 +140,6 @@ namespace Colorimetry.Models
                 return YPbPr;
             }
             else
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED -> "Invalid YPbPr color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED").FormatString(specifier) + ": ypbprsdtv:<y>;<pb>;<pr>");
         }
 

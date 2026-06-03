@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>잘못된 단색 유형</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>YPbPr로 변환할 수 없습니다.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>YDbDr로 변환할 수 없습니다.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>LMS로 변환할 수 없습니다.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>null RGB 인스턴스를 YPbPr로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>null RGB 인스턴스를 YDbDr로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>null RGB 인스턴스를 LMS로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>null YPbPr 인스턴스를 RGB로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>null YDbDr 인스턴스를 RGB로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>null LMS 인스턴스를 RGB로 변환할 수 없습니다!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>잘못된 LMS 색상 지정자 &quot;{0}&quot;입니다. 올바른 형식인지 확인하십시오.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>L 값이 범위를 벗어났습니다(0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>M 값이 범위를 벗어났습니다(0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>S 값이 범위를 벗어났습니다(0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>잘못된 LMS 색상 지정자 &quot;{0}&quot;입니다. 지정자는 세 개 이상의 요소를 가질 수 없습니다. 형식이 올바른지 확인하세요.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>YDbDr 색상 지정자 &quot;{0}&quot;이 잘못되었습니다. 형식이 올바른지 확인하세요.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>Y 값이 범위를 벗어났습니다(0.0~1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>Db 값이 범위를 벗어났습니다(-1.333~1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>Dr 값이 범위를 벗어났습니다(-1.333~1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>YDbDr 색상 지정자 &quot;{0}&quot;이 잘못되었습니다. 지정자는 세 개 이상의 요소를 가질 수 없습니다. 형식이 올바른지 확인하세요.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>YPbPr 색상 지정자 &quot;{0}&quot;이 잘못되었습니다. 형식이 올바른지 확인하세요.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>Y 값이 범위를 벗어났습니다(0.0~750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>Pb 값이 범위를 벗어났습니다(0.0~750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>Pr 값이 범위를 벗어났습니다(0.0~750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>잘못된 YPbPr 색상 지정자 \&quot;{0}\&quot;입니다. 지정자는 세 개 이상의 요소로 구성될 수 없습니다. 올바른 형식인지 확인하십시오.</value>
+  </data>
 
 </root>

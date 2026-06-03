@@ -528,5 +528,77 @@
   <data name="COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE" xml:space="preserve">
     <value>Loại đơn sắc không hợp lệ</value>
   </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
+    <value>Không thể chuyển đổi sang YPbPr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
+    <value>Không thể chuyển đổi sang YDbDr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
+    <value>Không thể chuyển đổi sang LMS.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện RGB rỗng sang YPbPr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện RGB rỗng sang YDbDr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện RGB rỗng sang LMS!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện YPbPr rỗng sang RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện YDbDr rỗng sang RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
+    <value>Không thể chuyển đổi một thể hiện LMS rỗng sang RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
+    <value>Bộ chỉ định màu LMS không hợp lệ &quot;{0}&quot;. Hãy đảm bảo rằng nó ở đúng định dạng.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
+    <value>Giá trị L nằm ngoài phạm vi (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL" xml:space="preserve">
+    <value>Giá trị M nằm ngoài phạm vi (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL" xml:space="preserve">
+    <value>Giá trị S nằm ngoài phạm vi (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
+    <value>Bộ chỉ định màu LMS không hợp lệ &quot;{0}&quot;. Bộ chỉ định không được có nhiều hơn ba phần tử. Hãy đảm bảo định dạng chính xác</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
+    <value>Chỉ định màu YDbDr không hợp lệ \&quot;{0}\&quot;. Hãy đảm bảo định dạng chính xác</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
+    <value>Giá trị Y nằm ngoài phạm vi (0.0 -&gt; 1.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL" xml:space="preserve">
+    <value>Giá trị Db nằm ngoài phạm vi (−1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL" xml:space="preserve">
+    <value>Giá trị Dr nằm ngoài phạm vi (−1.333 -&gt; 1.333).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Chỉ định màu YDbDr không hợp lệ \&quot;{0}\&quot;. Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
+    <value>Chỉ định màu YPbPr không hợp lệ \&quot;{0}\&quot;. Hãy đảm bảo định dạng chính xác</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
+    <value>Giá trị Y nằm ngoài phạm vi (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL" xml:space="preserve">
+    <value>Giá trị Pb nằm ngoài phạm vi (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL" xml:space="preserve">
+    <value>Giá trị Pr nằm ngoài phạm vi (0.0 -&gt; 750.0).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Mã màu YPbPr không hợp lệ \&quot;{0}\&quot;. Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng.</value>
+  </data>
 
 </root>

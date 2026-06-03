@@ -553,6 +553,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "Loại đơn sắc không hợp lệ"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "Không thể chuyển đổi sang YPbPr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "Không thể chuyển đổi sang YDbDr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "Không thể chuyển đổi sang LMS."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "Không thể chuyển đổi một thể hiện RGB rỗng sang YPbPr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "Không thể chuyển đổi một thể hiện RGB rỗng sang YDbDr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "Không thể chuyển đổi một thể hiện RGB rỗng sang LMS!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "Không thể chuyển đổi một thể hiện YPbPr rỗng sang RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "Không thể chuyển đổi một thể hiện YDbDr rỗng sang RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "Không thể chuyển đổi một thể hiện LMS rỗng sang RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "Bộ chỉ định màu LMS không hợp lệ \"{0}\". Hãy đảm bảo rằng nó ở đúng định dạng."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "Giá trị L nằm ngoài phạm vi (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "Giá trị M nằm ngoài phạm vi (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "Giá trị S nằm ngoài phạm vi (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "Bộ chỉ định màu LMS không hợp lệ \"{0}\". Bộ chỉ định không được có nhiều hơn ba phần tử. Hãy đảm bảo định dạng chính xác"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "Chỉ định màu YDbDr không hợp lệ \\\"{0}\\\". Hãy đảm bảo định dạng chính xác"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Giá trị Y nằm ngoài phạm vi (0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Giá trị Db nằm ngoài phạm vi (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Giá trị Dr nằm ngoài phạm vi (−1.333 -> 1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "Chỉ định màu YDbDr không hợp lệ \\\"{0}\\\". Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "Chỉ định màu YPbPr không hợp lệ \\\"{0}\\\". Hãy đảm bảo định dạng chính xác"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Giá trị Y nằm ngoài phạm vi (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Giá trị Pb nằm ngoài phạm vi (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Giá trị Pr nằm ngoài phạm vi (0.0 -> 750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "Mã màu YPbPr không hợp lệ \\\"{0}\\\". Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng."
     }
   ]
 }

@@ -554,6 +554,102 @@
     {
       "loc": "COLORIMETRY_FORMULAS_EXCEPTION_INVALIDMONOCHROMACYTYPE",
       "text": "잘못된 단색 유형"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED",
+      "text": "YPbPr로 변환할 수 없습니다."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED",
+      "text": "YDbDr로 변환할 수 없습니다."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED",
+      "text": "LMS로 변환할 수 없습니다."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB",
+      "text": "null RGB 인스턴스를 YPbPr로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB",
+      "text": "null RGB 인스턴스를 YDbDr로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB",
+      "text": "null RGB 인스턴스를 LMS로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR",
+      "text": "null YPbPr 인스턴스를 RGB로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR",
+      "text": "null YDbDr 인스턴스를 RGB로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS",
+      "text": "null LMS 인스턴스를 RGB로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
+      "text": "잘못된 LMS 색상 지정자 \"{0}\"입니다. 올바른 형식인지 확인하십시오."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
+      "text": "L 값이 범위를 벗어났습니다(0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL",
+      "text": "M 값이 범위를 벗어났습니다(0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL",
+      "text": "S 값이 범위를 벗어났습니다(0.0 -> 1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
+      "text": "잘못된 LMS 색상 지정자 \"{0}\"입니다. 지정자는 세 개 이상의 요소를 가질 수 없습니다. 형식이 올바른지 확인하세요."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
+      "text": "YDbDr 색상 지정자 \"{0}\"이 잘못되었습니다. 형식이 올바른지 확인하세요."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
+      "text": "Y 값이 범위를 벗어났습니다(0.0~1.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL",
+      "text": "Db 값이 범위를 벗어났습니다(-1.333~1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL",
+      "text": "Dr 값이 범위를 벗어났습니다(-1.333~1.333)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
+      "text": "YDbDr 색상 지정자 \"{0}\"이 잘못되었습니다. 지정자는 세 개 이상의 요소를 가질 수 없습니다. 형식이 올바른지 확인하세요."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
+      "text": "YPbPr 색상 지정자 \"{0}\"이 잘못되었습니다. 형식이 올바른지 확인하세요."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
+      "text": "Y 값이 범위를 벗어났습니다(0.0~750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPBLEVEL",
+      "text": "Pb 값이 범위를 벗어났습니다(0.0~750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRPRLEVEL",
+      "text": "Pr 값이 범위를 벗어났습니다(0.0~750.0)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
+      "text": "잘못된 YPbPr 색상 지정자 \\\"{0}\\\"입니다. 지정자는 세 개 이상의 요소로 구성될 수 없습니다. 올바른 형식인지 확인하십시오."
     }
   ]
 }

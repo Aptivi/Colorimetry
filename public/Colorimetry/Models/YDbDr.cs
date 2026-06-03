@@ -117,7 +117,6 @@ namespace Colorimetry.Models
         /// <exception cref="ColorException"></exception>
         public static YDbDr ParseSpecifier(string specifier)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER -> "Invalid YDbDr color specifier \"{0}\". Ensure that it's on the correct format"
             if (!IsSpecifierValid(specifier))
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER").FormatString(specifier) + ": ydbdr:<y>;<db>;<dr>");
 
@@ -127,15 +126,12 @@ namespace Colorimetry.Models
             {
                 // We got the YDbDr whole values! First, check to see if we need to filter the color for the color-blind
                 double y = Convert.ToDouble(specifierArray[0]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL -> "The Y value is out of range (0.0 -> 1.0)."
                 if (y < 0 || y > 1)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL") + $" {y}");
                 double db = Convert.ToDouble(specifierArray[1]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL -> "The Db value is out of range (−1.333 -> 1.333)."
                 if (db < -1.333 || db > 1.333)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDBLEVEL") + $" {db}");
                 double dr = Convert.ToDouble(specifierArray[2]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL -> "The Dr value is out of range (−1.333 -> 1.333)."
                 if (dr < -1.333 || dr > 1.333)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRDRLEVEL") + $" {dr}");
 
@@ -144,7 +140,6 @@ namespace Colorimetry.Models
                 return YDbDr;
             }
             else
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED -> "Invalid YDbDr color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED").FormatString(specifier) + ": ydbdr:<y>;<db>;<dr>");
         }
 

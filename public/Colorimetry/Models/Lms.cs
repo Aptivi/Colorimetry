@@ -117,7 +117,6 @@ namespace Colorimetry.Models
         /// <exception cref="ColorException"></exception>
         public static Lms ParseSpecifier(string specifier)
         {
-            // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER -> "Invalid LMS color specifier \"{0}\". Ensure that it's on the correct format"
             if (!IsSpecifierValid(specifier))
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER").FormatString(specifier) + ": lms:<l>;<m>;<s>");
 
@@ -127,15 +126,12 @@ namespace Colorimetry.Models
             {
                 // We got the LMS whole values! First, check to see if we need to filter the color for the color-blind
                 double l = Convert.ToDouble(specifierArray[0]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL -> "The L value is out of range (0.0 -> 1.0)."
                 if (l < 0 || l > 1)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL") + $" {l}");
                 double m = Convert.ToDouble(specifierArray[1]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL -> "The M value is out of range (0.0 -> 1.0)."
                 if (m < -1.333 || m > 1.333)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL") + $" {m}");
                 double s = Convert.ToDouble(specifierArray[2]);
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL -> "The S value is out of range (0.0 -> 1.0)."
                 if (s < -1.333 || s > 1.333)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL") + $" {s}");
 
@@ -144,7 +140,6 @@ namespace Colorimetry.Models
                 return LMS;
             }
             else
-                // TODO: COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED -> "Invalid LMS color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
                 throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED").FormatString(specifier) + ": lms:<l>;<m>;<s>");
         }
 
