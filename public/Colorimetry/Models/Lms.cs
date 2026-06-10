@@ -47,7 +47,7 @@ namespace Colorimetry.Models
         public double S { get; private set; }
 
         /// <summary>
-        /// lms:&lt;Y&gt;;&lt;Db&gt;;&lt;Dr&gt;
+        /// lms:&lt;L&gt;;&lt;M&gt;;&lt;S&gt;
         /// </summary>
         public override string ToString() =>
             $"lms:{L:0.##};{M:0.##};{S:0.##}";
@@ -129,10 +129,10 @@ namespace Colorimetry.Models
                 if (l < 0 || l > 1)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL") + $" {l}");
                 double m = Convert.ToDouble(specifierArray[1]);
-                if (m < -1.333 || m > 1.333)
+                if (m < 0 || m > 1)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSMLEVEL") + $" {m}");
                 double s = Convert.ToDouble(specifierArray[2]);
-                if (s < -1.333 || s > 1.333)
+                if (s < 0 || s > 1)
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_PARSELMSSLEVEL") + $" {s}");
 
                 // First, we need to convert from LMS to RGB
