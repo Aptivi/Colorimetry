@@ -259,6 +259,12 @@ namespace Colorimetry.Models.Conversion
                     rgb = ToRgb(ydbdr);
                 else if (source is Lms lms)
                     rgb = ToRgb(lms);
+                else if (source is YCbCrSDTV ycbcrSDTV)
+                    rgb = ToRgb(ycbcrSDTV);
+                else if (source is YCbCrHDTV ycbcrHDTV)
+                    rgb = ToRgb(ycbcrHDTV);
+                else if (source is YCbCrHiVi ycbcrHiVi)
+                    rgb = ToRgb(ycbcrHiVi);
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED"));
                 return rgb;
@@ -349,6 +355,15 @@ namespace Colorimetry.Models.Conversion
                 else if (targetType == typeof(Lms))
                     return ToLms(source) ??
                         throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED"));
+                else if (targetType == typeof(YCbCrSDTV))
+                    return ToYCbCrSDTV(source) ??
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED"));
+                else if (targetType == typeof(YCbCrHDTV))
+                    return ToYCbCrHDTV(source) ??
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED"));
+                else if (targetType == typeof(YCbCrHiVi))
+                    return ToYCbCrHiVi(source) ??
+                        throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED"));
                 else
                     throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED"));
             }
@@ -1077,6 +1092,90 @@ namespace Colorimetry.Models.Conversion
             // Return the resulting values
             return new(l, m, s);
         }
+
+        /// <summary>
+        /// Converts the RGB color model to YCbCrSDTV
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YCbCrSDTV ToYCbCrSDTV(RedGreenBlue rgb)
+        {
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB"));
+
+            // Get YPbPr
+            var ypbpr = ToYPbPrSDTV(rgb);
+
+            // Return the resulting values
+            var (y, cb, cr) = ProcessYCbCr(ypbpr.Y, ypbpr.Pb, ypbpr.Pr);
+            return new(y, cb, cr);
+        }
+
+        /// <summary>
+        /// Converts the RGB color model to YCbCrHDTV
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YCbCrHDTV ToYCbCrHDTV(RedGreenBlue rgb)
+        {
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB"));
+
+            // Get YPbPr
+            var ypbpr = ToYPbPrHDTV(rgb);
+
+            // Return the resulting values
+            var (y, cb, cr) = ProcessYCbCr(ypbpr.Y, ypbpr.Pb, ypbpr.Pr);
+            return new(y, cb, cr);
+        }
+
+        /// <summary>
+        /// Converts the RGB color model to YCbCrHiVi
+        /// </summary>
+        /// <param name="rgb">Instance of RGB</param>
+        /// <exception cref="ColorException"></exception>
+        public static YCbCrHiVi ToYCbCrHiVi(RedGreenBlue rgb)
+        {
+            if (rgb is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB"));
+
+            // Get YPbPr
+            var ypbpr = ToYPbPrHiVi(rgb);
+
+            // Return the resulting values
+            var (y, cb, cr) = ProcessYCbCr(ypbpr.Y, ypbpr.Pb, ypbpr.Pr);
+            return new(y, cb, cr);
+        }
+
+        private static (int y, int cb, int cr) ProcessYCbCr(double aY, double aPb, double aPr)
+        {
+            // Normalize the YPbPr values from 700 mV
+            double normalizedY = aY / 700d;
+            double normalizedPb = (aPb - 350) / 700d;
+            double normalizedPr = (aPr - 350) / 700d;
+
+            // Get the Cb and Cr values
+            int y = (int)Math.Round(16d + 219d * normalizedY);
+            int cb = (int)Math.Round(128d + 224d * normalizedPb);
+            int cr = (int)Math.Round(128d + 224d * normalizedPr);
+
+            // Clamp the values in case of overflow
+            if (y < 16)
+                y = 16;
+            if (y > 235)
+                y = 235;
+            if (cb < 16)
+                cb = 16;
+            if (cb > 240)
+                cb = 240;
+            if (cr < 16)
+                cr = 16;
+            if (cr > 240)
+                cr = 240;
+
+            // Return the resulting values
+            return new(y, cb, cr);
+        }
         #endregion
         #region Translate to RGB from...
         /// <summary>
@@ -1797,6 +1896,75 @@ namespace Colorimetry.Models.Conversion
 
             // Install the values
             return new(r, g, b);
+        }
+
+        /// <summary>
+        /// Converts the YCbCrSDTV color model to RGB
+        /// </summary>
+        /// <param name="ycbcr">Instance of YCbCr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YCbCrSDTV ycbcr)
+        {
+            if (ycbcr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR"));
+
+            // Recover YPbPr
+            double y = (ycbcr.Y - 16) / 219.0 * 700d;
+            double pb = (ycbcr.Cb - 128) / 224.0 * 700d + 350;
+            double pr = (ycbcr.Cr - 128) / 224.0 * 700d + 350;
+
+            // Convert from YPbPr
+            var ypbpr = new YPbPrSDTV(y, pb, pr);
+            var result = ToRgb(ypbpr);
+
+            // Install the values
+            return result;
+        }
+
+        /// <summary>
+        /// Converts the YCbCrHDTV color model to RGB
+        /// </summary>
+        /// <param name="ycbcr">Instance of YCbCr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YCbCrHDTV ycbcr)
+        {
+            if (ycbcr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR"));
+
+            // Recover YPbPr
+            double y = (ycbcr.Y - 16) / 219.0 * 700d;
+            double pb = (ycbcr.Cb - 128) / 224.0 * 700d + 350;
+            double pr = (ycbcr.Cr - 128) / 224.0 * 700d + 350;
+
+            // Convert from YPbPr
+            var ypbpr = new YPbPrHDTV(y, pb, pr);
+            var result = ToRgb(ypbpr);
+
+            // Install the values
+            return result;
+        }
+
+        /// <summary>
+        /// Converts the YCbCrHiVi color model to RGB
+        /// </summary>
+        /// <param name="ycbcr">Instance of YCbCr</param>
+        /// <exception cref="ColorException"></exception>
+        public static RedGreenBlue ToRgb(YCbCrHiVi ycbcr)
+        {
+            if (ycbcr is null)
+                throw new ColorException(LanguageTools.GetLocalized("COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR"));
+
+            // Recover YPbPr
+            double y = (ycbcr.Y - 16) / 219.0 * 700d;
+            double pb = (ycbcr.Cb - 128) / 224.0 * 700d + 350;
+            double pr = (ycbcr.Cr - 128) / 224.0 * 700d + 350;
+
+            // Convert from YPbPr
+            var ypbpr = new YPbPrHiVi(y, pb, pr);
+            var result = ToRgb(ypbpr);
+
+            // Install the values
+            return result;
         }
 
         private static double GetRgbValueFromHue(double variable1, double variable2, double variableHue)

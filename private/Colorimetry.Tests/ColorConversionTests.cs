@@ -996,6 +996,120 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to YCbCrSDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestConvertRgbToYCbCrSDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrSDTV
+            var ycbcrsdtv = ConversionTools.ToYCbCrSDTV(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrsdtv.Y.ShouldBe(81);
+            ycbcrsdtv.Cb.ShouldBe(90);
+            ycbcrsdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ToRgb(ycbcrsdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestConvertRgbToYCbCrHDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHDTV
+            var ycbcrhdtv = ConversionTools.ToYCbCrHDTV(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhdtv.Y.ShouldBe(63);
+            ycbcrhdtv.Cb.ShouldBe(102);
+            ycbcrhdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ToRgb(ycbcrhdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHiVi
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestConvertRgbToYCbCrHiVi()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHiVi
+            var ycbcrhivi = ConversionTools.ToYCbCrHiVi(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhivi.Y.ShouldBe(74);
+            ycbcrhivi.Cb.ShouldBe(97);
+            ycbcrhivi.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ToRgb(ycbcrhivi);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(1);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -1684,6 +1798,120 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests converting an RGB color to YCbCrSDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericConvertRgbToYCbCrSDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrSDTV
+            var ycbcrsdtv = ConversionTools.ConvertFromRgb<YCbCrSDTV>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrsdtv.Y.ShouldBe(81);
+            ycbcrsdtv.Cb.ShouldBe(90);
+            ycbcrsdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ConvertToRgb(ycbcrsdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericConvertRgbToYCbCrHDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHDTV
+            var ycbcrhdtv = ConversionTools.ConvertFromRgb<YCbCrHDTV>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhdtv.Y.ShouldBe(63);
+            ycbcrhdtv.Cb.ShouldBe(102);
+            ycbcrhdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ConvertToRgb(ycbcrhdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHiVi
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericConvertRgbToYCbCrHiVi()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHiVi
+            var ycbcrhivi = ConversionTools.ConvertFromRgb<YCbCrHiVi>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhivi.Y.ShouldBe(74);
+            ycbcrhivi.Cb.ShouldBe(97);
+            ycbcrhivi.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.ConvertToRgb(ycbcrhivi);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(1);
+        }
+
+        /// <summary>
         /// Tests converting an RGB color to CMYK
         /// </summary>
         [TestMethod]
@@ -2369,6 +2597,120 @@ namespace Colorimetry.Tests
             rgb.R.ShouldBe(255);
             rgb.G.ShouldBe(0);
             rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrSDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericBidirectionalConvertRgbToYCbCrSDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrSDTV
+            var ycbcrsdtv = ConversionTools.GetConvertedColorModel<RedGreenBlue, YCbCrSDTV>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrsdtv.Y.ShouldBe(81);
+            ycbcrsdtv.Cb.ShouldBe(90);
+            ycbcrsdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.GetConvertedColorModel<YCbCrSDTV, RedGreenBlue>(ycbcrsdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(254);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHDTV
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericBidirectionalConvertRgbToYCbCrHDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHDTV
+            var ycbcrhdtv = ConversionTools.GetConvertedColorModel<RedGreenBlue, YCbCrHDTV>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhdtv.Y.ShouldBe(63);
+            ycbcrhdtv.Cb.ShouldBe(102);
+            ycbcrhdtv.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.GetConvertedColorModel<YCbCrHDTV, RedGreenBlue>(ycbcrhdtv);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(0);
+        }
+
+        /// <summary>
+        /// Tests converting an RGB color to YCbCrHiVi
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestGenericBidirectionalConvertRgbToYCbCrHiVi()
+        {
+            // Create instance
+            var ColorInstance = new Color(255, 0, 0);
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+
+            // Now, convert to YCbCrHiVi
+            var ycbcrhivi = ConversionTools.GetConvertedColorModel<RedGreenBlue, YCbCrHiVi>(ColorInstance.RGB);
+
+            // Check for property correctness
+            ycbcrhivi.Y.ShouldBe(74);
+            ycbcrhivi.Cb.ShouldBe(97);
+            ycbcrhivi.Cr.ShouldBe(240);
+
+            // Now, convert back to RGB
+            var rgb = ConversionTools.GetConvertedColorModel<YCbCrHiVi, RedGreenBlue>(ycbcrhivi);
+
+            // Check for property correctness
+            rgb.R.ShouldBe(255);
+            rgb.G.ShouldBe(0);
+            rgb.B.ShouldBe(1);
         }
     }
 }

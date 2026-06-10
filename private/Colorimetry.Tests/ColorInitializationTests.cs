@@ -2171,6 +2171,168 @@ namespace Colorimetry.Tests
         }
 
         /// <summary>
+        /// Tests initializing color instance from true color (YCbCrSDTV)
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrSDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color("ycbcrsdtv:81;90;240");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("254;0;0");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(254);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FE0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YCbCrSDTV) using the implicit operator
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrSDTVImplicit()
+        {
+            // Create instance
+            Color ColorInstance = "ycbcrsdtv:81;90;240";
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("254;0;0");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(254);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FE0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YCbCrHDTV)
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrHDTV()
+        {
+            // Create instance
+            var ColorInstance = new Color("ycbcrhdtv:63;102;240");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FF0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YCbCrHDTV) using the implicit operator
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrHDTVImplicit()
+        {
+            // Create instance
+            Color ColorInstance = "ycbcrhdtv:63;102;240";
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("9");
+            ColorInstance.Type.ShouldBe(ColorType.FourBitColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(0);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FF0000");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YCbCrHiVi)
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrHiVi()
+        {
+            // Create instance
+            var ColorInstance = new Color("ycbcrhivi:74;97;240");
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("255;0;1");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(1);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FF0001");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
+        /// Tests initializing color instance from true color (YCbCrHiVi) using the implicit operator
+        /// </summary>
+        [TestMethod]
+        [Description("Initialization")]
+        public void TestInitializeColorInstanceFromTrueColorYCbCrHiViImplicit()
+        {
+            // Create instance
+            Color ColorInstance = "ycbcrhivi:74;97;240";
+
+            // Check for null
+            ColorInstance.ShouldNotBeNull();
+            ColorInstance.PlainSequence.ShouldNotBeNullOrEmpty();
+
+            // Check for property correctness
+            ColorInstance.PlainSequence.ShouldBe("255;0;1");
+            ColorInstance.Type.ShouldBe(ColorType.TrueColor);
+            ColorInstance.RGB.R.ShouldBe(255);
+            ColorInstance.RGB.G.ShouldBe(0);
+            ColorInstance.RGB.B.ShouldBe(1);
+            ColorInstance.Brightness.ShouldBe(ColorBrightness.Dark);
+            ColorInstance.Brightness.ShouldNotBe(ColorBrightness.Light);
+            ColorInstance.Hex.ShouldBe("#FF0001");
+            ColorInstance.ColorEnum255.ShouldBe(ConsoleColors.Red);
+            ColorInstance.ColorEnum16.ShouldBe(ConsoleColor.Red);
+        }
+
+        /// <summary>
         /// Tests initializing color instance from Drawing's color
         /// </summary>
         [TestMethod]
