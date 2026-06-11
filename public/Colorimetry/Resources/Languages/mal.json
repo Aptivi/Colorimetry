@@ -595,7 +595,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "Penentu warna LMS tidak sah \\\"{0}\\\". Pastikan ia berada pada format yang betul"
+      "text": "Penentu warna LMS tidak sah \"{0}\". Pastikan ia berada pada format yang betul"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -611,11 +611,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "Penentu warna LMS tidak sah \\\"{0}\\\". Penentu tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
+      "text": "Penentu warna LMS tidak sah \"{0}\". Penentu tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "Penentukan warna YDbDr tidak sah \\\"{0}\\\". Pastikan ia berada pada format yang betul"
+      "text": "Penentukan warna YDbDr tidak sah \"{0}\". Pastikan ia berada pada format yang betul"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -631,11 +631,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "Penentuan warna YDbDr tidak sah \\\"{0}\\\". Penentuan tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
+      "text": "Penentuan warna YDbDr tidak sah \"{0}\". Penentuan tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "Penentuan warna YPbPr tidak sah \\\"{0}\\\". Pastikan ia berada pada format yang betul"
+      "text": "Penentuan warna YPbPr tidak sah \"{0}\". Pastikan ia berada pada format yang betul"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -651,7 +651,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "Penentu warna YPbPr tidak sah \\\"{0}\\\". Penentu tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
+      "text": "Penentu warna YPbPr tidak sah \"{0}\". Penentu tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
     }
   ]
 }

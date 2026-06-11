@@ -698,7 +698,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "Invalid LMS color specifier \\\"{0}\\\". Ensure that it's on the correct format"
+      "text": "Invalid LMS color specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -714,11 +714,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "Invalid LMS color specifier \\\"{0}\\\". The specifier may not be more than three elements. Ensure that it's on the correct format"
+      "text": "Invalid LMS color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "Invalid YDbDr color specifier \\\"{0}\\\". Ensure that it's on the correct format"
+      "text": "Invalid YDbDr color specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -734,11 +734,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "Invalid YDbDr color specifier \\\"{0}\\\". The specifier may not be more than three elements. Ensure that it's on the correct format"
+      "text": "Invalid YDbDr color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "Invalid YPbPr color specifier \\\"{0}\\\". Ensure that it's on the correct format"
+      "text": "Invalid YPbPr color specifier \"{0}\". Ensure that it's on the correct format"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -754,7 +754,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "Invalid YPbPr color specifier \\\"{0}\\\". The specifier may not be more than three elements. Ensure that it's on the correct format"
+      "text": "Invalid YPbPr color specifier \"{0}\". The specifier may not be more than three elements. Ensure that it's on the correct format"
     }
   ]
 }

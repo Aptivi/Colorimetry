@@ -593,7 +593,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "Geçersiz LMS renk belirleyicisi \\\"{0}\\\". Doğru biçimde olduğundan emin olun."
+      "text": "Geçersiz LMS renk belirleyicisi \"{0}\". Doğru biçimde olduğundan emin olun."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -609,11 +609,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "Geçersiz LMS renk belirleyicisi \\\"{0}\\\". Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun"
+      "text": "Geçersiz LMS renk belirleyicisi \"{0}\". Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "Geçersiz YDbDr renk belirleyicisi \\\"{0}\\\". Doğru formatta olduğundan emin olun"
+      "text": "Geçersiz YDbDr renk belirleyicisi \"{0}\". Doğru formatta olduğundan emin olun"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -629,11 +629,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "Geçersiz YDbDr renk belirleyicisi \\\"{0}\\\". Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun"
+      "text": "Geçersiz YDbDr renk belirleyicisi \"{0}\". Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "Geçersiz YPbPr renk belirleyicisi \\\"{0}\\\". Doğru formatta olduğundan emin olun"
+      "text": "Geçersiz YPbPr renk belirleyicisi \"{0}\". Doğru formatta olduğundan emin olun"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -649,7 +649,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "Geçersiz YPbPr renk belirleyicisi \\\"{0}\\\". Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun."
+      "text": "Geçersiz YPbPr renk belirleyicisi \"{0}\". Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun."
     }
   ]
 }

@@ -556,7 +556,7 @@
     <value>एक null LMS इंस्टेंस को RGB में कन्वर्ट नहीं कर सकता!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>गलत LMS कलर स्पेसिफायर \&quot;{0}\&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
+    <value>गलत LMS कलर स्पेसिफायर &quot;{0}&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>L वैल्यू रेंज से बाहर है (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>S वैल्यू रेंज से बाहर है (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>गलत LMS कलर स्पेसिफायर \&quot;{0}\&quot;. स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है</value>
+    <value>गलत LMS कलर स्पेसिफायर &quot;{0}&quot;. स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>अमान्य YDbDr कलर स्पेसिफायर \&quot;{0}\&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
+    <value>अमान्य YDbDr कलर स्पेसिफायर &quot;{0}&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Y वैल्यू रेंज से बाहर है (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Dr वैल्यू रेंज से बाहर है (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>अमान्य YDbDr कलर स्पेसिफायर \&quot;{0}\&quot;. स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है</value>
+    <value>अमान्य YDbDr कलर स्पेसिफायर &quot;{0}&quot;. स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>अमान्य YPbPr कलर स्पेसिफायर \&quot;{0}\&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
+    <value>अमान्य YPbPr कलर स्पेसिफायर &quot;{0}&quot;. पक्का करें कि यह सही फ़ॉर्मेट में है</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Y वैल्यू रेंज से बाहर है (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Pr वैल्यू रेंज (0.0 -&gt; 750.0) से बाहर है।</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>YPbPr कलर स्पेसिफायर \&quot;{0}\&quot; गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।</value>
+    <value>YPbPr कलर स्पेसिफायर &quot;{0}&quot; गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।</value>
   </data>
 
 </root>

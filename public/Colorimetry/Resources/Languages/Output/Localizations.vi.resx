@@ -571,7 +571,7 @@
     <value>Bộ chỉ định màu LMS không hợp lệ &quot;{0}&quot;. Bộ chỉ định không được có nhiều hơn ba phần tử. Hãy đảm bảo định dạng chính xác</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Chỉ định màu YDbDr không hợp lệ \&quot;{0}\&quot;. Hãy đảm bảo định dạng chính xác</value>
+    <value>Chỉ định màu YDbDr không hợp lệ &quot;{0}&quot;. Hãy đảm bảo định dạng chính xác</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Giá trị Y nằm ngoài phạm vi (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Giá trị Dr nằm ngoài phạm vi (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Chỉ định màu YDbDr không hợp lệ \&quot;{0}\&quot;. Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác</value>
+    <value>Chỉ định màu YDbDr không hợp lệ &quot;{0}&quot;. Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Chỉ định màu YPbPr không hợp lệ \&quot;{0}\&quot;. Hãy đảm bảo định dạng chính xác</value>
+    <value>Chỉ định màu YPbPr không hợp lệ &quot;{0}&quot;. Hãy đảm bảo định dạng chính xác</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Giá trị Y nằm ngoài phạm vi (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Giá trị Pr nằm ngoài phạm vi (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Mã màu YPbPr không hợp lệ \&quot;{0}\&quot;. Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng.</value>
+    <value>Mã màu YPbPr không hợp lệ &quot;{0}&quot;. Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng.</value>
   </data>
 
 </root>

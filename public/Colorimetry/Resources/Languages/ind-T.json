@@ -592,7 +592,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "गलत LMS कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+      "text": "गलत LMS कलर स्पेसिफायर \"{0}\". पक्का करें कि यह सही फ़ॉर्मेट में है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -608,11 +608,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "गलत LMS कलर स्पेसिफायर \\\"{0}\\\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
+      "text": "गलत LMS कलर स्पेसिफायर \"{0}\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "अमान्य YDbDr कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+      "text": "अमान्य YDbDr कलर स्पेसिफायर \"{0}\". पक्का करें कि यह सही फ़ॉर्मेट में है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -628,11 +628,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "अमान्य YDbDr कलर स्पेसिफायर \\\"{0}\\\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
+      "text": "अमान्य YDbDr कलर स्पेसिफायर \"{0}\". स्पेसिफायर में तीन एलिमेंट से ज़्यादा नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "अमान्य YPbPr कलर स्पेसिफायर \\\"{0}\\\". पक्का करें कि यह सही फ़ॉर्मेट में है"
+      "text": "अमान्य YPbPr कलर स्पेसिफायर \"{0}\". पक्का करें कि यह सही फ़ॉर्मेट में है"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -648,7 +648,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "YPbPr कलर स्पेसिफायर \\\"{0}\\\" गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।"
+      "text": "YPbPr कलर स्पेसिफायर \"{0}\" गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।"
     }
   ]
 }

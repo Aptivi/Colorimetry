@@ -556,7 +556,7 @@
     <value>Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας LMS σε RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος LMS \&quot;{0}\&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος LMS &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>Η τιμή L είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>Η τιμή S είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος LMS \&quot;{0}\&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος LMS &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr \&quot;{0}\&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Η τιμή Y είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Η τιμή Dr είναι εκτός εύρους (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr \&quot;{0}\&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr \&quot;{0}\&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Η τιμή Y είναι εκτός εύρους (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Η τιμή Pr είναι εκτός εύρους (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr \&quot;{0}\&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
 
 </root>

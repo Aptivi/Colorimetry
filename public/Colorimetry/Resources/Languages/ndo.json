@@ -592,7 +592,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "Penentu warna LMS tidak valid \\\"{0}\\\". Pastikan formatnya benar."
+      "text": "Penentu warna LMS tidak valid \"{0}\". Pastikan formatnya benar."
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -608,11 +608,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "Penentu warna LMS tidak valid \\\"{0}\\\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
+      "text": "Penentu warna LMS tidak valid \"{0}\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "Penentu warna YDbDr tidak valid \\\"{0}\\\". Pastikan formatnya sudah benar"
+      "text": "Penentu warna YDbDr tidak valid \"{0}\". Pastikan formatnya sudah benar"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -628,11 +628,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "Penentu warna YDbDr tidak valid \\\"{0}\\\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
+      "text": "Penentu warna YDbDr tidak valid \"{0}\". Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "Penentu warna YPbPr tidak valid \\\"{0}\\\". Pastikan formatnya sudah benar"
+      "text": "Penentu warna YPbPr tidak valid \"{0}\". Pastikan formatnya sudah benar"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -648,7 +648,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "Penentu warna YPbPr tidak valid \\\"{0}\\\". Penentu warna tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar."
+      "text": "Penentu warna YPbPr tidak valid \"{0}\". Penentu warna tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar."
     }
   ]
 }

@@ -556,7 +556,7 @@
     <value>Boş bir LMS örneği RGB&apos;ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Geçersiz LMS renk belirleyicisi \&quot;{0}\&quot;. Doğru biçimde olduğundan emin olun.</value>
+    <value>Geçersiz LMS renk belirleyicisi &quot;{0}&quot;. Doğru biçimde olduğundan emin olun.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>L değeri aralık dışında (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>S değeri aralık dışında (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz LMS renk belirleyicisi \&quot;{0}\&quot;. Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz LMS renk belirleyicisi &quot;{0}&quot;. Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YDbDr renk belirleyicisi \&quot;{0}\&quot;. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YDbDr renk belirleyicisi &quot;{0}&quot;. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Y değeri aralık dışında (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Dr değeri aralık dışında (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YDbDr renk belirleyicisi \&quot;{0}\&quot;. Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YDbDr renk belirleyicisi &quot;{0}&quot;. Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YPbPr renk belirleyicisi \&quot;{0}\&quot;. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YPbPr renk belirleyicisi &quot;{0}&quot;. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Y değeri aralık dışında (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Pr değeri aralık dışında (0,0 -&gt; 750,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YPbPr renk belirleyicisi \&quot;{0}\&quot;. Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun.</value>
+    <value>Geçersiz YPbPr renk belirleyicisi &quot;{0}&quot;. Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun.</value>
   </data>
 
 </root>

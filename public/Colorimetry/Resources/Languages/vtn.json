@@ -612,7 +612,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "Chỉ định màu YDbDr không hợp lệ \\\"{0}\\\". Hãy đảm bảo định dạng chính xác"
+      "text": "Chỉ định màu YDbDr không hợp lệ \"{0}\". Hãy đảm bảo định dạng chính xác"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -628,11 +628,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "Chỉ định màu YDbDr không hợp lệ \\\"{0}\\\". Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác"
+      "text": "Chỉ định màu YDbDr không hợp lệ \"{0}\". Chỉ định không được có quá ba phần tử. Hãy đảm bảo định dạng chính xác"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "Chỉ định màu YPbPr không hợp lệ \\\"{0}\\\". Hãy đảm bảo định dạng chính xác"
+      "text": "Chỉ định màu YPbPr không hợp lệ \"{0}\". Hãy đảm bảo định dạng chính xác"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -648,7 +648,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "Mã màu YPbPr không hợp lệ \\\"{0}\\\". Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng."
+      "text": "Mã màu YPbPr không hợp lệ \"{0}\". Mã màu không được có quá ba phần tử. Hãy đảm bảo rằng nó đúng định dạng."
     }
   ]
 }

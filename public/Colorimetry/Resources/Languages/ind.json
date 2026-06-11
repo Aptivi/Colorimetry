@@ -592,7 +592,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER",
-      "text": "galat LMS colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+      "text": "galat LMS colour specifier \"{0}\". pakka karen ki yah sahi formate mein hai"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL",
@@ -608,11 +608,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED",
-      "text": "galat LMS colour specifier \\\"{0}\\\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
+      "text": "galat LMS colour specifier \"{0}\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER",
-      "text": "amanya YDbDr colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+      "text": "amanya YDbDr colour specifier \"{0}\". pakka karen ki yah sahi formate mein hai"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL",
@@ -628,11 +628,11 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED",
-      "text": "amanya YDbDr colour specifier \\\"{0}\\\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
+      "text": "amanya YDbDr colour specifier \"{0}\". specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER",
-      "text": "amanya YPbPr colour specifier \\\"{0}\\\". pakka karen ki yah sahi formate mein hai"
+      "text": "amanya YPbPr colour specifier \"{0}\". pakka karen ki yah sahi formate mein hai"
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL",
@@ -648,7 +648,7 @@
     },
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
-      "text": "YPbPr colour specifier \\\"{0}\\\" galat hai। specifier mein teen se zyada element nahin ho sakte। pakka karen ki yah sahi formate mein ho।"
+      "text": "YPbPr colour specifier \"{0}\" galat hai। specifier mein teen se zyada element nahin ho sakte। pakka karen ki yah sahi formate mein ho।"
     }
   ]
 }

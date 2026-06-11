@@ -556,7 +556,7 @@
     <value>Неможливо конвертувати нульовий екземпляр LMS в RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Недійсний специфікатор кольору LMS \&quot;{0}\&quot;. Переконайтеся, що він у правильному форматі.</value>
+    <value>Недійсний специфікатор кольору LMS &quot;{0}&quot;. Переконайтеся, що він у правильному форматі.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>Значення L поза діапазоном (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>Значення S поза діапазоном (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Недійсний специфікатор кольору LMS \&quot;{0}\&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він у правильному форматі</value>
+    <value>Недійсний специфікатор кольору LMS &quot;{0}&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він у правильному форматі</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Недійсний специфікатор кольору YDbDr \&quot;{0}\&quot;. Переконайтеся, що він у правильному форматі</value>
+    <value>Недійсний специфікатор кольору YDbDr &quot;{0}&quot;. Переконайтеся, що він у правильному форматі</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Значення Y поза діапазоном (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Значення Dr поза діапазоном (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Недійсний специфікатор кольору YDbDr \&quot;{0}\&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він у правильному форматі</value>
+    <value>Недійсний специфікатор кольору YDbDr &quot;{0}&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він у правильному форматі</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Недійсний специфікатор кольору YPbPr \&quot;{0}\&quot;. Переконайтеся, що він у правильному форматі</value>
+    <value>Недійсний специфікатор кольору YPbPr &quot;{0}&quot;. Переконайтеся, що він у правильному форматі</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Значення Y поза діапазоном (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Значення Pr поза діапазоном (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Недійсний специфікатор кольору YPbPr \&quot;{0}\&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він має правильний формат.</value>
+    <value>Недійсний специфікатор кольору YPbPr &quot;{0}&quot;. Специфікатор не може містити більше трьох елементів. Переконайтеся, що він має правильний формат.</value>
   </data>
 
 </root>

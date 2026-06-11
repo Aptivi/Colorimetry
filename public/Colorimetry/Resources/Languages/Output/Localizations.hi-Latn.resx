@@ -556,7 +556,7 @@
     <value>ek null LMS instance ko RGB mein convert nahin kar sakta!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>galat LMS colour specifier \&quot;{0}\&quot;. pakka karen ki yah sahi formate mein hai</value>
+    <value>galat LMS colour specifier &quot;{0}&quot;. pakka karen ki yah sahi formate mein hai</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>L value range se bahar hai (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>S value range se bahar hai (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>galat LMS colour specifier \&quot;{0}\&quot;. specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai</value>
+    <value>galat LMS colour specifier &quot;{0}&quot;. specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>amanya YDbDr colour specifier \&quot;{0}\&quot;. pakka karen ki yah sahi formate mein hai</value>
+    <value>amanya YDbDr colour specifier &quot;{0}&quot;. pakka karen ki yah sahi formate mein hai</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Y value range se bahar hai (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Dr value range se bahar hai (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>amanya YDbDr colour specifier \&quot;{0}\&quot;. specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai</value>
+    <value>amanya YDbDr colour specifier &quot;{0}&quot;. specifier mein teen element se zyada nahin ho sakte। pakka karen ki yah sahi formate mein hai</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>amanya YPbPr colour specifier \&quot;{0}\&quot;. pakka karen ki yah sahi formate mein hai</value>
+    <value>amanya YPbPr colour specifier &quot;{0}&quot;. pakka karen ki yah sahi formate mein hai</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Y value range se bahar hai (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Pr value range (0.0 -&gt; 750.0) se bahar hai।</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>YPbPr colour specifier \&quot;{0}\&quot; galat hai। specifier mein teen se zyada element nahin ho sakte। pakka karen ki yah sahi formate mein ho।</value>
+    <value>YPbPr colour specifier &quot;{0}&quot; galat hai। specifier mein teen se zyada element nahin ho sakte। pakka karen ki yah sahi formate mein ho।</value>
   </data>
 
 </root>

@@ -556,7 +556,7 @@
     <value>Tidak dapat mengkonversi instance LMS null ke RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Penentu warna LMS tidak valid \&quot;{0}\&quot;. Pastikan formatnya benar.</value>
+    <value>Penentu warna LMS tidak valid &quot;{0}&quot;. Pastikan formatnya benar.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>Nilai L berada di luar rentang (0.0 -&gt; 1.0).</value>
@@ -568,10 +568,10 @@
     <value>Nilai S berada di luar rentang (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Penentu warna LMS tidak valid \&quot;{0}\&quot;. Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar</value>
+    <value>Penentu warna LMS tidak valid &quot;{0}&quot;. Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Penentu warna YDbDr tidak valid \&quot;{0}\&quot;. Pastikan formatnya sudah benar</value>
+    <value>Penentu warna YDbDr tidak valid &quot;{0}&quot;. Pastikan formatnya sudah benar</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Nilai Y berada di luar rentang (0.0 -&gt; 1.0).</value>
@@ -583,10 +583,10 @@
     <value>Nilai Dr berada di luar rentang (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Penentu warna YDbDr tidak valid \&quot;{0}\&quot;. Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar</value>
+    <value>Penentu warna YDbDr tidak valid &quot;{0}&quot;. Penentu tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Penentu warna YPbPr tidak valid \&quot;{0}\&quot;. Pastikan formatnya sudah benar</value>
+    <value>Penentu warna YPbPr tidak valid &quot;{0}&quot;. Pastikan formatnya sudah benar</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Nilai Y berada di luar rentang (0.0 -&gt; 750.0).</value>
@@ -598,7 +598,7 @@
     <value>Nilai Pr berada di luar rentang (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Penentu warna YPbPr tidak valid \&quot;{0}\&quot;. Penentu warna tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar.</value>
+    <value>Penentu warna YPbPr tidak valid &quot;{0}&quot;. Penentu warna tidak boleh lebih dari tiga elemen. Pastikan formatnya sudah benar.</value>
   </data>
 
 </root>

@@ -598,7 +598,7 @@
     <value>Pr 값이 범위를 벗어났습니다(0.0~750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>잘못된 YPbPr 색상 지정자 \&quot;{0}\&quot;입니다. 지정자는 세 개 이상의 요소로 구성될 수 없습니다. 올바른 형식인지 확인하십시오.</value>
+    <value>잘못된 YPbPr 색상 지정자 &quot;{0}&quot;입니다. 지정자는 세 개 이상의 요소로 구성될 수 없습니다. 올바른 형식인지 확인하십시오.</value>
   </data>
 
 </root>
