@@ -650,6 +650,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Μη έγκυρος προσδιοριστής χρώματος YPbPr \"{0}\". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Δεν είναι δυνατή η μετατροπή σε YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας RGB σε YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας YCbCr σε RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Μη έγκυρος προσδιοριστής χρώματος YCbCr \"{0}\". Βεβαιωθείτε ότι έχει τη σωστή μορφή."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Η τιμή Y είναι εκτός εύρους (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Η τιμή Cb είναι εκτός εύρους (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Η τιμή Cr είναι εκτός εύρους (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Μη έγκυρος προσδιοριστής χρώματος YCbCr \"{0}\". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή."
     }
   ]
 }

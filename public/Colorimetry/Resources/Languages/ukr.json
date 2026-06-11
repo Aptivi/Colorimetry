@@ -649,6 +649,34 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Недійсний специфікатор кольору YPbPr \"{0}\". Специфікатор не може містити більше трьох елементів. Переконайтеся, що він має правильний формат."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Неможливо конвертувати в YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Неможливо конвертувати нульовий екземпляр RGB в YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Неможливо конвертувати нульовий екземпляр YCbCr в RGB! Недійсний специфікатор кольору YCbCr \"{0}\". Переконайтеся, що він у правильному форматі."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Значення Y поза діапазоном (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Значення Cb поза діапазоном (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Значення Cr поза діапазоном (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Недійсний специфікатор кольору YCbCr \"{0}\". Специфікатор не може містити більше трьох елементів. Переконайтеся, що він у правильному форматі."
     }
   ]
 }

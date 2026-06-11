@@ -650,6 +650,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "잘못된 YPbPr 색상 지정자 \"{0}\"입니다. 지정자는 세 개 이상의 요소로 구성될 수 없습니다. 올바른 형식인지 확인하십시오."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "YCbCr로 변환할 수 없습니다."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "null RGB 인스턴스를 YCbCr로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "null YCbCr 인스턴스를 RGB로 변환할 수 없습니다!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "잘못된 YCbCr 색상 지정자 \"{0}\"입니다. 형식이 올바른지 확인하십시오."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Y 값이 범위를 벗어났습니다(16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Cb 값이 범위를 벗어났습니다(16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Cr 값이 범위를 벗어났습니다(16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "잘못된 YCbCr 색상 지정자 \"{0}\"입니다. 지정자는 세 개 이상의 요소를 가질 수 없습니다. 형식이 올바른지 확인하십시오."
     }
   ]
 }

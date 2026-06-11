@@ -695,6 +695,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Spécificateur de couleur YPbPr invalide « {0} ». Le spécificateur ne peut pas comporter plus de trois éléments. Assurez-vous qu'il est au format correct."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Impossible de convertir en YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Impossible de convertir une instance RGB nulle en YCbCr !"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Impossible de convertir une instance YCbCr nulle en RGB !"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Spécificateur de couleur YCbCr invalide « {0} ». Vérifiez qu'il est au format correct."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "La valeur Y est hors plage (16 → 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "La valeur Cb est hors plage (16 → 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "La valeur Cr est hors plage (16 → 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Spécificateur de couleur YCbCr invalide « {0} ». Le spécificateur ne peut pas comporter plus de trois éléments. Vérifiez qu'il est au format correct."
     }
   ]
 }

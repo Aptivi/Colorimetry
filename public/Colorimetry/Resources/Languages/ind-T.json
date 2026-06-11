@@ -649,6 +649,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "YPbPr कलर स्पेसिफायर \"{0}\" गलत है। स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते। पक्का करें कि यह सही फ़ॉर्मेट में हो।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "YCbCr में कन्वर्ट नहीं कर सकता।"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "एक null RGB इंस्टेंस को YCbCr में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "एक null YCbCr इंस्टेंस को RGB में कन्वर्ट नहीं कर सकता!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "इनवैलिड YCbCr कलर स्पेसिफायर \"{0}\". पक्का करें कि यह सही फॉर्मेट में है"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Y वैल्यू रेंज से बाहर है (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Cb वैल्यू रेंज से बाहर है (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Cr वैल्यू रेंज से बाहर है (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "इनवैलिड YCbCr कलर स्पेसिफायर \"{0}\". स्पेसिफायर में तीन से ज़्यादा एलिमेंट नहीं हो सकते. पक्का करें कि यह सही फॉर्मेट में है"
     }
   ]
 }

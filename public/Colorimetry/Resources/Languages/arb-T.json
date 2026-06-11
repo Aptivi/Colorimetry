@@ -675,6 +675,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "محدد لون YPbPr غير صالح \"{0}\". يجب ألا يتجاوز عدد عناصر المحدد ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "لا يمكن التحويل إلى YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "لا يمكن تحويل قيمة RGB فارغة إلى YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "لا يمكن تحويل قيمة YCbCr فارغة إلى RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "مُحدِّد لون YCbCr غير صالح \"{0}\". تأكد من أنه بالتنسيق الصحيح."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "قيمة Y خارج النطاق (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "قيمة Cb خارج النطاق (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "قيمة Cr خارج النطاق (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "مُحدِّد لون YCbCr غير صالح \"{0}\". يجب ألا يتجاوز المُحدِّد ثلاثة عناصر. تأكد من أنه بالتنسيق الصحيح."
     }
   ]
 }

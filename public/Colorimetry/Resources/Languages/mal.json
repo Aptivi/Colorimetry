@@ -652,6 +652,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Penentu warna YPbPr tidak sah \"{0}\". Penentu tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Tidak dapat menukar kepada YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Tidak dapat menukar contoh RGB null kepada YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Tidak dapat menukar contoh YCbCr null kepada RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Penentukan warna YCbCr tidak sah \"{0}\". Pastikan ia berada pada format yang betul"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Nilai Y berada di luar julat (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Nilai Cb berada di luar julat (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Nilai Cr berada di luar julat (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Penentuan warna YCbCr tidak sah \"{0}\". Penentuan tidak boleh lebih daripada tiga elemen. Pastikan ia berada pada format yang betul"
     }
   ]
 }

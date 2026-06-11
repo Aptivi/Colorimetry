@@ -1,123 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <!-- 
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-        <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="metadata">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                </xsd:sequence>
-                <xsd:attribute name="name" use="required" type="xsd:string" />
-                <xsd:attribute name="type" type="xsd:string" />
-                <xsd:attribute name="mimetype" type="xsd:string" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="assembly">
-            <xsd:complexType>
-                <xsd:attribute name="alias" type="xsd:string" />
-                <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="data">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="resheader">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-            </xsd:element>
-        </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
+  </resheader>
+  <resheader name="version">
     <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
+  </resheader>
+  <resheader name="reader">
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
+  </resheader>
+  <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
+  </resheader>
+  <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
     <value>Γενικό λάθος!</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1" xml:space="preserve">
@@ -142,7 +83,7 @@
     <value>Καθορίστε τουλάχιστον ένα χρώμα.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLab &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLab "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
     <value>Η τιμή L είναι εκτός εύρους (0,0 -&gt; 100,0).</value>
@@ -160,10 +101,10 @@
     <value>Το φωτιστικό δεν είναι έγκυρο</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLab &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLab "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLch &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLch "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>Η τιμή C είναι εκτός εύρους (-128,0 -&gt; 128,0).</value>
@@ -172,10 +113,10 @@
     <value>Η τιμή H είναι εκτός εύρους (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLch &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLch "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>Η τιμή U είναι εκτός εύρους (-134,0 -&gt; 220,0).</value>
@@ -184,7 +125,7 @@
     <value>Η τιμή V είναι εκτός εύρους (-140,0 -&gt; 122,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CieLuv "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
     <value>Δεν είναι δυνατή η μετατροπή της μηδενικής πηγής.</value>
@@ -343,7 +284,7 @@
     <value>Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας HWB σε RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CMY &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CMY "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
     <value>Το επίπεδο κυανού χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
@@ -355,22 +296,22 @@
     <value>Το επίπεδο κίτρινου χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CMY &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CMY "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CMYK &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CMYK "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Η στάθμη μαύρου χρώματος είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος CMYK &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τέσσερα στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος CMYK "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τέσσερα στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HSL &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HSL "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Η στάθμη απόχρωσης είναι εκτός εύρους (0&apos; -&gt; 360&apos; μοίρες).</value>
+    <value>Η στάθμη απόχρωσης είναι εκτός εύρους (0' -&gt; 360' μοίρες).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
     <value>Το επίπεδο κορεσμού είναι εκτός εύρους (0 -&gt; 100).</value>
@@ -379,19 +320,19 @@
     <value>Το επίπεδο φωτεινότητας είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HSL &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HSL "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HSV &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HSV "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Το επίπεδο τιμής είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HSV &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HSV "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HWB &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HWB "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Το επίπεδο λευκότητας είναι εκτός εύρους (0 -&gt; 100).</value>
@@ -400,10 +341,10 @@
     <value>Το επίπεδο μαυρίσματος είναι εκτός εύρους (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HWB &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HWB "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HunterLab &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HunterLab "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>Η τιμή A είναι εκτός εύρους (-128,0 -&gt; 127,0).</value>
@@ -412,10 +353,10 @@
     <value>Η τιμή B είναι εκτός εύρους (-128,0 -&gt; 127,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος HunterLab &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος HunterLab "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YUV &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YUV "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
     <value>Η στάθμη φωτεινότητας είναι εκτός εύρους (0 -&gt; 255).</value>
@@ -427,10 +368,10 @@
     <value>Το επίπεδο χρωματικής (V) είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YUV &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YUV "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YIQ &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YIQ "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Το επίπεδο σε φάση είναι εκτός εύρους (0 -&gt; 255).</value>
@@ -439,13 +380,13 @@
     <value>Το επίπεδο τετραγωνισμού είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YIQ &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YIQ "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Δεν είναι δυνατή η λήψη αναφορών από τον πίνακα</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος &quot;{0}&quot;. Εάν χρησιμοποιείτε 256 χρώματα, θα πρέπει να εισαγάγετε μια θετική τιμή από 0 έως 255 ή ένα έγκυρο όνομα χρώματος. Εάν χρησιμοποιείτε πραγματικό χρώμα, θα πρέπει είτε να γράψετε έναν έγκυρο προσδιοριστή χρώματος, όπως RRR;GGG;BBB, είτε έναν κωδικό χρώματος έως 16777215.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος "{0}". Εάν χρησιμοποιείτε 256 χρώματα, θα πρέπει να εισαγάγετε μια θετική τιμή από 0 έως 255 ή ένα έγκυρο όνομα χρώματος. Εάν χρησιμοποιείτε πραγματικό χρώμα, θα πρέπει είτε να γράψετε έναν έγκυρο προσδιοριστή χρώματος, όπως RRR;GGG;BBB, είτε έναν κωδικό χρώματος έως 16777215.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
     <value>Το επίπεδο κόκκινου χρώματος είναι εκτός εύρους (0 -&gt; 255).</value>
@@ -457,25 +398,25 @@
     <value>Το επίπεδο μπλε χρώματος είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος δεκαεξαδικός προσδιοριστής χρώματος &quot;{0}&quot;. Αυτός ο προσδιοριστής πρέπει να ξεκινά με την ετικέτα hashtag. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος δεκαεξαδικός προσδιοριστής χρώματος "{0}". Αυτός ο προσδιοριστής πρέπει να ξεκινά με την ετικέτα hashtag. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH" xml:space="preserve">
-    <value>Μη έγκυρο δεκαεξαδικό μήκος χρώματος &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρο δεκαεξαδικό μήκος χρώματος "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE" xml:space="preserve">
-    <value>Δεν είναι δυνατή η ανάλυση του δεκαεξαδικού χρώματος &quot;{0}&quot;.</value>
+    <value>Δεν είναι δυνατή η ανάλυση του δεκαεξαδικού χρώματος "{0}".</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBISORIGINALCOLOR" xml:space="preserve">
     <value>Αυτό το χρώμα είναι ήδη ένα αρχικό χρώμα.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή, που σημαίνει έναν αριθμό από 0-255 εάν χρησιμοποιείτε 255 χρώματα ή μια ακολουθία VT εάν χρησιμοποιείτε πραγματικό χρώμα ως εξής.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή, που σημαίνει έναν αριθμό από 0-255 εάν χρησιμοποιείτε 255 χρώματα ή μια ακολουθία VT εάν χρησιμοποιείτε πραγματικό χρώμα ως εξής.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος RYB &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος RYB "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERYBRLEVEL" xml:space="preserve">
     <value>Η κόκκινη στάθμη είναι εκτός εύρους (0 -&gt; 255).</value>
@@ -487,10 +428,10 @@
     <value>Το μπλε επίπεδο είναι εκτός εύρους (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος RYB &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος RYB "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος XYZ &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος XYZ "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL" xml:space="preserve">
     <value>Η τιμή X είναι εκτός εύρους (0,0 -&gt; 95,047).</value>
@@ -502,10 +443,10 @@
     <value>Η τιμή Z είναι εκτός εύρους (0,0 -&gt; 108,883).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος XYZ &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος XYZ "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YXY &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YXY "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYXYY1LEVEL" xml:space="preserve">
     <value>Η τιμή Y1 είναι εκτός εύρους (0,0 -&gt; 100,0).</value>
@@ -517,7 +458,7 @@
     <value>Η τιμή Y2 είναι εκτός εύρους (0,0 -&gt; 1,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YXY &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YXY "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE" xml:space="preserve">
     <value>Ο τύπος χρώματος δεν είναι έγκυρος</value>
@@ -556,7 +497,7 @@
     <value>Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας LMS σε RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος LMS &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος LMS "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>Η τιμή L είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
@@ -568,10 +509,10 @@
     <value>Η τιμή S είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος LMS &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος LMS "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Η τιμή Y είναι εκτός εύρους (0.0 -&gt; 1.0).</value>
@@ -583,10 +524,10 @@
     <value>Η τιμή Dr είναι εκτός εύρους (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YDbDr "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr &quot;{0}&quot;. Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Η τιμή Y είναι εκτός εύρους (0.0 -&gt; 750.0).</value>
@@ -598,7 +539,30 @@
     <value>Η τιμή Pr είναι εκτός εύρους (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr &quot;{0}&quot;. Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+    <value>Μη έγκυρος προσδιοριστής χρώματος YPbPr "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
   </data>
-
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED" xml:space="preserve">
+    <value>Δεν είναι δυνατή η μετατροπή σε YCbCr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB" xml:space="preserve">
+    <value>Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας RGB σε YCbCr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR" xml:space="preserve">
+    <value>Δεν είναι δυνατή η μετατροπή μιας μηδενικής παρουσίας YCbCr σε RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER" xml:space="preserve">
+    <value>Μη έγκυρος προσδιοριστής χρώματος YCbCr "{0}". Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL" xml:space="preserve">
+    <value>Η τιμή Y είναι εκτός εύρους (16 -&gt; 235).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL" xml:space="preserve">
+    <value>Η τιμή Cb είναι εκτός εύρους (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL" xml:space="preserve">
+    <value>Η τιμή Cr είναι εκτός εύρους (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Μη έγκυρος προσδιοριστής χρώματος YCbCr "{0}". Ο προσδιοριστής δεν μπορεί να έχει περισσότερα από τρία στοιχεία. Βεβαιωθείτε ότι έχει τη σωστή μορφή.</value>
+  </data>
 </root>

@@ -652,6 +652,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Specificatore di colore YPbPr non valido \"{0}\". Lo specificatore non può contenere più di tre elementi. Assicurarsi che sia nel formato corretto."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Impossibile convertire in YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Impossibile convertire un'istanza RGB nulla in YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Impossibile convertire un'istanza YCbCr nulla in RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Specificatore di colore YCbCr non valido \"{0}\". Assicurarsi che sia nel formato corretto."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Il valore Y è fuori intervallo (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Il valore Cb è fuori intervallo (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Il valore Cr è fuori intervallo (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Specificatore di colore YCbCr non valido \"{0}\". Lo specificatore non può essere composto da più di tre elementi. Assicurarsi che sia nel formato corretto."
     }
   ]
 }

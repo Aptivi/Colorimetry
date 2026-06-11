@@ -1,127 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <!-- 
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-        <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="metadata">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                </xsd:sequence>
-                <xsd:attribute name="name" use="required" type="xsd:string" />
-                <xsd:attribute name="type" type="xsd:string" />
-                <xsd:attribute name="mimetype" type="xsd:string" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="assembly">
-            <xsd:complexType>
-                <xsd:attribute name="alias" type="xsd:string" />
-                <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="data">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="resheader">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-            </xsd:element>
-        </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
+  </resheader>
+  <resheader name="version">
     <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
+  </resheader>
+  <resheader name="reader">
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
+  </resheader>
+  <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
+  </resheader>
+  <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
     <value>Genel hata!</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1" xml:space="preserve">
-    <value>{1}&apos;in {0}&apos;ının renge nasıl dönüştürüleceği belirlenemiyor.</value>
+    <value>{1}'in {0}'ının renge nasıl dönüştürüleceği belirlenemiyor.</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR2" xml:space="preserve">
     <value>Bilinmeyen bir türdeki {0} öğesinin renge nasıl dönüştürüleceği belirlenemiyor.</value>
@@ -142,7 +83,7 @@
     <value>En az bir renk belirtin.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER" xml:space="preserve">
-    <value>Geçersiz CieLab renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLab renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
     <value>L değeri aralık dışında (0.0 -&gt; 100.0).</value>
@@ -160,10 +101,10 @@
     <value>Aydınlatıcı geçersiz</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz CieLab renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLab renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
-    <value>Geçersiz CieLch renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLch renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>C değeri aralık dışında (-128.0 -&gt; 128.0).</value>
@@ -172,10 +113,10 @@
     <value>H değeri aralık dışında (-128.0 -&gt; 128.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz CieLch renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLch renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
-    <value>Geçersiz CieLuv renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLuv renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>U değeri aralık dışında (-134.0 -&gt; 220.0).</value>
@@ -184,7 +125,7 @@
     <value>V değeri aralık dışında (-140.0 -&gt; 122.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz CieLuv renk belirteci &quot;{0}&quot;. Belirleyici üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CieLuv renk belirteci "{0}". Belirleyici üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
     <value>Boş kaynak dönüştürülemiyor.</value>
@@ -208,142 +149,142 @@
     <value>Aynı renk modeli dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>RGB&apos;ye dönüştürülemiyor.</value>
+    <value>RGB'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
     <value>Temel renk modelinden dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYKFAILED" xml:space="preserve">
-    <value>CMYK&apos;ye dönüştürülemiyor.</value>
+    <value>CMYK'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYFAILED" xml:space="preserve">
-    <value>CMY&apos;ye dönüştürülemiyor.</value>
+    <value>CMY'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSLFAILED" xml:space="preserve">
-    <value>HSL&apos;ye dönüştürülemiyor.</value>
+    <value>HSL'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSVFAILED" xml:space="preserve">
-    <value>HSV&apos;ye dönüştürülemiyor.</value>
+    <value>HSV'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORYBFAILED" xml:space="preserve">
-    <value>RYB&apos;ye dönüştürülemiyor.</value>
+    <value>RYB'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYIQFAILED" xml:space="preserve">
-    <value>YIQ&apos;ya dönüştürülemiyor.</value>
+    <value>YIQ'ya dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYUVFAILED" xml:space="preserve">
-    <value>YUV&apos;a dönüştürülemiyor.</value>
+    <value>YUV'a dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOXYZFAILED" xml:space="preserve">
-    <value>XYZ&apos;ye dönüştürülemiyor.</value>
+    <value>XYZ'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYXYFAILED" xml:space="preserve">
-    <value>YXY&apos;ye dönüştürülemiyor.</value>
+    <value>YXY'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABFAILED" xml:space="preserve">
-    <value>HunterLab&apos;a dönüştürülemiyor.</value>
+    <value>HunterLab'a dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELABFAILED" xml:space="preserve">
-    <value>CieLab&apos;a dönüştürülemiyor.</value>
+    <value>CieLab'a dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELUVFAILED" xml:space="preserve">
-    <value>CieLuv&apos;a dönüştürülemiyor.</value>
+    <value>CieLuv'a dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELCHFAILED" xml:space="preserve">
-    <value>CieLch&apos;e dönüştürülemiyor.</value>
+    <value>CieLch'e dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHWBFAILED" xml:space="preserve">
-    <value>HWB&apos;ye dönüştürülemiyor.</value>
+    <value>HWB'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED" xml:space="preserve">
-    <value>RGB&apos;den dönüştürülemiyor.</value>
+    <value>RGB'den dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini CMY&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini CMY'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYKNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini CMYK&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini CMYK'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSLNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği HSL&apos;ye dönüştürülemez!</value>
+    <value>Boş bir RGB örneği HSL'ye dönüştürülemez!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSVNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini HSV&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini HSV'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORYBNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini RYB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini RYB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYIQNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini YIQ&apos;ya dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini YIQ'ya dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYUVNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini YUV&apos;a dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini YUV'a dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOXYZNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği XYZ&apos;ye dönüştürülemez!</value>
+    <value>Boş bir RGB örneği XYZ'ye dönüştürülemez!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYXYNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği YXY&apos;ye dönüştürülemez!</value>
+    <value>Boş bir RGB örneği YXY'ye dönüştürülemez!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği HunterLab&apos;a dönüştürülemiyor!</value>
+    <value>Boş bir RGB örneği HunterLab'a dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELABNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini CieLab&apos;a dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini CieLab'a dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELUVNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini CieLuv&apos;a dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini CieLuv'a dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELCHNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini CieLch&apos;e dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini CieLch'e dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHWBNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneğini HWB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RGB örneğini HWB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMY" xml:space="preserve">
-    <value>Boş bir CMY örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir CMY örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMYK" xml:space="preserve">
-    <value>Boş bir CMYK örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir CMYK örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSL" xml:space="preserve">
-    <value>Boş bir HSL örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir HSL örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSV" xml:space="preserve">
-    <value>Boş bir HSV örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir HSV örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLRYB" xml:space="preserve">
-    <value>Boş bir RYB örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir RYB örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYIQ" xml:space="preserve">
-    <value>Boş bir YIQ örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir YIQ örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYUV" xml:space="preserve">
-    <value>Boş bir YUV örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir YUV örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLXYZ" xml:space="preserve">
-    <value>Boş bir XYZ örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir XYZ örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYXY" xml:space="preserve">
-    <value>Boş bir YXY örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir YXY örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHUNTERLAB" xml:space="preserve">
-    <value>Boş bir HunterLab örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir HunterLab örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELAB" xml:space="preserve">
-    <value>Boş bir CieLab örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir CieLab örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELUV" xml:space="preserve">
-    <value>Boş bir CieLuv örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir CieLuv örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELCH" xml:space="preserve">
-    <value>Boş bir CieLch örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir CieLch örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHWB" xml:space="preserve">
-    <value>Boş bir HWB örneğini RGB&apos;ye dönüştüremiyorum!</value>
+    <value>Boş bir HWB örneğini RGB'ye dönüştüremiyorum!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER" xml:space="preserve">
-    <value>Geçersiz CMY renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CMY renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
     <value>Camgöbeği renk seviyesi aralık dışında (0 -&gt; 100).</value>
@@ -355,22 +296,22 @@
     <value>Sarı renk seviyesi aralık dışındadır (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz CMY renk belirteci &quot;{0}&quot;. Belirteç üç öğeden fazla olamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CMY renk belirteci "{0}". Belirteç üç öğeden fazla olamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
-    <value>Geçersiz CMYK renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CMYK renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Siyah renk seviyesi aralık dışında (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz CMYK renk belirteci &quot;{0}&quot;. Belirteç dört öğeden fazla olamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz CMYK renk belirteci "{0}". Belirteç dört öğeden fazla olamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER" xml:space="preserve">
-    <value>Geçersiz HSL renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HSL renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Renk tonu seviyesi aralık dışında (0&apos; -&gt; 360&apos; derece).</value>
+    <value>Renk tonu seviyesi aralık dışında (0' -&gt; 360' derece).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
     <value>Doygunluk seviyesi aralık dışında (0 -&gt; 100).</value>
@@ -379,19 +320,19 @@
     <value>Parlaklık seviyesi aralık dışında (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz HSL renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HSL renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
-    <value>Geçersiz HSV renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HSV renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Değer seviyesi aralık dışında (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz HSV renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HSV renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
-    <value>Geçersiz HWB renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HWB renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Beyazlık seviyesi aralık dışında (0 -&gt; 100).</value>
@@ -400,10 +341,10 @@
     <value>Siyahlık seviyesi aralık dışında (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz HWB renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HWB renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
-    <value>Geçersiz HunterLab renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HunterLab renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>A değeri aralık dışında (-128.0 -&gt; 127.0).</value>
@@ -412,10 +353,10 @@
     <value>B değeri aralık dışında (-128.0 -&gt; 127.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz HunterLab renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz HunterLab renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YUV renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YUV renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
     <value>Luma seviyesi aralık dışında (0 -&gt; 255).</value>
@@ -427,10 +368,10 @@
     <value>Renk (V) seviyesi aralık dışında (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YUV renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YUV renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YIQ renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YIQ renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Eş fazlı seviye aralık dışında (0 -&gt; 255).</value>
@@ -439,13 +380,13 @@
     <value>Karesel seviye aralık dışında (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YIQ renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YIQ renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Tablodan referans alınamıyor</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER" xml:space="preserve">
-    <value>Geçersiz renk belirteci &quot;{0}&quot;. 256 renk kullanıyorsanız, 0 ila 255 arasında pozitif bir değer veya geçerli bir renk adı girmeniz gerekir. Gerçek renk kullanıyorsanız, RRR;GGG;BBB gibi geçerli bir renk belirteci veya 16777215&apos;e kadar bir renk kodu yazmanız gerekir.</value>
+    <value>Geçersiz renk belirteci "{0}". 256 renk kullanıyorsanız, 0 ila 255 arasında pozitif bir değer veya geçerli bir renk adı girmeniz gerekir. Gerçek renk kullanıyorsanız, RRR;GGG;BBB gibi geçerli bir renk belirteci veya 16777215'e kadar bir renk kodu yazmanız gerekir.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
     <value>Kırmızı renk seviyesi aralık dışında (0 -&gt; 255).</value>
@@ -457,25 +398,25 @@
     <value>Mavi renk seviyesi aralık dışında (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER" xml:space="preserve">
-    <value>Geçersiz renk hex belirteci &quot;{0}&quot;. Bu belirteç, hash etiketiyle başlamalıdır. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz renk hex belirteci "{0}". Bu belirteç, hash etiketiyle başlamalıdır. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH" xml:space="preserve">
-    <value>Geçersiz renk hex uzunluğu &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz renk hex uzunluğu "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE" xml:space="preserve">
-    <value>&quot;{0}&quot; renk hex&apos;i çözülemiyor.</value>
+    <value>"{0}" renk hex'i çözülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBISORIGINALCOLOR" xml:space="preserve">
     <value>Bu renk zaten orijinal bir renktir.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
-    <value>Geçersiz renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun, yani 255 renk kullanılıyorsa 0-255 arasında bir sayı veya gerçek renk kullanılıyorsa aşağıdaki gibi bir VT dizisi kullanın</value>
+    <value>Geçersiz renk belirteci "{0}". Doğru biçimde olduğundan emin olun, yani 255 renk kullanılıyorsa 0-255 arasında bir sayı veya gerçek renk kullanılıyorsa aşağıdaki gibi bir VT dizisi kullanın</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIER" xml:space="preserve">
-    <value>Geçersiz RYB renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz RYB renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERYBRLEVEL" xml:space="preserve">
     <value>Kırmızı seviye aralık dışındadır (0 -&gt; 255).</value>
@@ -487,10 +428,10 @@
     <value>Mavi seviye aralık dışında (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz RYB renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz RYB renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER" xml:space="preserve">
-    <value>Geçersiz XYZ renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz XYZ renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL" xml:space="preserve">
     <value>X değeri aralık dışında (0.0 -&gt; 95.047).</value>
@@ -502,10 +443,10 @@
     <value>Z değeri aralık dışında (0.0 -&gt; 108.883).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz XYZ renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz XYZ renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YXY renk belirteci &quot;{0}&quot;. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YXY renk belirteci "{0}". Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYXYY1LEVEL" xml:space="preserve">
     <value>Y1 değeri aralık dışında (0.0 -&gt; 100.0).</value>
@@ -517,7 +458,7 @@
     <value>Y2 değeri aralık dışında (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YXY renk belirteci &quot;{0}&quot;. Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
+    <value>Geçersiz YXY renk belirteci "{0}". Belirteç üçten fazla öğeden oluşamaz. Doğru biçimde olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE" xml:space="preserve">
     <value>Renk türü geçersiz</value>
@@ -529,34 +470,34 @@
     <value>Geçersiz monokromatik türü</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
-    <value>YPbPr&apos;ye dönüştürülemiyor.</value>
+    <value>YPbPr'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
-    <value>YDbDr&apos;ye dönüştürülemiyor.</value>
+    <value>YDbDr'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
-    <value>LMS&apos;ye dönüştürülemiyor.</value>
+    <value>LMS'ye dönüştürülemiyor.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği YPbPr&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir RGB örneği YPbPr'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği YDbDr&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir RGB örneği YDbDr'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
-    <value>Boş bir RGB örneği LMS&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir RGB örneği LMS'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
-    <value>Boş bir YPbPr örneği RGB&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir YPbPr örneği RGB'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
-    <value>Boş bir YDbDr örneği RGB&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir YDbDr örneği RGB'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
-    <value>Boş bir LMS örneği RGB&apos;ye dönüştürülemiyor!</value>
+    <value>Boş bir LMS örneği RGB'ye dönüştürülemiyor!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Geçersiz LMS renk belirleyicisi &quot;{0}&quot;. Doğru biçimde olduğundan emin olun.</value>
+    <value>Geçersiz LMS renk belirleyicisi "{0}". Doğru biçimde olduğundan emin olun.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>L değeri aralık dışında (0.0 -&gt; 1.0).</value>
@@ -568,10 +509,10 @@
     <value>S değeri aralık dışında (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz LMS renk belirleyicisi &quot;{0}&quot;. Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz LMS renk belirleyicisi "{0}". Belirleyici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YDbDr renk belirleyicisi &quot;{0}&quot;. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YDbDr renk belirleyicisi "{0}". Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>Y değeri aralık dışında (0.0 -&gt; 1.0).</value>
@@ -583,10 +524,10 @@
     <value>Dr değeri aralık dışında (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YDbDr renk belirleyicisi &quot;{0}&quot;. Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YDbDr renk belirleyicisi "{0}". Belirtici üçten fazla öğe içeremez. Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Geçersiz YPbPr renk belirleyicisi &quot;{0}&quot;. Doğru formatta olduğundan emin olun</value>
+    <value>Geçersiz YPbPr renk belirleyicisi "{0}". Doğru formatta olduğundan emin olun</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>Y değeri aralık dışında (0.0 -&gt; 750.0).</value>
@@ -598,7 +539,30 @@
     <value>Pr değeri aralık dışında (0,0 -&gt; 750,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Geçersiz YPbPr renk belirleyicisi &quot;{0}&quot;. Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun.</value>
+    <value>Geçersiz YPbPr renk belirleyicisi "{0}". Belirleyici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun.</value>
   </data>
-
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED" xml:space="preserve">
+    <value>YCbCr'ye dönüştürülemiyor.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB" xml:space="preserve">
+    <value>Boş bir RGB örneği YCbCr'ye dönüştürülemiyor!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR" xml:space="preserve">
+    <value>Boş bir YCbCr örneği RGB'ye dönüştürülemiyor!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER" xml:space="preserve">
+    <value>Geçersiz YCbCr renk belirleyicisi "{0}". Doğru biçimde olduğundan emin olun.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL" xml:space="preserve">
+    <value>Y değeri aralık dışında (16 -&gt; 235).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL" xml:space="preserve">
+    <value>Cb değeri aralık dışında (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL" xml:space="preserve">
+    <value>Cr değeri aralık dışında (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Geçersiz YCbCr renk belirleyicisi "{0}". Belirtici üçten fazla öğe içeremez. Doğru biçimde olduğundan emin olun.</value>
+  </data>
 </root>

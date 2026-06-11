@@ -1,139 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <!-- 
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-        <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="metadata">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                </xsd:sequence>
-                <xsd:attribute name="name" use="required" type="xsd:string" />
-                <xsd:attribute name="type" type="xsd:string" />
-                <xsd:attribute name="mimetype" type="xsd:string" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="assembly">
-            <xsd:complexType>
-                <xsd:attribute name="alias" type="xsd:string" />
-                <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="data">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="resheader">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-            </xsd:element>
-        </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
+  </resheader>
+  <resheader name="version">
     <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
+  </resheader>
+  <resheader name="reader">
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
+  </resheader>
+  <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
+  </resheader>
+  <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
     <value>General error!</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1" xml:space="preserve">
-    <value>Can&apos;t determine how to convert a(n) {0} of {1} to a colour.</value>
+    <value>Can't determine how to convert a(n) {0} of {1} to a colour.</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR2" xml:space="preserve">
-    <value>Can&apos;t determine how to convert a(n) {0} of an unknown type to a colour.</value>
+    <value>Can't determine how to convert a(n) {0} of an unknown type to a colour.</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_WRITEERROR" xml:space="preserve">
-    <value>Can&apos;t get colour.</value>
+    <value>Can't get colour.</value>
   </data>
   <data name="COLORIMETRY_DATA_EXCEPTION_COLOROUTOFRANGE" xml:space="preserve">
     <value>Colour is out of range.</value>
   </data>
   <data name="COLORIMETRY_DATA_EXCEPTION_COLORNODATA" xml:space="preserve">
-    <value>Can&apos;t get colour data.</value>
+    <value>Can't get colour data.</value>
   </data>
   <data name="COLORIMETRY_GRADIENT_EXCEPTION_GRADIENTNULL" xml:space="preserve">
     <value>Are you sure that this gradient is not null?</value>
@@ -142,7 +83,7 @@
     <value>Specify at least one colour.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER" xml:space="preserve">
-    <value>Invalid CieLab colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLab colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
     <value>The L value is out of range (0.0 -&gt; 100.0).</value>
@@ -160,10 +101,10 @@
     <value>Illuminant is invalid</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid CieLab colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLab colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
-    <value>Invalid CieLch colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLch colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>The C value is out of range (-128.0 -&gt; 128.0).</value>
@@ -172,10 +113,10 @@
     <value>The H value is out of range (-128.0 -&gt; 128.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid CieLch colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLch colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
-    <value>Invalid CieLuv colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLuv colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>The U value is out of range (-134.0 -&gt; 220.0).</value>
@@ -184,13 +125,13 @@
     <value>The V value is out of range (-140.0 -&gt; 122.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid CieLuv colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CieLuv colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
-    <value>Can&apos;t convert null source.</value>
+    <value>Can't convert null source.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOTYPE" xml:space="preserve">
-    <value>Can&apos;t convert to null type.</value>
+    <value>Can't convert to null type.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_SPECIFYSOURCEMODEL" xml:space="preserve">
     <value>You should specify a specific source colour model, not the base one.</value>
@@ -205,145 +146,145 @@
     <value>Not a target colour model.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_SAMEMODEL" xml:space="preserve">
-    <value>Can&apos;t convert same colour model.</value>
+    <value>Can't convert same colour model.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to RGB.</value>
+    <value>Can't convert to RGB.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMBASEFAILED" xml:space="preserve">
-    <value>Can&apos;t convert from base colour model.</value>
+    <value>Can't convert from base colour model.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYKFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to CMYK.</value>
+    <value>Can't convert to CMYK.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to CMY.</value>
+    <value>Can't convert to CMY.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSLFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to HSL.</value>
+    <value>Can't convert to HSL.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSVFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to HSV.</value>
+    <value>Can't convert to HSV.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORYBFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to RYB.</value>
+    <value>Can't convert to RYB.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYIQFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to YIQ.</value>
+    <value>Can't convert to YIQ.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYUVFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to YUV.</value>
+    <value>Can't convert to YUV.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOXYZFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to XYZ.</value>
+    <value>Can't convert to XYZ.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYXYFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to YXY.</value>
+    <value>Can't convert to YXY.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to HunterLab.</value>
+    <value>Can't convert to HunterLab.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELABFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to CieLab.</value>
+    <value>Can't convert to CieLab.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELUVFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to CieLuv.</value>
+    <value>Can't convert to CieLuv.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELCHFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to CieLch.</value>
+    <value>Can't convert to CieLch.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHWBFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to HWB.</value>
+    <value>Can't convert to HWB.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_FROMRGBFAILED" xml:space="preserve">
-    <value>Can&apos;t convert from RGB.</value>
+    <value>Can't convert from RGB.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to CMY!</value>
+    <value>Can't convert a null RGB instance to CMY!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCMYKNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to CMYK!</value>
+    <value>Can't convert a null RGB instance to CMYK!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSLNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to HSL!</value>
+    <value>Can't convert a null RGB instance to HSL!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHSVNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to HSV!</value>
+    <value>Can't convert a null RGB instance to HSV!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORYBNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to RYB!</value>
+    <value>Can't convert a null RGB instance to RYB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYIQNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to YIQ!</value>
+    <value>Can't convert a null RGB instance to YIQ!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYUVNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to YUV!</value>
+    <value>Can't convert a null RGB instance to YUV!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOXYZNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to XYZ!</value>
+    <value>Can't convert a null RGB instance to XYZ!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYXYNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to YXY!</value>
+    <value>Can't convert a null RGB instance to YXY!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHUNTERLABNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to HunterLab!</value>
+    <value>Can't convert a null RGB instance to HunterLab!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELABNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to CieLab!</value>
+    <value>Can't convert a null RGB instance to CieLab!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELUVNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to CieLuv!</value>
+    <value>Can't convert a null RGB instance to CieLuv!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOCIELCHNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to CieLch!</value>
+    <value>Can't convert a null RGB instance to CieLch!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOHWBNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to HWB!</value>
+    <value>Can't convert a null RGB instance to HWB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMY" xml:space="preserve">
-    <value>Can&apos;t convert a null CMY instance to RGB!</value>
+    <value>Can't convert a null CMY instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCMYK" xml:space="preserve">
-    <value>Can&apos;t convert a null CMYK instance to RGB!</value>
+    <value>Can't convert a null CMYK instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSL" xml:space="preserve">
-    <value>Can&apos;t convert a null HSL instance to RGB!</value>
+    <value>Can't convert a null HSL instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHSV" xml:space="preserve">
-    <value>Can&apos;t convert a null HSV instance to RGB!</value>
+    <value>Can't convert a null HSV instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLRYB" xml:space="preserve">
-    <value>Can&apos;t convert a null RYB instance to RGB!</value>
+    <value>Can't convert a null RYB instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYIQ" xml:space="preserve">
-    <value>Can&apos;t convert a null YIQ instance to RGB!</value>
+    <value>Can't convert a null YIQ instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYUV" xml:space="preserve">
-    <value>Can&apos;t convert a null YUV instance to RGB!</value>
+    <value>Can't convert a null YUV instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLXYZ" xml:space="preserve">
-    <value>Can&apos;t convert a null XYZ instance to RGB!</value>
+    <value>Can't convert a null XYZ instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYXY" xml:space="preserve">
-    <value>Can&apos;t convert a null YXY instance to RGB!</value>
+    <value>Can't convert a null YXY instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHUNTERLAB" xml:space="preserve">
-    <value>Can&apos;t convert a null HunterLab instance to RGB!</value>
+    <value>Can't convert a null HunterLab instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELAB" xml:space="preserve">
-    <value>Can&apos;t convert a null CieLab instance to RGB!</value>
+    <value>Can't convert a null CieLab instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELUV" xml:space="preserve">
-    <value>Can&apos;t convert a null CieLuv instance to RGB!</value>
+    <value>Can't convert a null CieLuv instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLCIELCH" xml:space="preserve">
-    <value>Can&apos;t convert a null CieLch instance to RGB!</value>
+    <value>Can't convert a null CieLch instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLHWB" xml:space="preserve">
-    <value>Can&apos;t convert a null HWB instance to RGB!</value>
+    <value>Can't convert a null HWB instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER" xml:space="preserve">
-    <value>Invalid CMY colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CMY colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
     <value>The cyan colour level is out of range (0 -&gt; 100).</value>
@@ -355,22 +296,22 @@
     <value>The yellow colour level is out of range (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid CMY colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CMY colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
-    <value>Invalid CMYK colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CMYK colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>The black colour level is out of range (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid CMYK colour specifier &quot;{0}&quot;. The specifier may not be more than four elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid CMYK colour specifier "{0}". The specifier may not be more than four elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER" xml:space="preserve">
-    <value>Invalid HSL colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HSL colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>The hue level is out of range (0&apos; -&gt; 360&apos; degrees).</value>
+    <value>The hue level is out of range (0' -&gt; 360' degrees).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
     <value>The saturation level is out of range (0 -&gt; 100).</value>
@@ -379,19 +320,19 @@
     <value>The lightness level is out of range (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid HSL colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HSL colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
-    <value>Invalid HSV colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HSV colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>The value level is out of range (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid HSV colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HSV colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
-    <value>Invalid HWB colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HWB colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>The whiteness level is out of range (0 -&gt; 100).</value>
@@ -400,10 +341,10 @@
     <value>The blackness level is out of range (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid HWB colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HWB colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
-    <value>Invalid HunterLab colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HunterLab colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>The A value is out of range (-128.0 -&gt; 127.0).</value>
@@ -412,10 +353,10 @@
     <value>The B value is out of range (-128.0 -&gt; 127.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid HunterLab colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid HunterLab colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER" xml:space="preserve">
-    <value>Invalid YUV colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YUV colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
     <value>The luma level is out of range (0 -&gt; 255).</value>
@@ -427,10 +368,10 @@
     <value>The chroma (V) level is out of range (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid YUV colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YUV colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
-    <value>Invalid YIQ colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YIQ colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>The in-phase level is out of range (0 -&gt; 255).</value>
@@ -439,13 +380,13 @@
     <value>The quadrature level is out of range (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid YIQ colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YIQ colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
-    <value>Can&apos;t get references from the table</value>
+    <value>Can't get references from the table</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER" xml:space="preserve">
-    <value>Invalid colour specifier &quot;{0}&quot;. If you&apos;re using 256 colours, you&apos;ll need to enter a positive value from 0 to 255 or a valid colour name. If you&apos;re using true colour, you&apos;ll either need to write a valid colour specifier, such as RRR;GGG;BBB, or a colour code up to 16777215.</value>
+    <value>Invalid colour specifier "{0}". If you're using 256 colours, you'll need to enter a positive value from 0 to 255 or a valid colour name. If you're using true colour, you'll either need to write a valid colour specifier, such as RRR;GGG;BBB, or a colour code up to 16777215.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
     <value>The red colour level is out of range (0 -&gt; 255).</value>
@@ -457,25 +398,25 @@
     <value>The blue colour level is out of range (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER" xml:space="preserve">
-    <value>Invalid colour hex specifier &quot;{0}&quot;. This specifier must start with the hash tag. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid colour hex specifier "{0}". This specifier must start with the hash tag. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH" xml:space="preserve">
-    <value>Invalid colour hex length &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid colour hex length "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE" xml:space="preserve">
-    <value>Can&apos;t resolve colour hex &quot;{0}&quot;.</value>
+    <value>Can't resolve colour hex "{0}".</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBISORIGINALCOLOR" xml:space="preserve">
     <value>This colour is already an original colour.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
-    <value>Invalid colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format, which means a number from 0-255 if using 255 colours or a VT sequence if using true colour as follows</value>
+    <value>Invalid colour specifier "{0}". Ensure that it's on the correct format, which means a number from 0-255 if using 255 colours or a VT sequence if using true colour as follows</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIER" xml:space="preserve">
-    <value>Invalid RYB colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid RYB colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERYBRLEVEL" xml:space="preserve">
     <value>The red level is out of range (0 -&gt; 255).</value>
@@ -487,10 +428,10 @@
     <value>The blue level is out of range (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid RYB colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid RYB colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER" xml:space="preserve">
-    <value>Invalid XYZ colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid XYZ colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL" xml:space="preserve">
     <value>The X value is out of range (0.0 -&gt; 95.047).</value>
@@ -502,10 +443,10 @@
     <value>The Z value is out of range (0.0 -&gt; 108.883).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid XYZ colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid XYZ colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIER" xml:space="preserve">
-    <value>Invalid YXY colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YXY colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYXYY1LEVEL" xml:space="preserve">
     <value>The Y1 value is out of range (0.0 -&gt; 100.0).</value>
@@ -517,7 +458,7 @@
     <value>The Y2 value is out of range (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid YXY colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YXY colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE" xml:space="preserve">
     <value>Colour type is invalid</value>
@@ -529,34 +470,34 @@
     <value>Invalid monochromacy type</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to YPbPr.</value>
+    <value>Can't convert to YPbPr.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to YDbDr.</value>
+    <value>Can't convert to YDbDr.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSFAILED" xml:space="preserve">
-    <value>Can&apos;t convert to LMS.</value>
+    <value>Can't convert to LMS.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYPBPRNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to YPbPr!</value>
+    <value>Can't convert a null RGB instance to YPbPr!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOYDBDRNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to YDbDr!</value>
+    <value>Can't convert a null RGB instance to YDbDr!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TOLMSNULLRGB" xml:space="preserve">
-    <value>Can&apos;t convert a null RGB instance to LMS!</value>
+    <value>Can't convert a null RGB instance to LMS!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYPBPR" xml:space="preserve">
-    <value>Can&apos;t convert a null YPbPr instance to RGB!</value>
+    <value>Can't convert a null YPbPr instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYDBDR" xml:space="preserve">
-    <value>Can&apos;t convert a null YDbDr instance to RGB!</value>
+    <value>Can't convert a null YDbDr instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLLMS" xml:space="preserve">
-    <value>Can&apos;t convert a null LMS instance to RGB!</value>
+    <value>Can't convert a null LMS instance to RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Invalid LMS colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid LMS colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>The L value is out of range (0.0 -&gt; 1.0).</value>
@@ -568,10 +509,10 @@
     <value>The S value is out of range (0.0 -&gt; 1.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid LMS colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid LMS colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Invalid YDbDr colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YDbDr colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>The Y value is out of range (0.0 -&gt; 1.0).</value>
@@ -583,10 +524,10 @@
     <value>The Dr value is out of range (−1.333 -&gt; 1.333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid YDbDr colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YDbDr colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Invalid YPbPr colour specifier &quot;{0}&quot;. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YPbPr colour specifier "{0}". Ensure that it's on the correct format</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>The Y value is out of range (0.0 -&gt; 750.0).</value>
@@ -598,7 +539,30 @@
     <value>The Pr value is out of range (0.0 -&gt; 750.0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Invalid YPbPr colour specifier &quot;{0}&quot;. The specifier may not be more than three elements. Ensure that it&apos;s on the correct format</value>
+    <value>Invalid YPbPr colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
   </data>
-
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED" xml:space="preserve">
+    <value>Can't convert to YCbCr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB" xml:space="preserve">
+    <value>Can't convert a null RGB instance to YCbCr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR" xml:space="preserve">
+    <value>Can't convert a null YCbCr instance to RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER" xml:space="preserve">
+    <value>Invalid YCbCr colour specifier "{0}". Ensure that it's on the correct format</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL" xml:space="preserve">
+    <value>The Y value is out of range (16 -&gt; 235).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL" xml:space="preserve">
+    <value>The Cb value is out of range (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL" xml:space="preserve">
+    <value>The Cr value is out of range (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Invalid YCbCr colour specifier "{0}". The specifier may not be more than three elements. Ensure that it's on the correct format</value>
+  </data>
 </root>

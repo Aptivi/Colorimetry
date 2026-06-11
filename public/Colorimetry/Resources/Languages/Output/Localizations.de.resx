@@ -1,123 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <!-- 
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-        <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="metadata">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                </xsd:sequence>
-                <xsd:attribute name="name" use="required" type="xsd:string" />
-                <xsd:attribute name="type" type="xsd:string" />
-                <xsd:attribute name="mimetype" type="xsd:string" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="assembly">
-            <xsd:complexType>
-                <xsd:attribute name="alias" type="xsd:string" />
-                <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="data">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="resheader">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-            </xsd:element>
-        </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
+  </resheader>
+  <resheader name="version">
     <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
+  </resheader>
+  <resheader name="reader">
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
+  </resheader>
+  <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
+  </resheader>
+  <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
     <value>Allgemeiner Fehler!</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1" xml:space="preserve">
@@ -142,7 +83,7 @@
     <value>Geben Sie mindestens eine Farbe an.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER" xml:space="preserve">
-    <value>Ungültiger CieLab-Farbspezifizierer &quot;{0}&quot;. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLab-Farbspezifizierer "{0}". Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
     <value>Der L-Wert liegt außerhalb des Bereichs (0,0 -&gt; 100,0).</value>
@@ -160,10 +101,10 @@
     <value>Leuchtmittel ist ungültig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger CieLab-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLab-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
-    <value>Ungültiger CieLch-Farbspezifizierer &quot;{0}&quot;. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLch-Farbspezifizierer "{0}". Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>Der C-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 128,0).</value>
@@ -172,10 +113,10 @@
     <value>Der H-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger CieLch-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLch-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
-    <value>Ungültiger CieLuv-Farbspezifizierer &quot;{0}&quot;. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLuv-Farbspezifizierer "{0}". Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>Der U-Wert liegt außerhalb des Bereichs (-134,0 -&gt; 220,0).</value>
@@ -184,7 +125,7 @@
     <value>Der V-Wert liegt außerhalb des Bereichs (-140,0 -&gt; 122,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger CieLuv-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CieLuv-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
     <value>Nullquelle kann nicht konvertiert werden.</value>
@@ -343,7 +284,7 @@
     <value>Eine Null-HWB-Instanz kann nicht in RGB konvertiert werden!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER" xml:space="preserve">
-    <value>Ungültiger CMY-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger CMY-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
     <value>Der Cyan-Farbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
@@ -355,22 +296,22 @@
     <value>Der Gelbfarbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger CMY-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CMY-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
-    <value>Ungültiger CMYK-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger CMYK-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Der Schwarzfarbpegel liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger CMYK-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als vier Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger CMYK-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als vier Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER" xml:space="preserve">
-    <value>Ungültiger HSL-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger HSL-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Der Farbton liegt außerhalb des Bereichs (0&apos; -&gt; 360&apos; Grad).</value>
+    <value>Der Farbton liegt außerhalb des Bereichs (0' -&gt; 360' Grad).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
     <value>Der Sättigungsgrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
@@ -379,19 +320,19 @@
     <value>Der Helligkeitsgrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger HSL-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger HSL-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
-    <value>Ungültiger HSV-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger HSV-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>Der Wertebereich liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger HSV-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger HSV-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
-    <value>Ungültiger HWB-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger HWB-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Der Weißgrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
@@ -400,10 +341,10 @@
     <value>Der Schwärzegrad liegt außerhalb des Bereichs (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger HWB-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger HWB-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
-    <value>Ungültiger HunterLab-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger HunterLab-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>Der A-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 127,0).</value>
@@ -412,10 +353,10 @@
     <value>Der B-Wert liegt außerhalb des Bereichs (-128,0 -&gt; 127,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger HunterLab-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger HunterLab-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER" xml:space="preserve">
-    <value>Ungültiger YUV-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger YUV-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
     <value>Der Luma-Pegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
@@ -427,10 +368,10 @@
     <value>Der Chroma-Pegel (V) liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger YUV-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger YUV-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
-    <value>Ungültiger YIQ-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger YIQ-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Der In-Phase-Pegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
@@ -439,13 +380,13 @@
     <value>Der Quadraturpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger YIQ-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger YIQ-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Es können keine Referenzen aus der Tabelle abgerufen werden</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER" xml:space="preserve">
-    <value>Ungültiger Farbbezeichner &quot;{0}&quot;. Wenn Sie 256 Farben verwenden, müssen Sie einen positiven Wert zwischen 0 und 255 oder einen gültigen Farbnamen eingeben. Wenn Sie True Color verwenden, müssen Sie entweder einen gültigen Farbbezeichner wie RRR;GGG;BBB oder einen Farbcode bis 16777215 eingeben.</value>
+    <value>Ungültiger Farbbezeichner "{0}". Wenn Sie 256 Farben verwenden, müssen Sie einen positiven Wert zwischen 0 und 255 oder einen gültigen Farbnamen eingeben. Wenn Sie True Color verwenden, müssen Sie entweder einen gültigen Farbbezeichner wie RRR;GGG;BBB oder einen Farbcode bis 16777215 eingeben.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
     <value>Der Rotfarbpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
@@ -457,10 +398,10 @@
     <value>Der Blaufarbpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER" xml:space="preserve">
-    <value>Ungültiger Hex-Farbspezifizierer &quot;{0}&quot;. Dieser Spezifizierer muss mit dem Hashtag beginnen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger Hex-Farbspezifizierer "{0}". Dieser Spezifizierer muss mit dem Hashtag beginnen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH" xml:space="preserve">
-    <value>Ungültige Hex-Farblänge &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültige Hex-Farblänge "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE" xml:space="preserve">
     <value>Hex-Farbe „{0}“ kann nicht aufgelöst werden.</value>
@@ -469,13 +410,13 @@
     <value>Bei dieser Farbe handelt es sich bereits um eine Originalfarbe.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
-    <value>Ungültiger Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird. Dies bedeutet eine Zahl zwischen 0 und 255 bei Verwendung von 255 Farben oder eine VT-Sequenz bei Verwendung von True Color.</value>
+    <value>Ungültiger Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird. Dies bedeutet eine Zahl zwischen 0 und 255 bei Verwendung von 255 Farben oder eine VT-Sequenz bei Verwendung von True Color.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIER" xml:space="preserve">
-    <value>Ungültiger RYB-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger RYB-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERYBRLEVEL" xml:space="preserve">
     <value>Der Rotpegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
@@ -487,10 +428,10 @@
     <value>Der Blaupegel liegt außerhalb des Bereichs (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger RYB-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger RYB-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER" xml:space="preserve">
-    <value>Ungültiger XYZ-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger XYZ-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL" xml:space="preserve">
     <value>Der X-Wert liegt außerhalb des Bereichs (0,0 -&gt; 95,047).</value>
@@ -502,10 +443,10 @@
     <value>Der Z-Wert liegt außerhalb des Bereichs (0,0 -&gt; 108,883).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger XYZ-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger XYZ-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIER" xml:space="preserve">
-    <value>Ungültiger YXY-Farbbezeichner &quot;{0}&quot;. Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
+    <value>Ungültiger YXY-Farbbezeichner "{0}". Stellen Sie sicher, dass das richtige Format verwendet wird.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYXYY1LEVEL" xml:space="preserve">
     <value>Der Y1-Wert liegt außerhalb des Bereichs (0,0 -&gt; 100,0).</value>
@@ -517,7 +458,7 @@
     <value>Der Y2-Wert liegt außerhalb des Bereichs (0,0 -&gt; 1,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ungültiger YXY-Farbspezifizierer &quot;{0}&quot;. Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
+    <value>Ungültiger YXY-Farbspezifizierer "{0}". Der Spezifizierer darf nicht mehr als drei Elemente umfassen. Stellen Sie sicher, dass er das richtige Format hat.</value>
   </data>
   <data name="COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE" xml:space="preserve">
     <value>Der Farbtyp ist ungültig</value>
@@ -600,5 +541,28 @@
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
     <value>Ungültiger YPbPr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format aufweist.</value>
   </data>
-
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED" xml:space="preserve">
+    <value>Die Konvertierung nach YCbCr ist nicht möglich.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB" xml:space="preserve">
+    <value>Eine leere RGB-Instanz kann nicht in YCbCr konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR" xml:space="preserve">
+    <value>Eine leere YCbCr-Instanz kann nicht in RGB konvertiert werden!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER" xml:space="preserve">
+    <value>Ungültiger YCbCr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass er das richtige Format hat.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL" xml:space="preserve">
+    <value>Der Y-Wert liegt außerhalb des Bereichs (16–235).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL" xml:space="preserve">
+    <value>Der Cb-Wert liegt außerhalb des Bereichs (16–240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL" xml:space="preserve">
+    <value>Der Cr-Wert liegt außerhalb des Bereichs (16–240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Ungültiger YCbCr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format hat.</value>
+  </data>
 </root>

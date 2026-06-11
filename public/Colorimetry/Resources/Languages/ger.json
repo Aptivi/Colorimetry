@@ -658,6 +658,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Ungültiger YPbPr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format aufweist."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Die Konvertierung nach YCbCr ist nicht möglich."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Eine leere RGB-Instanz kann nicht in YCbCr konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Eine leere YCbCr-Instanz kann nicht in RGB konvertiert werden!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Ungültiger YCbCr-Farbspezifizierer „{0}“. Stellen Sie sicher, dass er das richtige Format hat."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Der Y-Wert liegt außerhalb des Bereichs (16–235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Der Cb-Wert liegt außerhalb des Bereichs (16–240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Der Cr-Wert liegt außerhalb des Bereichs (16–240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Ungültiger YCbCr-Farbspezifizierer „{0}“. Der Spezifizierer darf maximal drei Elemente enthalten. Stellen Sie sicher, dass er das richtige Format hat."
     }
   ]
 }

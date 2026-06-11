@@ -655,6 +655,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Ongeldige YPbPr-kleurspecificatie \"{0}\". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Kan niet converteren naar YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Kan een null RGB-instantie niet converteren naar YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Kan een null YCbCr-instantie niet converteren naar RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Ongeldige YCbCr-kleurspecificatie \"{0}\". Zorg ervoor dat deze de juiste indeling heeft."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "De Y-waarde ligt buiten het bereik (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "De Cb-waarde ligt buiten het bereik (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "De Cr-waarde ligt buiten het bereik (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Ongeldige YCbCr-kleurspecificatie \"{0}\". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft."
     }
   ]
 }

@@ -650,6 +650,38 @@
     {
       "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED",
       "text": "Sonraitheoir datha YPbPr neamhbhailí \"{0}\". Ní fhéadfaidh níos mó ná trí eilimint a bheith sa shonraitheoir. Cinntigh go bhfuil sé san fhormáid cheart."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED",
+      "text": "Ní féidir tiontú go YCbCr."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB",
+      "text": "Ní féidir sampla RGB nialasach a thiontú go YCbCr!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR",
+      "text": "Ní féidir sampla YCbCr nialasach a thiontú go RGB!"
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER",
+      "text": "Sonraitheoir datha YCbCr neamhbhailí \"{0}\". Cinntigh go bhfuil sé san fhormáid cheart."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL",
+      "text": "Tá an luach Y lasmuigh den raon (16 -> 235)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL",
+      "text": "Tá an luach Cb lasmuigh den raon (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL",
+      "text": "Tá an luach Cr lasmuigh den raon (16 -> 240)."
+    },
+    {
+      "loc": "COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED",
+      "text": "Sonraitheoir datha YCbCr neamhbhailí \"{0}\". Ní fhéadfaidh níos mó ná trí eilimint a bheith sa sonraitheoir. Cinntigh go bhfuil sé san fhormáid cheart."
     }
   ]
 }

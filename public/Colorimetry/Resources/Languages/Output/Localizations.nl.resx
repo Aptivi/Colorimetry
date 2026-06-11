@@ -1,123 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<root>
-    <!-- 
-    Microsoft ResX Schema 
-
-    Version 2.0
-
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-
-    Example:
-
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-        <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="metadata">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                </xsd:sequence>
-                <xsd:attribute name="name" use="required" type="xsd:string" />
-                <xsd:attribute name="type" type="xsd:string" />
-                <xsd:attribute name="mimetype" type="xsd:string" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="assembly">
-            <xsd:complexType>
-                <xsd:attribute name="alias" type="xsd:string" />
-                <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="data">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-            </xsd:element>
-            <xsd:element name="resheader">
-            <xsd:complexType>
-                <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                </xsd:sequence>
-                <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-            </xsd:element>
-        </xsd:choice>
-        </xsd:complexType>
-    </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xs:string" />
+              <xs:attribute name="type" type="xs:string" />
+              <xs:attribute name="mimetype" type="xs:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xs:string" />
+              <xs:attribute name="name" type="xs:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xs:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xs:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xs:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xs:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
+  </resheader>
+  <resheader name="version">
     <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
+  </resheader>
+  <resheader name="reader">
     <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
+  </resheader>
+  <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-      <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
+  </resheader>
+  <data name="COLORIMETRY_EXCEPTION_UNKNOWNERROR1" xml:space="preserve">
     <value>Algemene fout!</value>
   </data>
   <data name="COLORIMETRY_SERIALIZER_EXCEPTION_READERROR1" xml:space="preserve">
@@ -142,7 +83,7 @@
     <value>Geef minimaal één kleur op.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIER" xml:space="preserve">
-    <value>Ongeldige CieLab-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige CieLab-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELABLLEVEL" xml:space="preserve">
     <value>De L-waarde ligt buiten het bereik (0,0 -&gt; 100,0).</value>
@@ -160,10 +101,10 @@
     <value>Verlichtingsmiddel is ongeldig</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige CieLab-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige CieLab-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIER" xml:space="preserve">
-    <value>Ongeldige CieLch-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige CieLch-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELCHCLEVEL" xml:space="preserve">
     <value>De C-waarde ligt buiten het bereik (-128,0 -&gt; 128,0).</value>
@@ -172,10 +113,10 @@
     <value>De H-waarde ligt buiten het bereik (-128,0 -&gt; 128,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELCHSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige CieLch-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige CieLch-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIER" xml:space="preserve">
-    <value>Ongeldige CieLuv-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige CieLuv-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECIELUVULEVEL" xml:space="preserve">
     <value>De U-waarde ligt buiten het bereik (-134,0 -&gt; 220,0).</value>
@@ -184,7 +125,7 @@
     <value>De V-waarde ligt buiten het bereik (-140,0 -&gt; 122,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCIELUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige CieLuv-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige CieLuv-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_NOSOURCE" xml:space="preserve">
     <value>Kan geen null-bron converteren.</value>
@@ -343,7 +284,7 @@
     <value>Kan een null HWB-instantie niet naar RGB converteren!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIER" xml:space="preserve">
-    <value>Ongeldige CMY-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze het juiste formaat heeft.</value>
+    <value>Ongeldige CMY-kleurspecificatie "{0}". Zorg ervoor dat deze het juiste formaat heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYCLEVEL" xml:space="preserve">
     <value>Het cyaankleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
@@ -355,22 +296,22 @@
     <value>Het gele kleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige CMY-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige CMY-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIER" xml:space="preserve">
-    <value>Ongeldige CMYK-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze het juiste formaat heeft.</value>
+    <value>Ongeldige CMYK-kleurspecificatie "{0}". Zorg ervoor dat deze het juiste formaat heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSECMYKKLEVEL" xml:space="preserve">
     <value>Het zwarte kleurniveau ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDCMYKSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige CMYK-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan vier elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige CMYK-kleurspecificatie "{0}". De specificatie mag niet meer dan vier elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIER" xml:space="preserve">
-    <value>Ongeldige HSL-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HSL-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLHLEVEL" xml:space="preserve">
-    <value>Het tintniveau ligt buiten het bereik (0&apos; -&gt; 360&apos; graden).</value>
+    <value>Het tintniveau ligt buiten het bereik (0' -&gt; 360' graden).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSLSLEVEL" xml:space="preserve">
     <value>Het verzadigingsniveau ligt buiten het bereik (0 -&gt; 100).</value>
@@ -379,19 +320,19 @@
     <value>Het helderheidsniveau ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSLSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige HSL-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HSL-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIER" xml:space="preserve">
-    <value>Ongeldige HSV-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HSV-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHSVVLEVEL" xml:space="preserve">
     <value>De waarde ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHSVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige HSV-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HSV-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIER" xml:space="preserve">
-    <value>Ongeldige HWB-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze het juiste formaat heeft.</value>
+    <value>Ongeldige HWB-kleurspecificatie "{0}". Zorg ervoor dat deze het juiste formaat heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHWBWLEVEL" xml:space="preserve">
     <value>Het witheidsniveau ligt buiten het bereik (0 -&gt; 100).</value>
@@ -400,10 +341,10 @@
     <value>Het zwartheidsniveau ligt buiten het bereik (0 -&gt; 100).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHWBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige HWB-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HWB-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIER" xml:space="preserve">
-    <value>Ongeldige HunterLab-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HunterLab-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHUNTERLABALEVEL" xml:space="preserve">
     <value>De A-waarde ligt buiten het bereik (-128,0 -&gt; 127,0).</value>
@@ -412,10 +353,10 @@
     <value>De B-waarde ligt buiten het bereik (-128,0 -&gt; 127,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHUNTERLABSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige HunterLab-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige HunterLab-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIER" xml:space="preserve">
-    <value>Ongeldige YUV-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YUV-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYUVYLEVEL" xml:space="preserve">
     <value>Het luma-niveau ligt buiten het bereik (0 -&gt; 255).</value>
@@ -427,10 +368,10 @@
     <value>Het chroma (V)-niveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYUVSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige YUV-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YUV-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIER" xml:space="preserve">
-    <value>Ongeldige YIQ-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YIQ-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYIQILEVEL" xml:space="preserve">
     <value>Het in-fase niveau ligt buiten het bereik (0 -&gt; 255).</value>
@@ -439,13 +380,13 @@
     <value>Het kwadratuurniveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYIQSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige YIQ-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YIQ-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_ILLUMINANCENOREFERENCE" xml:space="preserve">
     <value>Kan geen referenties uit de tabel halen</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDSPECIFIER" xml:space="preserve">
-    <value>Ongeldige kleurspecificatie &quot;{0}&quot;. Als u 256 kleuren gebruikt, moet u een positieve waarde tussen 0 en 255 of een geldige kleurnaam invoeren. Als u ware kleuren gebruikt, moet u een geldige kleurspecificatie invoeren, zoals RRR;GGG;BBB, of een kleurcode tot 16777215.</value>
+    <value>Ongeldige kleurspecificatie "{0}". Als u 256 kleuren gebruikt, moet u een positieve waarde tussen 0 en 255 of een geldige kleurnaam invoeren. Als u ware kleuren gebruikt, moet u een geldige kleurspecificatie invoeren, zoals RRR;GGG;BBB, of een kleurcode tot 16777215.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBREDLEVEL" xml:space="preserve">
     <value>Het rode kleurniveau ligt buiten het bereik (0 -&gt; 255).</value>
@@ -457,25 +398,25 @@
     <value>Het blauwe kleurniveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXSPECIFIER" xml:space="preserve">
-    <value>Ongeldige hex-kleurspecificatie &quot;{0}&quot;. Deze specificatie moet beginnen met de hashtag. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige hex-kleurspecificatie "{0}". Deze specificatie moet beginnen met de hashtag. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDHEXLENGTH" xml:space="preserve">
-    <value>Ongeldige hex-lengte van de kleur &quot;{0}&quot;. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige hex-lengte van de kleur "{0}". Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEHEXUNRESOLVABLE" xml:space="preserve">
-    <value>Kan kleur hex &quot;{0}&quot; niet oplossen.</value>
+    <value>Kan kleur hex "{0}" niet oplossen.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERGBISORIGINALCOLOR" xml:space="preserve">
     <value>Deze kleur is al een originele kleur.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIER" xml:space="preserve">
-    <value>Ongeldige kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste notatie heeft, wat betekent een getal van 0-255 als u 255 kleuren gebruikt of een VT-reeks als u ware kleuren gebruikt, zoals hieronder.</value>
+    <value>Ongeldige kleurspecificatie "{0}". Zorg ervoor dat deze de juiste notatie heeft, wat betekent een getal van 0-255 als u 255 kleuren gebruikt of een VT-reeks als u ware kleuren gebruikt, zoals hieronder.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRGBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIER" xml:space="preserve">
-    <value>Ongeldige RYB-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige RYB-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSERYBRLEVEL" xml:space="preserve">
     <value>Het rode niveau valt buiten het bereik (0 -&gt; 255).</value>
@@ -487,10 +428,10 @@
     <value>Het blauwe niveau ligt buiten het bereik (0 -&gt; 255).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDRYBSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige RYB-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige RYB-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIER" xml:space="preserve">
-    <value>Ongeldige XYZ-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige XYZ-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEXYZXLEVEL" xml:space="preserve">
     <value>De X-waarde ligt buiten het bereik (0,0 -&gt; 95,047).</value>
@@ -502,10 +443,10 @@
     <value>De Z-waarde ligt buiten het bereik (0,0 -&gt; 108,883).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDXYZSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige XYZ-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige XYZ-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIER" xml:space="preserve">
-    <value>Ongeldige YXY-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YXY-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYXYY1LEVEL" xml:space="preserve">
     <value>De Y1-waarde ligt buiten het bereik (0,0 -&gt; 100,0).</value>
@@ -517,7 +458,7 @@
     <value>De Y2-waarde ligt buiten het bereik (0,0 -&gt; 1,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYXYSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige YXY-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
+    <value>Ongeldige YXY-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste notatie heeft.</value>
   </data>
   <data name="COLORIMETRY_CONTRAST_EXCEPTION_INVALIDTYPE" xml:space="preserve">
     <value>Kleurtype is ongeldig</value>
@@ -556,7 +497,7 @@
     <value>Kan een null LMS-instantie niet converteren naar RGB!</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIER" xml:space="preserve">
-    <value>Ongeldige LMS-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige LMS-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSELMSLLEVEL" xml:space="preserve">
     <value>De L-waarde ligt buiten het bereik (0,0 -&gt; 1,0).</value>
@@ -568,10 +509,10 @@
     <value>De S-waarde ligt buiten het bereik (0,0 -&gt; 1,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDLMSSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige LMS-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat het de juiste indeling heeft</value>
+    <value>Ongeldige LMS-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat het de juiste indeling heeft</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIER" xml:space="preserve">
-    <value>Ongeldige YDbDr-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat het de juiste indeling heeft</value>
+    <value>Ongeldige YDbDr-kleurspecificatie "{0}". Zorg ervoor dat het de juiste indeling heeft</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYDBDRYLEVEL" xml:space="preserve">
     <value>De Y-waarde ligt buiten het bereik (0,0 -&gt; 1,0).</value>
@@ -583,10 +524,10 @@
     <value>De Dr-waarde ligt buiten het bereik (-1,333 -&gt; 1,333).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYDBDRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige YDbDr-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat het de juiste indeling heeft</value>
+    <value>Ongeldige YDbDr-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat het de juiste indeling heeft</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIER" xml:space="preserve">
-    <value>Ongeldige YPbPr-kleurspecificatie &quot;{0}&quot;. Zorg ervoor dat het de juiste indeling heeft</value>
+    <value>Ongeldige YPbPr-kleurspecificatie "{0}". Zorg ervoor dat het de juiste indeling heeft</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYPBPRYLEVEL" xml:space="preserve">
     <value>De Y-waarde ligt buiten het bereik (0,0 -&gt; 750,0).</value>
@@ -598,7 +539,30 @@
     <value>De Pr-waarde ligt buiten het bereik (0,0 -&gt; 750,0).</value>
   </data>
   <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYPBPRSPECIFIEREXCEED" xml:space="preserve">
-    <value>Ongeldige YPbPr-kleurspecificatie &quot;{0}&quot;. De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+    <value>Ongeldige YPbPr-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
   </data>
-
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRFAILED" xml:space="preserve">
+    <value>Kan niet converteren naar YCbCr.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TOYCBCRNULLRGB" xml:space="preserve">
+    <value>Kan een null RGB-instantie niet converteren naar YCbCr!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_TORGBNULLYCBCR" xml:space="preserve">
+    <value>Kan een null YCbCr-instantie niet converteren naar RGB!</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIER" xml:space="preserve">
+    <value>Ongeldige YCbCr-kleurspecificatie "{0}". Zorg ervoor dat deze de juiste indeling heeft.</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRYLEVEL" xml:space="preserve">
+    <value>De Y-waarde ligt buiten het bereik (16 -&gt; 235).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCBLEVEL" xml:space="preserve">
+    <value>De Cb-waarde ligt buiten het bereik (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEYCBCRCRLEVEL" xml:space="preserve">
+    <value>De Cr-waarde ligt buiten het bereik (16 -&gt; 240).</value>
+  </data>
+  <data name="COLORIMETRY_MODEL_EXCEPTION_PARSEINVALIDYCBCRSPECIFIEREXCEED" xml:space="preserve">
+    <value>Ongeldige YCbCr-kleurspecificatie "{0}". De specificatie mag niet meer dan drie elementen bevatten. Zorg ervoor dat deze de juiste indeling heeft.</value>
+  </data>
 </root>
