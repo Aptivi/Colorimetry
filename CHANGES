@@ -1,10 +1,10 @@
-We've updated Colorimetry to add even more color models!
+We've updated Colorimetry as a hotfix release to add missing localizations!
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[+]` Added YCbCr color model (SDTV, HDTV, and HiVision)
+- `[*]` Fixed YCbCr localizations
 
 Review the commit history if you want to get a deep insight about the changes.
 
