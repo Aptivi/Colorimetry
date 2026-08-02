@@ -1993,7 +1993,7 @@ namespace Colorimetry.Models.Conversion
         /// </summary>
         /// <param name="sourceModel"></param>
         /// <returns></returns>
-        public static Func<int, int, int, int, Color>? GetColorFuncFromModel(string sourceModel)
+        public static Func<int, int, int, int, int, Color>? GetColorFuncFromModel(string sourceModel)
         {
             sourceModel = sourceModel.Trim().ToLower();
             if (string.IsNullOrEmpty(sourceModel))
@@ -2002,15 +2002,29 @@ namespace Colorimetry.Models.Conversion
             // Now, make a case for source and target models
             return sourceModel switch
             {
-                "rgb" => new((int r, int g, int b, int _) => new Color($"{r};{g};{b}")),
-                "ryb" => new((int r, int y, int b, int _) => new Color($"{sourceModel}:{r};{y};{b}")),
-                "cmy" => new((int c, int m, int y, int _) => new Color($"{sourceModel}:{c};{m};{y}")),
-                "cmyk" => new((int c, int m, int y, int k) => new Color($"{sourceModel}:{c};{m};{y};{k}")),
-                "hsv" => new((int h, int s, int v, int _) => new Color($"{sourceModel}:{h};{s};{v}")),
-                "hsl" => new((int h, int s, int l, int _) => new Color($"{sourceModel}:{h};{s};{l}")),
-                "yiq" => new((int y, int i, int q, int _) => new Color($"{sourceModel}:{y};{i};{q}")),
-                "yuv" => new((int y, int u, int v, int _) => new Color($"{sourceModel}:{y};{u};{v}")),
-                "xyz" => new((int x, int y, int z, int _) => new Color($"{sourceModel}:{x};{y};{z}")),
+                "rgb" => new((r, g, b, _, _) => new Color($"{r};{g};{b}")),
+                "ryb" => new((r, y, b, _, _) => new Color($"{sourceModel}:{r};{y};{b}")),
+                "cmy" => new((c, m, y, _, _) => new Color($"{sourceModel}:{c};{m};{y}")),
+                "cmyk" => new((c, m, y, k, _) => new Color($"{sourceModel}:{c};{m};{y};{k}")),
+                "hsv" => new((h, s, v, _, _) => new Color($"{sourceModel}:{h};{s};{v}")),
+                "hsl" => new((h, s, l, _, _) => new Color($"{sourceModel}:{h};{s};{l}")),
+                "yiq" => new((y, i, q, _, _) => new Color($"{sourceModel}:{y};{i};{q}")),
+                "yuv" => new((y, u, v, _, _) => new Color($"{sourceModel}:{y};{u};{v}")),
+                "xyz" => new((x, y, z, _, _) => new Color($"{sourceModel}:{x};{y};{z}")),
+                "yxy" => new((y1, x, y2, _, _) => new Color($"{sourceModel}:{y1};{x};{y2}")),
+                "cielab" => new((l, a, b, observer, illuminant) => new Color($"{sourceModel}:{l};{a};{b};{observer};{illuminant}")),
+                "cielch" => new((l, c, h, observer, illuminant) => new Color($"{sourceModel}:{l};{c};{h};{observer};{illuminant}")),
+                "cieluv" => new((l, u, v, observer, illuminant) => new Color($"{sourceModel}:{l};{u};{v};{observer};{illuminant}")),
+                "hwb" => new((h, w, b, _, _) => new Color($"{sourceModel}:{h};{w};{b}")),
+                "hunterlab" => new((l, a, b, _, _) => new Color($"{sourceModel}:{l};{a};{b}")),
+                "lms" => new((l, m, s, _, _) => new Color($"{sourceModel}:{l};{m};{s}")),
+                "ycbcrsdtv" => new((y, cb, cr, _, _) => new Color($"{sourceModel}:{y};{cb};{cr}")),
+                "ycbcrhdtv" => new((y, cb, cr, _, _) => new Color($"{sourceModel}:{y};{cb};{cr}")),
+                "ycbcrhivi" => new((y, cb, cr, _, _) => new Color($"{sourceModel}:{y};{cb};{cr}")),
+                "ypbprsdtv" => new((y, pb, pr, _, _) => new Color($"{sourceModel}:{y};{pb};{pr}")),
+                "ypbprhdtv" => new((y, pb, pr, _, _) => new Color($"{sourceModel}:{y};{pb};{pr}")),
+                "ypbprhivi" => new((y, pb, pr, _, _) => new Color($"{sourceModel}:{y};{pb};{pr}")),
+                "ydbdr" => new((y, db, dr, _, _) => new Color($"{sourceModel}:{y};{db};{dr}")),
                 _ => null,
             };
         }
@@ -2029,15 +2043,29 @@ namespace Colorimetry.Models.Conversion
             // Now, make a case for source and target models
             return sourceModel switch
             {
-                "rgb" => new((string spec) => new Color(spec).RGB),
-                "ryb" => new((string spec) => ConvertFromRgb<RedYellowBlue>(new Color(spec).RGB)),
-                "cmy" => new((string spec) => ConvertFromRgb<CyanMagentaYellow>(new Color(spec).RGB)),
-                "cmyk" => new((string spec) => ConvertFromRgb<CyanMagentaYellowKey>(new Color(spec).RGB)),
-                "hsv" => new((string spec) => ConvertFromRgb<HueSaturationValue>(new Color(spec).RGB)),
-                "hsl" => new((string spec) => ConvertFromRgb<HueSaturationLightness>(new Color(spec).RGB)),
-                "yiq" => new((string spec) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color(spec).RGB)),
-                "yuv" => new((string spec) => ConvertFromRgb<LumaChromaUv>(new Color(spec).RGB)),
-                "xyz" => new((string spec) => ConvertFromRgb<Xyz>(new Color(spec).RGB)),
+                "rgb" => new(spec => new Color(spec).RGB),
+                "ryb" => new(spec => ConvertFromRgb<RedYellowBlue>(new Color(spec).RGB)),
+                "cmy" => new(spec => ConvertFromRgb<CyanMagentaYellow>(new Color(spec).RGB)),
+                "cmyk" => new(spec => ConvertFromRgb<CyanMagentaYellowKey>(new Color(spec).RGB)),
+                "hsv" => new(spec => ConvertFromRgb<HueSaturationValue>(new Color(spec).RGB)),
+                "hsl" => new(spec => ConvertFromRgb<HueSaturationLightness>(new Color(spec).RGB)),
+                "yiq" => new(spec => ConvertFromRgb<LumaInPhaseQuadrature>(new Color(spec).RGB)),
+                "yuv" => new(spec => ConvertFromRgb<LumaChromaUv>(new Color(spec).RGB)),
+                "xyz" => new(spec => ConvertFromRgb<Xyz>(new Color(spec).RGB)),
+                "yxy" => new(spec => ConvertFromRgb<Yxy>(new Color(spec).RGB)),
+                "cielab" => new(spec => ConvertFromRgb<CieLab>(new Color(spec).RGB)),
+                "cielch" => new(spec => ConvertFromRgb<CieLch>(new Color(spec).RGB)),
+                "cieluv" => new(spec => ConvertFromRgb<CieLuv>(new Color(spec).RGB)),
+                "hwb" => new(spec => ConvertFromRgb<HueWhiteBlack>(new Color(spec).RGB)),
+                "hunterlab" => new(spec => ConvertFromRgb<HunterLab>(new Color(spec).RGB)),
+                "lms" => new(spec => ConvertFromRgb<Lms>(new Color(spec).RGB)),
+                "ycbcrsdtv" => new(spec => ConvertFromRgb<YCbCrSDTV>(new Color(spec).RGB)),
+                "ycbcrhdtv" => new(spec => ConvertFromRgb<YCbCrHDTV>(new Color(spec).RGB)),
+                "ycbcrhivi" => new(spec => ConvertFromRgb<YCbCrHiVi>(new Color(spec).RGB)),
+                "ypbprsdtv" => new(spec => ConvertFromRgb<YPbPrSDTV>(new Color(spec).RGB)),
+                "ypbprhdtv" => new(spec => ConvertFromRgb<YPbPrHDTV>(new Color(spec).RGB)),
+                "ypbprhivi" => new(spec => ConvertFromRgb<YPbPrHiVi>(new Color(spec).RGB)),
+                "ydbdr" => new(spec => ConvertFromRgb<YDbDr>(new Color(spec).RGB)),
                 _ => null,
             };
         }
@@ -2048,7 +2076,7 @@ namespace Colorimetry.Models.Conversion
         /// <param name="sourceModel"></param>
         /// <param name="targetModel"></param>
         /// <returns></returns>
-        public static Func<int, int, int, int, BaseColorModel>? GetConvertFuncFromModel(string sourceModel, string targetModel)
+        public static Func<int, int, int, int, int, BaseColorModel>? GetConvertFuncFromModel(string sourceModel, string targetModel)
         {
             sourceModel = sourceModel.Trim().ToLower();
             targetModel = targetModel.Trim().ToLower();
@@ -2059,119 +2087,16 @@ namespace Colorimetry.Models.Conversion
             if (sourceModel == targetModel)
                 return null;
 
-            // Now, make a case for source and target models
-            return sourceModel switch
-            {
-                "rgb" => targetModel switch
-                {
-                    "ryb" => new((int r, int g, int b, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"{r};{g};{b}").RGB)),
-                    "cmy" => new((int r, int g, int b, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"{r};{g};{b}").RGB)),
-                    "cmyk" => new((int r, int g, int b, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"{r};{g};{b}").RGB)),
-                    "hsv" => new((int r, int g, int b, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"{r};{g};{b}").RGB)),
-                    "hsl" => new((int r, int g, int b, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"{r};{g};{b}").RGB)),
-                    "yiq" => new((int r, int g, int b, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"{r};{g};{b}").RGB)),
-                    "yuv" => new((int r, int g, int b, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"{r};{g};{b}").RGB)),
-                    "xyz" => new((int r, int g, int b, int _) => ConvertFromRgb<Xyz>(new Color($"{r};{g};{b}").RGB)),
-                    _ => null,
-                },
-                "ryb" => targetModel switch
-                {
-                    "rgb" => new((int r, int y, int b, int _) => new Color($"ryb:{r};{y};{b}").RGB),
-                    "cmy" => new((int r, int y, int b, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "cmyk" => new((int r, int y, int b, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "hsv" => new((int r, int y, int b, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "hsl" => new((int r, int y, int b, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "yiq" => new((int r, int y, int b, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "yuv" => new((int r, int y, int b, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    "xyz" => new((int r, int y, int b, int _) => ConvertFromRgb<Xyz>(new Color($"ryb:{r};{y};{b}").RGB)),
-                    _ => null,
-                },
-                "cmy" => targetModel switch
-                {
-                    "rgb" => new((int c, int m, int y, int _) => new Color($"cmy:{c};{m};{y}").RGB),
-                    "ryb" => new((int c, int m, int y, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "cmyk" => new((int c, int m, int y, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "hsv" => new((int c, int m, int y, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "hsl" => new((int c, int m, int y, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "yiq" => new((int c, int m, int y, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "yuv" => new((int c, int m, int y, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    "xyz" => new((int c, int m, int y, int _) => ConvertFromRgb<Xyz>(new Color($"ryb:{c};{m};{y}").RGB)),
-                    _ => null,
-                },
-                "cmyk" => targetModel switch
-                {
-                    "rgb" => new((int c, int m, int y, int k) => new Color($"cmyk:{c};{m};{y};{k}").RGB),
-                    "ryb" => new((int c, int m, int y, int k) => ConvertFromRgb<RedYellowBlue>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "cmy" => new((int c, int m, int y, int k) => ConvertFromRgb<CyanMagentaYellow>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "hsv" => new((int c, int m, int y, int k) => ConvertFromRgb<HueSaturationValue>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "hsl" => new((int c, int m, int y, int k) => ConvertFromRgb<HueSaturationLightness>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "yiq" => new((int c, int m, int y, int k) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "yuv" => new((int c, int m, int y, int k) => ConvertFromRgb<LumaChromaUv>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    "xyz" => new((int c, int m, int y, int k) => ConvertFromRgb<Xyz>(new Color($"cmyk:{c};{m};{y};{k}").RGB)),
-                    _ => null,
-                },
-                "hsv" => targetModel switch
-                {
-                    "rgb" => new((int h, int s, int v, int _) => new Color($"hsv:{h};{s};{v}").RGB),
-                    "ryb" => new((int h, int s, int v, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "cmy" => new((int h, int s, int v, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "cmyk" => new((int h, int s, int v, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "hsl" => new((int h, int s, int v, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "yiq" => new((int h, int s, int v, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "yuv" => new((int h, int s, int v, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    "xyz" => new((int h, int s, int v, int _) => ConvertFromRgb<Xyz>(new Color($"hsv:{h};{s};{v}").RGB)),
-                    _ => null,
-                },
-                "hsl" => targetModel switch
-                {
-                    "rgb" => new((int h, int s, int l, int _) => new Color($"hsl:{h};{s};{l}").RGB),
-                    "ryb" => new((int h, int s, int l, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "cmy" => new((int h, int s, int l, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "cmyk" => new((int h, int s, int l, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "hsv" => new((int h, int s, int l, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "yiq" => new((int h, int s, int l, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "yuv" => new((int h, int s, int l, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    "xyz" => new((int h, int s, int l, int _) => ConvertFromRgb<Xyz>(new Color($"hsl:{h};{s};{l}").RGB)),
-                    _ => null,
-                },
-                "yiq" => targetModel switch
-                {
-                    "rgb" => new((int y, int i, int q, int _) => new Color($"yiq:{y};{i};{q}").RGB),
-                    "ryb" => new((int y, int i, int q, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "cmy" => new((int y, int i, int q, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "cmyk" => new((int y, int i, int q, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "hsv" => new((int y, int i, int q, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "hsl" => new((int y, int i, int q, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "yuv" => new((int y, int i, int q, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    "xyz" => new((int y, int i, int q, int _) => ConvertFromRgb<Xyz>(new Color($"yiq:{y};{i};{q}").RGB)),
-                    _ => null,
-                },
-                "yuv" => targetModel switch
-                {
-                    "rgb" => new((int y, int u, int v, int _) => new Color($"yuv:{y};{u};{v}").RGB),
-                    "ryb" => new((int y, int u, int v, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "cmy" => new((int y, int u, int v, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "cmyk" => new((int y, int u, int v, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "hsv" => new((int y, int u, int v, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "hsl" => new((int y, int u, int v, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "yiq" => new((int y, int u, int v, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    "xyz" => new((int y, int u, int v, int _) => ConvertFromRgb<Xyz>(new Color($"yuv:{y};{u};{v}").RGB)),
-                    _ => null,
-                },
-                "xyz" => targetModel switch
-                {
-                    "rgb" => new((int x, int y, int z, int _) => new Color($"xyz:{x};{y};{z}").RGB),
-                    "ryb" => new((int x, int y, int z, int _) => ConvertFromRgb<RedYellowBlue>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "cmy" => new((int x, int y, int z, int _) => ConvertFromRgb<CyanMagentaYellow>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "cmyk" => new((int x, int y, int z, int _) => ConvertFromRgb<CyanMagentaYellowKey>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "hsv" => new((int x, int y, int z, int _) => ConvertFromRgb<HueSaturationValue>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "hsl" => new((int x, int y, int z, int _) => ConvertFromRgb<HueSaturationLightness>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "yiq" => new((int x, int y, int z, int _) => ConvertFromRgb<LumaInPhaseQuadrature>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    "yuv" => new((int x, int y, int z, int _) => ConvertFromRgb<LumaChromaUv>(new Color($"xyz:{x};{y};{z}").RGB)),
-                    _ => null,
-                },
-                _ => null,
-            };
+            // Get the source model color obtain function
+            var sourceModelColorObtain = GetColorFuncFromModel(sourceModel);
+            if (sourceModelColorObtain is null)
+                return null;
+
+            // Get the target model color conversion function
+            var targetModelColorConvert = GetConvertFuncFromSingleModel(targetModel);
+            if (targetModelColorConvert is null)
+                return null;
+            return new((a, b, c, d, e) => targetModelColorConvert(sourceModelColorObtain(a, b, c, d, e).ToString()));
         }
         #endregion
     }
